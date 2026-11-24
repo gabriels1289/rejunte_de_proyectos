@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2625691647</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\cashless.c</file>
+      <file>$PROJ_DIR$\bitmap.c</file>
+      <file>$PROJ_DIR$\card.c</file>
+      <file>$PROJ_DIR$\display.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cashless.pbd</file>
+      <file>$PROJ_DIR$\cs8900.c</file>
+      <file>$PROJ_DIR$\dacom.c</file>
+      <file>$PROJ_DIR$\display.c</file>
+      <file>$PROJ_DIR$\enc28j60.c</file>
+      <file>$PROJ_DIR$\flash.c</file>
+      <file>$PROJ_DIR$\fram.c</file>
+      <file>$PROJ_DIR$\ks0108.c</file>
+      <file>$PROJ_DIR$\md5.c</file>
+      <file>$PROJ_DIR$\mgmt.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocaleuse.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\enc28j60.pbi</file>
+      <file>$PROJ_DIR$\serial.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\serial.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xmtx.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\card.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\md5.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\rs232.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\md5.r43</file>
+      <file>$PROJ_DIR$\cashless.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ctype.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bitmap.r43</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x14x.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\tcpip.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tcpip.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdio.h</file>
+      <file>$PROJ_DIR$\flash.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\dacom.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\enc28j60.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\fram.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.pbi</file>
+      <file>$PROJ_DIR$\md5.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mgmt.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\bitmap.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\cs8900.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\cashless.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ysizet.h</file>
+      <file>$PROJ_DIR$\dacom.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.r43</file>
+      <file>$PROJ_DIR$\fram.h</file>
+      <file>$PROJ_DIR$\mgmt.h</file>
+      <file>$PROJ_DIR$\cs8900.h</file>
+      <file>$PROJ_DIR$\lnk430F149.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\cs8900.pbi</file>
+      <file>$PROJ_DIR$\ks0108.h</file>
+      <file>$PROJ_DIR$\bitmap.h</file>
+      <file>$PROJ_DIR$\card.h</file>
+      <file>$PROJ_DIR$\serial.c</file>
+      <file>$PROJ_DIR$\support.s43</file>
+      <file>$PROJ_DIR$\tcpip.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\wchar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\card.r43</file>
+      <file>$PROJ_DIR$\enc28j60.h</file>
+      <file>$PROJ_DIR$\fonts.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\dacom.r43</file>
+      <file>$PROJ_DIR$\rs232.c</file>
+      <file>$PROJ_DIR$\Debug\Exe\cashless.d43</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\serial.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\tcpip.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\cashless.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\support.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xtls.h</file>
+      <file>$PROJ_DIR$\graficos.h</file>
+      <file>$PROJ_DIR$\support.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mgmt.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ks0108.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ks0108.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Product.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\cashless.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 47</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 4 85 33 87 24 76 48 36 21 30 86 78 22 15 77 62 32 82 69 80 53 64 34 29 37 52 3 56 58 51 49 19</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 4 85 33 16 87 24 76 48 36 21 30 86 78 22 15 77 62 32 82 69 80 53 64 34 29 37 52 3 56 58 51 49 19</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\bitmap.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 82 69 80 58</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 82 69 80 58</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\cashless.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 45 23 74 55 38 41 18 42 17 83 26 81 20 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cs8900.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 82 69 80 53</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 82 69 80 53</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\dacom.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36 4 85 33 87 24 76 48 21 32 82 69 34 29 58 3 49</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 36 4 85 33 16 87 24 76 48 21 32 82 69 34 29 58 3 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\display.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 4 85 33 87 24 76 48 29 34 32 82 69 3 56 80 52 57</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 21 4 85 33 16 87 24 76 48 29 34 32 82 69 3 56 80 52 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\enc28j60.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 82 69 80 34 53 64 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 82 69 80 34 53 64 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 82 69 51 37</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 82 69 51 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fram.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32 82 69 80 51</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32 82 69 80 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ks0108.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36 4 85 33 87 24 76 48 21 29 34 32 82 69 56 80 52 65 57 79</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 36 4 85 33 16 87 24 76 48 21 29 34 32 82 69 56 80 52 65 57 79</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\md5.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 4 85 33 87 24 76 48 34 32 82 69 29 43</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 21 4 85 33 16 87 24 76 48 34 32 82 69 29 43</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mgmt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 4 85 33 87 24 76 48 21 36 30 86 78 22 15 77 62 32 82 69 80 53 34 29 37 51 52 3 56 58 43</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 4 85 33 16 87 24 76 48 21 36 30 86 78 22 15 77 62 32 82 69 80 53 34 29 37 51 52 3 56 58 43</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\serial.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36 4 85 33 87 24 76 48 21 32 82 69 29 80 19 3 56</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 36 4 85 33 16 87 24 76 48 21 32 82 69 29 80 19 3 56</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\support.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 32</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\tcpip.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 73</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 4 85 33 87 24 76 48 21 36 32 82 69 80 53 64 34 29 37 52</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 25 4 85 33 16 87 24 76 48 21 36 32 82 69 80 53 64 34 29 37 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\rs232.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\cashless.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 54 31 63 47 46 66 50 39 71 40 84 28 44 72 75 73 70</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\cashless.c</file>
+      <file>$PROJ_DIR$\card.c</file>
+      <file>$PROJ_DIR$\display.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ycheck.h</file>
+      <file>$PROJ_DIR$\cs8900.c</file>
+      <file>$PROJ_DIR$\dacom.c</file>
+      <file>$PROJ_DIR$\display.c</file>
+      <file>$PROJ_DIR$\flash.c</file>
+      <file>$PROJ_DIR$\fram.c</file>
+      <file>$PROJ_DIR$\mgmt.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocaleuse.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$PROJ_DIR$\Release\Obj\support.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\display.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\card.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.raw</file>
+      <file>$PROJ_DIR$\Release\Obj\mgmt.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\flash.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\dacom.r43</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.a43</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.txt</file>
+      <file>$PROJ_DIR$\Release\Obj\cashless.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.d43</file>
+      <file>$PROJ_DIR$\Release\Obj\flash.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\fram.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\tcpip.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\card.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\cs8900.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\tcpip.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\display.r43</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.hex</file>
+      <file>$PROJ_DIR$\Release\Obj\cashless.r43</file>
+      <file>$PROJ_DIR$\Release\Obj\cs8900.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\cashless.pbd</file>
+      <file>$PROJ_DIR$\Release\Obj\mgmt.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\fram.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\dacom.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\cashless.bin</file>
+      <file>$TOOLKIT_DIR$\config\lnk430.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xmtx.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdlib.h</file>
+      <file>$PROJ_DIR$\cashless.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430x14x.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\tcpip.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\stdio.h</file>
+      <file>$PROJ_DIR$\flash.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\ysizet.h</file>
+      <file>$PROJ_DIR$\dacom.h</file>
+      <file>$PROJ_DIR$\fram.h</file>
+      <file>$PROJ_DIR$\mgmt.h</file>
+      <file>$PROJ_DIR$\cs8900.h</file>
+      <file>$PROJ_DIR$\card.h</file>
+      <file>$PROJ_DIR$\support.s43</file>
+      <file>$PROJ_DIR$\tcpip.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocale_c.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xtls.h</file>
+      <file>$PROJ_DIR$\support.h</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\DLib_Product.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\cashless.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 3 66 46 68 41 61 50 48 39 44 67 63 40 10 62 58 45 65 59 64 54 47 43 49 53 2 55 52 51</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 42 3 66 46 11 68 41 61 50 48 39 44 67 63 40 10 62 58 45 65 59 64 54 47 43 49 53 2 55 52 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\card.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 65 59 64 55</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 45 65 59 64 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cs8900.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 65 59 64 54</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 45 65 59 64 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\dacom.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 3 66 46 68 41 61 50 45 65 59 47 43 55 2 51</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 48 3 66 46 11 68 41 61 50 45 65 59 47 43 55 2 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\display.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43 2 64 45 65 59</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 43 2 64 45 65 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 65 59 52 49</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 45 65 59 52 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fram.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45 65 59 64 52</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 45 65 59 64 52</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\mgmt.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 16</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 3 66 46 68 41 61 50 39 48 44 67 63 40 10 62 58 45 65 59 64 54 47 43 49 52 53 2 55</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 42 3 66 46 11 68 41 61 50 39 48 44 67 63 40 10 62 58 45 65 59 64 54 47 43 49 52 53 2 55</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.raw</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.a43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.txt</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.hex</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Obj\cashless.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 14 21 32 36 13 23 35 34 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\cashless.bin</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 38 26 31 27 18 29 17 24 16 12 25 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\support.s43</name>
+      <outputs>
+        <tool>
+          <name>A430</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>A430</name>
+          <file> 45</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\tcpip.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 3 66 46 68 41 61 50 39 48 45 65 59 64 54 47 43 49 53 2</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 42 3 66 46 11 68 41 61 50 39 48 45 65 59 64 54 47 43 49 53 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

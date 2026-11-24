@@ -1,0 +1,16 @@
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\bin\Debug\FFTvisor.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\bin\Debug\FFTvisor.pdb
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.Form1.resources
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.Properties.Resources.resources
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.csproj.GenerateResource.Cache
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.pdb
+C:\Users\Gbinsur\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.csprojResolveAssemblyReference.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\bin\Debug\FFTvisor.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\bin\Debug\FFTvisor.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.csprojResolveAssemblyReference.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.Form1.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.Properties.Resources.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\FFTvisor\FFTvisor\obj\x86\Debug\FFTvisor.csproj.GenerateResource.Cache

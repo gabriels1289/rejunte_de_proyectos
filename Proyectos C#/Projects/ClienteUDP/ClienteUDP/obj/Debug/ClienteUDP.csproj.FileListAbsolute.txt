@@ -1,0 +1,9 @@
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\bin\Debug\ClienteUDP.exe.config
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\bin\Debug\ClienteUDP.exe
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\bin\Debug\ClienteUDP.pdb
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.Form1.resources
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.Properties.Resources.resources
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.csproj.GenerateResource.Cache
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.exe
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.pdb
+c:\Users\Pela\Documents\Visual Studio 2013\Projects\ClienteUDP\ClienteUDP\obj\Debug\ClienteUDP.csprojResolveAssemblyReference.cache

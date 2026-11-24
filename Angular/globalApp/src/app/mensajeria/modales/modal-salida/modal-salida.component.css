@@ -1,0 +1,12 @@
+/* genera un recorte del texto y agrega puntos suspensivos */
+.cortar{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+#detallesDiv{
+	border: solid 1px #bce8f1;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}

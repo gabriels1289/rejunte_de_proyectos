@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2\cmsis_lib\include /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2\cmsis_boot /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2\lib_inlcude /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2\cmsis /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2 /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_LCDTFT_v2\cmsis_lib">
+      <source file="..\..\..\lib_inlcude\stm32_ub_led.c" lastModified="1440ea5a1f1">
+         <include file="..\..\..\lib_inlcude\stm32_ub_led.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="1440e9519e0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13d01ec9638">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\tiburon.c" lastModified="14419857753">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1440e9519e4">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\SSD1963.h" lastModified="14419aef314">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13d01ec9250">
+      </source>
+      <source file="..\..\..\lib_inlcude\SSD1963.c" lastModified="144157aa7ec">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\bad_bird.c" lastModified="144198460ce">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\Apple_iris.c" lastModified="14419862218">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\Apple_Galaxy.c" lastModified="1441985e20c">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13d01ec8a80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="1440ea6b124">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\firefox.c" lastModified="14419854332">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\arco_iris.c" lastModified="1441981d662">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="13d01ecdc88">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="13d01ec8e68">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1440ea6b129">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="14419bc053b">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\lib_inlcude\stm32_ub_led.h"/>
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13d01ec8a80">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13d01ec8a80">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\lib_inlcude\imagen\TMMI.c" lastModified="1441984e498">
+         <include file="..\..\..\lib_inlcude\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_inlcude\stm32_ub_led.h" lastModified="1440ea5a20c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+   </includePath>
+</dependencies>

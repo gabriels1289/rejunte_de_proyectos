@@ -1,0 +1,27 @@
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\bin\Debug\ServidorDeImagen.exe
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\bin\Debug\ServidorDeImagen.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Form1.resources
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.exe
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\bin\Debug\ServidorDeImagen.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\bin\Debug\ServidorDeImagen.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Form1.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Properties.Resources.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.csproj.GenerateResource.Cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.csprojResolveAssemblyReference.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\bin\Debug\ServidorDeImagen.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\bin\Debug\ServidorDeImagen.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.csprojResolveAssemblyReference.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Form1.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.Properties.Resources.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.csproj.GenerateResource.Cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast - copia\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\ServidorDeImagen - Broadcast - copia\ServidorDeImagen\obj\x86\Debug\ServidorDeImagen.pdb

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=STM32F4_FPU_FFT_v2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\STM32F4_FPU_FFT_v2 -TC:\CooCox\CoIDE\configuration\ProgramData\STM32F4_FPU_FFT_v2/arm-gcc-link.ld -g -L..\..\..\..\Linked_Libraries -larm_cortexm4lf_math -L..\..\..\..\Linked_Libraries -lc -L..\..\..\..\Linked_Libraries -lg -L..\..\..\..\Linked_Libraries -lm">
+      <target file="STM32F4_FPU_FFT_v2.elf" lastModified="145603aed3e">
+         <source file="..\..\..\..\Linked_Libraries\libc.a" lastModified="137e7d34df0"/>
+         <source file="..\..\..\..\Linked_Libraries\libg.a" lastModified="137e7d34df0"/>
+         <source file="..\..\..\..\Linked_Libraries\libm.a" lastModified="137e7d34df0"/>
+         <source file="..\obj\arm_common_tables.o" lastModified="145603adb92"/>
+         <source file="..\obj\arm_cfft_f32.o" lastModified="145603add75"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="145603ade75"/>
+         <source file="..\obj\main.o" lastModified="145603adfd7"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1455fc7e4b9"/>
+         <source file="..\obj\arm_cmplx_mag_f32.o" lastModified="145603ae117"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1455fc7e77c"/>
+         <source file="..\obj\arm_cfft_radix8_f32.o" lastModified="145603ae274"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1455fc7e9eb"/>
+         <source file="..\obj\arm_fft_bin_data.o" lastModified="145603ae3b7"/>
+         <source file="..\obj\arm_max_f32.o" lastModified="145603ae4c4"/>
+      </target>
+   </processor>
+</history>

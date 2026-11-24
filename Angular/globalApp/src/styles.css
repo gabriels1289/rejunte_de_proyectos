@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import './bootstrap.min.css'; */
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* @import '@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* @import '@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+/* @import '@angular/material/prebuilt-themes/purple-green.css'; */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#zoom{
+  transition: 1.5s ease;
+  -moz-transition: 1.5s ease; /* Firefox */
+  -webkit-transition: 1.5s ease; /* Chrome - Safari */
+  -o-transition: 1.5s ease; /* Opera */
+}
+#zoom:hover{
+  transform: scale(2);
+  -moz-transform: scale(2); /* Firefox */
+  -webkit-transform: scale(2); /* Chrome - Safari */
+  -o-transform: scale(2); /* Opera */
+  -ms-transform: scale(2); /* IE9 */
+  transform-origin: left top;
+}
+
+.cursor-manito {
+  cursor: pointer;
+}
+
+/* Move down content because we have a fixed navbar that is 66px tall */
+body {
+/*  padding-top: 50px;*/
+  padding-top: 66px;
+}

@@ -1,0 +1,209 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<form [formGroup]="correoForm" class="example-container" *ngIf="!spinner">
+  <!-- Broadcast (ruta != responder) -->
+  <div class="row ml-1 mt-3" *ngIf="ruta!='responder'">
+    <mat-checkbox formControlName="broadcastCtrl" color="primary" (change)="onChangeBroadcast($event)">Para todos</mat-checkbox>
+  </div>
+  <!-- Usuarios (ruta != responder) -->
+  <mat-form-field *ngIf="ruta!='responder' && !broadcast">
+    <mat-chip-list #chipList aria-label="Seleccion Usuarios">
+      <mat-chip class="size-letra-chips"
+        *ngFor="let usuario of chipSelectedUsuarios"
+        [selectable]="selectable"
+        [removable]="removable"
+        (removed)="removeUsuario(usuario)">
+        {{usuario.usuario}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+      <input
+        placeholder="Usuarios"
+        #usuariosInput
+        [formControl]="usuariosCtrl"
+        [matAutocomplete]="auto"
+        [matChipInputFor]="chipList"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        [matChipInputAddOnBlur]="addOnBlur"
+        (matChipInputTokenEnd)="addUsuario($event)">
+    </mat-chip-list>
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="usuarioSelected($event)">
+      <mat-option *ngFor="let thisUsuarioName of usuariosFiltrados | async" [value]="thisUsuarioName">
+        {{thisUsuarioName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  
+  <br *ngIf="ruta!='responder' && !broadcast">
+  <!-- Areas (ruta != responder) -->
+  <mat-form-field *ngIf="ruta!='responder' && !broadcast">
+    <mat-chip-list #chipList2 aria-label="Seleccion Areas">
+      <mat-chip class="size-letra-chips"
+        *ngFor="let area of chipSelectedAreas"
+        [selectable]="selectable"
+        [removable]="removable"
+        (removed)="removeArea(area)">
+        {{area.area}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+      <input
+        placeholder="Áreas"
+        #areasInput
+        [formControl]="areasCtrl"
+        [matAutocomplete]="auto2"
+        [matChipInputFor]="chipList2"
+        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+        [matChipInputAddOnBlur]="addOnBlur"
+        (matChipInputTokenEnd)="addArea($event)">
+    </mat-chip-list>
+    <mat-autocomplete #auto2="matAutocomplete" (optionSelected)="areaSelected($event)">
+      <mat-option *ngFor="let thisAreaName of areasFiltradas | async" [value]="thisAreaName">
+        {{thisAreaName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+ 
+  <!-- Destinatarios (ruta == responder) -->
+  <div *ngIf="ruta=='responder'">
+    <div *ngFor="let destinatario of destinatarios" style="display: inline" class="text-left">{{destinatario.area | lowercase}}{{!$last?', ':''}}</div>
+  </div>
+  <br>
+
+  <!-- Seguimientos (ruta != responder) -->
+  <div>
+    <mat-slide-toggle formControlName="seguimientoCtrl" [color]="color" *ngIf="permisoSeguimiento && ruta!='responder'" (change)="resetSelects()">Anexar a seguimiento</mat-slide-toggle>
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- calificacion -->
+        <mat-form-field *ngIf="f.seguimientoCtrl.value">
+          <mat-label>Calificación</mat-label>
+          <mat-select formControlName="calificacionesCtrl" required>
+            <mat-option *ngFor="let calificacion of calificaciones" [value]="calificacion">
+              {{calificacion.detalle}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="f.calificacionesCtrl.hasError('required')">Por favor seleccione una calificación</mat-error>
+          <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
+        </mat-form-field>
+      </div> <!-- col 73 -->
+      <div class="col-sm-4">
+        <!-- tipo de observacion -->
+        <mat-form-field *ngIf="f.seguimientoCtrl.value">
+          <mat-label>Tipo de observación</mat-label>
+          <mat-select formControlName="observacionCtrl" required>
+            <mat-option *ngFor="let observacion of observaciones" [value]="observacion">
+              {{observacion.nombre}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="f.observacionCtrl.hasError('required')">Por favor seleccione un tipo de observacion</mat-error>
+        </mat-form-field>
+      </div> <!-- col 86 -->
+      <div class="col-sm-4">
+        <!-- empleado a observar -->
+        <mat-form-field *ngIf="f.seguimientoCtrl.value">
+          <mat-label>Empleado a observar</mat-label>
+          <mat-select formControlName="empleadoAobservarCtrl" required>
+            <mat-option *ngFor="let empleado of empleados" [value]="empleado">
+              {{empleado.nombre}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="f.empleadoAobservarCtrl.hasError('required')">Por favor seleccione un empleado</mat-error>
+        </mat-form-field>
+      </div> <!-- col 98 -->
+    </div> <!-- row 72 -->
+  </div> <!-- seguimientos 70 -->
+  
+  <br *ngIf="ruta!='responder'">
+
+  <div>
+    <!-- Adjuntos -->
+    <button mat-raised-button (click)="fileInput.click()" color="primary"><mat-icon mat-raised-button aria-hidden="false" aria-label="Adjunto">attach_file</mat-icon> Adjuntar archivos</button>
+    <input hidden formControlName="archivosCtrl" (change)="adjuntarArchivos($event)" #fileInput type="file" id="file" multiple
+      accept=".txt,.doc,.docx,.odt,.pdf,.jpg,.jpeg,.png,.gif,.xlsx,.xls,.xlsm,.ods,.ots,.sdc,.ppt,.pptx,.pps,.ppsx">
+    <br>
+    <br>
+    <ul>
+      <li *ngFor="let archivo of misArchivos" style="list-style-type: none;">
+        <div class="d-flex flex-row">
+          <mat-icon aria-hidden="false" aria-label="Adjunto">attach_file</mat-icon>
+          <p class="text-break small text-primary">{{archivo.name}}({{archivo.size/1000}} KB)</p>
+          <mat-icon aria-hidden="false" aria-label="Quitar" (click)="removerArchivo(archivo)" class="cursor-manito">cancel</mat-icon>
+        </div>
+      </li>
+    </ul>
+    <!-- Adjuntos del reenvio (ruta == reenvio) -->
+    <br *ngIf="ruta=='reenvio'">
+    <ul >
+      <li *ngFor="let adj of adjuntosReenvio" style="list-style-type: none;">
+        <div class="d-flex flex-row">
+          <mat-icon aria-hidden="false" aria-label="AdjuntoReenvio">attach_file</mat-icon>
+          <p class="text-break small text-primary">{{adj.nombre}} - ({{adj.adjuntadopor}} | {{adj.fecha | date:'medium'}})</p>
+          <mat-icon aria-hidden="false" aria-label="Quitar" (click)="removerArchivoReenvio(adj)" class="cursor-manito">cancel</mat-icon>
+        </div>
+      </li>
+    </ul>
+  </div> <!-- div 115 -->
+
+  <!-- Asunto (ruta != responder) -->
+  <mat-form-field hintLabel="Max 45 caracteres" *ngIf="ruta!='responder'">
+    <input matInput placeholder="Asunto" formControlName="asuntoCtrl" #inputAsunto required>
+    <mat-hint align="end">{{inputAsunto.value?.length || 0}}/45</mat-hint>
+    <mat-error *ngIf="f.asuntoCtrl.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+
+  <!-- Asunto (ruta==responder) -->
+  <h5 *ngIf="ruta=='responder'" class="pull-left">Asunto: {{detalleAresponder.asunto}}</h5>
+  <br>
+  
+  <!-- Cuerpo -->
+  <ckeditor formControlName="cuerpoCtrl" 
+            name="myckeditor"
+            required
+            [config]="ckeConfig" 
+            debounce="500" 
+            (paste)="onPaste($event)"
+            (change)="onChange($event)"
+            >
+  </ckeditor>
+
+  <br>
+
+  <div>
+    <!-- <button mat-raised-button (click)="test()" class="float-left" color="warn">Test <mat-icon aria-hidden="false" aria-label="Test">bug_report</mat-icon></button> -->
+    <button mat-raised-button (click)="volver()" class="float-left" color="warn" *ngIf="!spinner && ruta=='responder'">Volver <mat-icon>arrow_back</mat-icon></button>
+    <button mat-raised-button (click)="enviar()" class="float-right" color="primary" [disabled]="deshabilitarEnvio()">Enviar <mat-icon aria-hidden="false" aria-label="Enviar">send</mat-icon></button>
+  </div>
+  
+</form>
+
+
+<!--
+  <mat-error *ngIf="correoForm.controls['asuntoCtrl'].invalid">{{getErrorMessage()}}</mat-error>
+  <mat-error *ngIf="correoForm.get('cuerpo').invalid">Invalido</mat-error>
+  <pre>{{chipSelectedAreas|json}}</pre>
+  <p> Form Value: {{ correoForm.value | json }} </p>
+-->
+
+<!--
+  <mat-form-field>
+    <textarea matInput placeholder="Cuerpo" formControlName="cuerpo"
+      cdkTextareaAutosize
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="5" required>
+    </textarea>
+    <mat-hint align="end">{{cuerpo}}</mat-hint>
+    <mat-error *ngIf="correoForm.get('cuerpo').invalid">Invalido</mat-error>
+  </mat-form-field>
+-->
+
+<!--
+  <div *ngFor="let archivo of misArchivos">
+    <p class="text-break small">{{archivo.name}}({{archivo.size/1000}} KB)</p>
+    <div class="d-flex flex-row">
+      <mat-progress-bar mode="indeterminate" class="w-75"></mat-progress-bar>
+      <mat-icon aria-hidden="false" aria-label="Quitar">cancel</mat-icon>
+    </div>
+    <p>x% y KB of z KB</p>
+  </div>
+-->

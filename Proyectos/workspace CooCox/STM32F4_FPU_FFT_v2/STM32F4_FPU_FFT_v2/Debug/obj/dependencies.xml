@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_lib\include /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_boot /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\lib_include /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2 /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_lib">
+      <source file="..\..\..\lib_include\arm_cmplx_mag_f32.c" lastModified="140a5854f50">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1455e64cf26">
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1455e64cf1d">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_common_tables.h" lastModified="140a5838aa7">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_const_structs.h" lastModified="140a5838a98">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+         <include file="..\..\..\lib_include\arm_common_tables.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_common_tables.c" lastModified="140a5853c06">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+         <include file="..\..\..\lib_include\arm_common_tables.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1455e64cb29">
+      </source>
+      <source file="..\..\..\lib_include\arm_cfft_radix8_f32.c" lastModified="140a5854c04">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1455e64cb26">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1455e64caf9">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_math.h" lastModified="140a583a246">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_cfft_f32.c" lastModified="1455e88d490">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+         <include file="..\..\..\lib_include\arm_common_tables.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_max_f32.c" lastModified="140a585400e">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1455e6524fa">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1455e64cf08">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\lib_include\arm_fft_bin_data.c" lastModified="140a5856bd1">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1455e64cf22">
+      </source>
+      <source file="..\..\..\main.c" lastModified="1455fcab70c">
+         <include file="..\..\..\lib_include\arm_math.h"/>
+         <include file="..\..\..\lib_include\arm_const_structs.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1455e64cb4b">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1455e64cb16">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1455e64cafd">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1455e64cf20">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1455e64cb47">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>

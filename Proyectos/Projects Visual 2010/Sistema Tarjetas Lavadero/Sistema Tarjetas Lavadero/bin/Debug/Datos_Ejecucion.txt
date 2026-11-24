@@ -1,0 +1,86 @@
+--- Port Open ---
+--- Port Settings: ---
+Port:        COM3
+BaudRate:    9600
+DataBits:    8
+Parity:      None
+StopBits:    One
+Handshake:   None
+Recibido: VERSION: 2.0
+
+Recibido: N. TARJETAS: 4
+
+Recibido: RFFFFFFFFFF
+
+Recibido: RFFFFFFFFFF
+
+Recibido: RFFFFFFFFFF
+
+Recibido: R6900872FD0
+
+Recibido: TARJETAS
+
+Recibido: INICIO
+
+Recibido: ACK
+
+Recibido: ACK
+
+Recibido: ACK
+
+Recibido: ACK
+
+Recibido: ACK
+
+Recibido: FIN
+
+Recibido: R6900872FD0
+
+Recibido: R69008743D4
+
+Recibido: R6900877EA6
+
+Recibido: R69008729E3
+
+Recibido: TARJETAS
+
+Recibido: R6900872FD0
+
+Recibido: Historico cantidad de tarjetas usadas
+
+Recibido: MASTER: 0
+
+Recibido: HIDRO.: 0
+
+Recibido: ASPI.: 0
+
+Recibido: ESPUMA: 0
+
+Recibido: Diario cantidad de tarjetas usadas
+
+Recibido: HIDRO.: 0
+
+Recibido: ASPI.: 0
+
+Recibido: ESPUMA: 0
+
+Recibido: Uso diario de los equipos (multiplicar por 10 segundos)
+
+Recibido: HIDRO.: 0
+
+Recibido: ASPI.: 0
+
+Recibido: ESPUMA: 0
+
+Recibido: Uso historico de los equipos (multiplicar por 10 segundos)
+
+Recibido: HIDRO.: 0
+
+Recibido: ASPI.: 0
+
+Recibido: HIDRO.: 0
+
+Recibido: R69008743D4
+
+Recibido: R69008743D4
+

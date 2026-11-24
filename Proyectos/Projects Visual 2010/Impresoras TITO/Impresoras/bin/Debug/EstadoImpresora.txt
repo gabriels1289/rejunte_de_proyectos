@@ -1,0 +1,45 @@
+unit address: 0
+
+software version: GRARG5914
+
+Status Flags 1: @	 Hexa: @	En Binario: 10000000
+	Idle
+	System ok
+	Platen engaged
+	Paper loaded
+	Head ok
+	Volatge ok
+
+Status Flags 2: @	 Hexa: @	En Binario: 10000000
+	Temperature ok
+	Library refs ok
+	PR data ok
+	Library load ok
+	Buffer space ok
+	Job memory ok
+
+Status Flags 3: H	 Hexa: H	En Binario: 10010000
+	Command ok
+	Print libraries ok
+	Chute clear
+	Flash ok
+	Printer online
+	Supply index found
+
+Status Flags 4: A	 Hexa: A	En Binario: 10000010
+	X
+	X
+	TCL print mode
+	Cutter ok
+	Paper path ok
+	Paper low
+
+Status Flags 5: s	 Hexa: s	En Binario: 11100110
+	Validation # clear
+	Not at top of form
+	Ready to RX
+	Printer pocketed
+	Clear
+	Reset/Power up
+
+Temp_num:   

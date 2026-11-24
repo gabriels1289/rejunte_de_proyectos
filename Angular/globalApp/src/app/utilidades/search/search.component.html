@@ -1,0 +1,8 @@
+<div class="example-container">
+  <mat-form-field appearance="legacy">
+      <mat-label>Buscar...</mat-label>
+    <!--<input matInput placeholder="Buscar..." (keyup)="terminoDeBusqueda$.next($event.target.value)">-->
+    <input matInput placeholder="Buscar..." [(ngModel)]="terminoDeBusqueda">
+    <mat-icon matSuffix (click)="buscar()">search</mat-icon>
+  </mat-form-field>
+</div>

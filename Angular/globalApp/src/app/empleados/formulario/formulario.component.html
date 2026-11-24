@@ -1,0 +1,222 @@
+<div class="d-flex justify-content-center" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<form [formGroup]="form" *ngIf="!spinner">
+  <div class="form-group pl-5 pr-5 pb-5">
+    <!-- Imagen actual -->
+    <img src="assets\{{empleado.foto}}" class="img-thumbnail" style="height:150px; width:150px" *ngIf="previewUrl=='' && !spinnerCargaDeFoto">
+
+    <!-- vista previa nueva foto -->
+    <img [src]="previewUrl" *ngIf="previewUrl!='' && !spinnerCargaDeFoto" class="img-thumbnail" style="height:150px; width:150px"/>
+    <!-- spinner para el renderizado de la foto -->
+    <div style="height:150px; width:150px" *ngIf="spinnerCargaDeFoto"><mat-spinner></mat-spinner></div>
+
+    <!-- Botón para cambiar la imagen -->
+    <button mat-raised-button (click)="fileInput.click()" color="primary" *ngIf="previewUrl=='' && !spinnerCargaDeFoto" class="ml-5">
+      <mat-icon mat-raised-button aria-hidden="false" aria-label="Cargar foto">insert_photo</mat-icon> Cambiar foto
+    </button>
+    <input hidden formControlName="fotoCtrl" (change)="adjuntarFoto($event)" #fileInput type="file" id="file" accept="image/*">
+    
+    <!-- Botón para cancelar la foto -->
+    <button mat-raised-button (click)="cancelarFoto()" color="primary" *ngIf="previewUrl!='' && !spinnerCargaDeFoto" class="ml-5">
+      <mat-icon mat-raised-button aria-hidden="false" aria-label="Cancelar foto">cancel</mat-icon> Cancelar la foto
+    </button>
+  </div> <!-- div 6 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Nombre" formControlName="nombreCtrl" #nombre required>
+      <mat-hint align="end">{{nombre.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.nombreCtrl.invalid">{{getErrorMessageMinMaxRequired('nombreCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Apellido" formControlName="apellidoCtrl" #apellido required>
+      <mat-hint align="end">{{apellido.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.apellidoCtrl.invalid">{{getErrorMessageMinMaxRequired('apellidoCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="col-sm-4">
+      <mat-label>Sexo</mat-label>
+      <mat-select formControlName="sexoCtrl" required>
+        <mat-option *ngFor="let sexo of sexos" [value]="sexo">
+          {{sexo.descripcion}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> <!-- div 27 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Tipo de documento" formControlName="tipodocumentoCtrl" #tipodocumento required>
+      <mat-hint align="end">{{tipodocumento.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.tipodocumentoCtrl.invalid">{{getErrorMessageMinMaxRequired('tipodocumentoCtrl')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Máx 15 caracteres" class="col-sm-4">
+      <input matInput placeholder="Número de documento" formControlName="numerodocumentoCtrl" #numerodocumento required pattern="[0-9]+">
+      <mat-hint align="end">{{numerodocumento.value?.length || 0}}/15</mat-hint>
+      <mat-error *ngIf="f.numerodocumentoCtrl.invalid">{{getErrorMessageMinMaxRequired('numerodocumentoCtrl')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-4">
+      <input matInput [matDatepicker]="fechanacimiento" formControlName="fechanacimientoCtrl" placeholder="Fecha de Nacimiento" required>
+      <mat-datepicker-toggle matSuffix [for]="fechanacimiento"></mat-datepicker-toggle>
+      <mat-datepicker #fechanacimiento></mat-datepicker>
+    </mat-form-field>
+  </div> <!-- div 50 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Localidad" formControlName="localidadCtrl" #localidad required>
+      <mat-hint align="end">{{localidad.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.localidadCtrl.invalid">{{getErrorMessageMinMaxRequired('localidadCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 10 caracteres" class="col-sm-4">
+      <input matInput placeholder="Código postal" formControlName="codigopostalCtrl" #codigopostal required>
+      <mat-hint align="end">{{codigopostal.value?.length || 0}}/10</mat-hint>
+      <mat-error *ngIf="f.codigopostalCtrl.invalid">{{getErrorMessageMinMaxRequired('codigopostalCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 200 caracteres" class="col-sm-4">
+      <input matInput placeholder="Dirección" formControlName="direccionCtrl" #direccion required>
+      <mat-hint align="end">{{direccion.value?.length || 0}}/200</mat-hint>
+      <mat-error *ngIf="f.direccionCtrl.invalid">{{getErrorMessageMinMaxRequired('direccionCtrl')}}</mat-error>
+    </mat-form-field>
+  </div> <!-- div 70 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 200 caracteres" class="col-sm-4">
+      <input matInput placeholder="Mail" formControlName="mailCtrl" #mail>
+      <mat-hint align="end">{{mail.value?.length || 0}}/200</mat-hint>
+      <mat-error *ngIf="f.mailCtrl.invalid">{{getErrorMessageMinMaxRequired('mailCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Teléfono móvil" formControlName="telefonomovilCtrl" #telefonomovil>
+      <mat-hint align="end">{{telefonomovil.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.telefonomovilCtrl.invalid">{{getErrorMessageMinMaxRequired('telefonomovilCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Teléfono fijo" formControlName="telefonofijoCtrl" #telefonofijo>
+      <mat-hint align="end">{{telefonofijo.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.telefonofijoCtrl.invalid">{{getErrorMessageMinMaxRequired('telefonofijoCtrl')}}</mat-error>
+    </mat-form-field>
+  </div> <!-- div 90 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 10 caracteres" class="col-sm-4">
+      <input matInput placeholder="Legajo" formControlName="legajoCtrl" #legajo pattern="[0-9]+">
+      <mat-hint align="end">{{legajo.value?.length || 0}}/10</mat-hint>
+      <mat-error *ngIf="f.legajoCtrl.invalid">{{getErrorMessageMinMaxRequired('legajoCtrl')}}</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field hintLabel="Máx 15 caracteres" class="col-sm-4">
+      <input matInput placeholder="Cuil" formControlName="cuilCtrl" #cuil>
+      <mat-hint align="end">{{cuil.value?.length || 0}}/15</mat-hint>
+      <mat-error *ngIf="f.cuilCtrl.invalid">{{getErrorMessageMinMaxRequired('cuilCtrl')}}</mat-error>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="activoCtrl" class="col-sm-4" color="primary">Activo</mat-checkbox>
+  </div> <!-- div 110 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field class="col-sm-4">
+      <input matInput [matDatepicker]="fechacontrato" formControlName="fechacontratoCtrl" placeholder="Fecha de Contrato">
+      <mat-datepicker-toggle matSuffix [for]="fechacontrato"></mat-datepicker-toggle>
+      <mat-datepicker #fechacontrato></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-4">
+      <input matInput [matDatepicker]="fechabaja" formControlName="fechabajaCtrl" placeholder="Fecha de Baja">
+      <mat-datepicker-toggle matSuffix [for]="fechabaja"></mat-datepicker-toggle>
+      <mat-datepicker #fechabaja></mat-datepicker>
+    </mat-form-field>
+
+    <mat-checkbox formControlName="fulltimeCtrl" class="col-sm-4" color="primary">Full Time</mat-checkbox>
+  </div> <!-- div 126 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field class="col-sm-4">
+      <mat-label>Empresa</mat-label>
+      <mat-select formControlName="empresaCtrl" required>
+        <mat-option *ngFor="let empresa of empresas" [value]="empresa">
+          {{empresa.razonsocial}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field class="col-sm-4">
+      <mat-label>Sector</mat-label>
+      <mat-select formControlName="sectorCtrl" required>
+        <mat-option *ngFor="let sector of sectores" [value]="sector">
+          {{sector.area}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <!-- <mat-form-field hintLabel="Máx 11 caracteres" class="p-5">
+      <input matInput placeholder="Básico" formControlName="basicoCtrl" #basico required>
+      <mat-hint align="end">{{basico.value?.length || 0}}/11</mat-hint>
+      <mat-error *ngIf="f.basicoCtrl.invalid">{{getErrorMessageMinMaxRequired('basicoCtrl')}}</mat-error>
+    </mat-form-field> -->
+  </div> <!-- div 142 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field class="col-sm-4">
+      <mat-label>Obra social</mat-label>
+      <mat-select formControlName="obrasocialCtrl" required>
+        <mat-option *ngFor="let obrasocial of obrasSociales" [value]="obrasocial">
+          {{obrasocial.nombre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field class="col-sm-4">
+      <mat-label>ART</mat-label>
+      <mat-select formControlName="artCtrl" required>
+        <mat-option *ngFor="let art of arts" [value]="art">
+          {{art.nombre}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> <!-- div 168 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 45 caracteres" class="col-sm-4">
+      <input matInput placeholder="Número de legajo de estudio" formControlName="legajoestudioCtrl" #legajoestudio pattern="[0-9]+">
+      <mat-hint align="end">{{legajoestudio.value?.length || 0}}/45</mat-hint>
+      <mat-error *ngIf="f.legajoestudioCtrl.invalid">{{getErrorMessageMinMaxRequired('legajoestudioCtrl')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Máx 15 caracteres" class="col-sm-4">
+      <input matInput placeholder="Preocupacional" formControlName="preocupacionalCtrl" #preocupacional>
+      <mat-hint align="end">{{preocupacional.value?.length || 0}}/15</mat-hint>
+      <mat-error *ngIf="f.preocupacionalCtrl.invalid">{{getErrorMessageMinMaxRequired('preocupacionalCtrl')}}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-4">
+      <input matInput [matDatepicker]="fechaanalisis" formControlName="fechaanalisisCtrl" placeholder="Fecha de Análisis">
+      <mat-datepicker-toggle matSuffix [for]="fechaanalisis"></mat-datepicker-toggle>
+      <mat-datepicker #fechaanalisis></mat-datepicker>
+    </mat-form-field>
+  </div> <!-- div 188 -->
+
+  <div class="form-group pl-5 pr-5 pb-5">
+    <mat-form-field hintLabel="Máx 200 caracteres" class="col-sm-12">
+      <textarea matInput placeholder="Detalle preocupacional" formControlName="preocupacionaldetalleCtrl" #preocupacionaldetalle rows="4"></textarea>
+      <mat-hint align="end">{{preocupacionaldetalle.value?.length || 0}}/200</mat-hint>
+      <mat-error *ngIf="f.preocupacionaldetalleCtrl.invalid">{{getErrorMessageMinMaxRequired('preocupacionaldetalleCtrl')}}</mat-error>
+    </mat-form-field>
+  </div> <!-- div 208 -->
+
+  <div class="p-5">
+    <!-- <button mat-raised-button (click)="test()" class="w-25 float-left" color="primary">Test <mat-icon aria-hidden="false" aria-label="Test">bug_report</mat-icon></button> -->
+    <button mat-raised-button (click)="volver()" color="warn" class="float-left" *ngIf="edicion">Cerrar <mat-icon>cancel</mat-icon></button>
+    <button mat-raised-button (click)="enviar()" class="float-right" color="primary" [disabled]="deshabilitar()">Guardar <mat-icon aria-hidden="false" aria-label="Enviar">save</mat-icon></button>
+  </div> <!-- div 216 -->
+  
+</form>

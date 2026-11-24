@@ -1,0 +1,85 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="row" *ngIf="!spinner">
+	<div class="col-sm-5">
+    <!-- documentos -->
+    <div class="card" *ngIf="documentos!='vacio'">
+      <div class="card border-info">
+        <div class="card-header bg-info text-capitalize text-center">
+          <h2 class="sub-header">Listado de documentos</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let documento of documentos | paginador:pageSize:pageIndex" [class.selected]="documento.id == actual?.id">
+              {{documento.id}} - <a (click)="visualizar(documento)" class="cursor-manito" href="assets\{{documento.direccion}}"  [class.selected]="documento.id ==  actual?.id"
+              download="{{documento.titulo}}">{{documento.titulo}}</a>
+            </li>
+          </ul>
+          <mat-paginator  [length]="documentos.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="documentos"
+                [pageIndex] = "pageIndex"
+                >
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+
+    <!-- videos -->
+    <div class="card" *ngIf="videos!='vacio'">
+      <div class="card border-info">
+        <div class="card-header bg-info text-capitalize text-center">
+          <h2 class="sub-header">Listado de videos</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let video of videos | paginador:pageSize2:pageIndex2" [class.selected]="video.id == actual?.id">
+              {{video.id}} - <a (click)="visualizar(video)" class="cursor-manito" style="color: #007BFF" [class.selected]="video.id == actual?.id">{{video.titulo}}</a>
+            </li>
+          </ul>
+          <mat-paginator  [length]="videos.length"
+                [pageSize]="pageSize2"
+                [pageSizeOptions]="pageSizeOptions2"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage2($event)"
+                *ngIf="videos"
+                [pageIndex] = "pageIndex2"
+                >
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<div class="col-sm-7">
+		<div class="card border-info" *ngIf="actual">
+      <div class="card-header bg-info text-capitalize text-center">
+        <h2 class="sub-header">{{actual.id}} - {{actual.titulo}}</h2>
+      </div>
+      <div class="card-body">
+        <p *ngIf="actual.tipo=='D'" class="text-uppercase"><b>(Referirse al documento descargado)</b></p>
+				<br *ngIf="actual.tipo=='D'">
+        <p class="text-justify" style="margin:5px">{{actual.comentario}}</p>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9" *ngIf="actual.tipo=='V'">
+          <iframe class="embed-responsive-item" width="100%" height="100%" [src]="actual.direccion | safeResourseUrl" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- boton para gestionar biblioteca -->
+<div class="row" *ngIf="!spinner">
+  <button mat-raised-button (click)="gestor()" color="primary" *ngIf="permisoGestor">Gestor Contenido De La Biblioteca <mat-icon>book</mat-icon></button>
+</div>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 4.3.2 arm-none-eabi -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2 -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\lib_include -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_lib\include -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_boot -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_lib">
+      <target file="stm32f4xx_gpio.o" lastModified="1440bfb773f">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1440bd891c2"/>
+      </target>
+      <target file="server.o" lastModified="1440d08f8e7">
+         <source file="..\..\..\lib_include\server.c" lastModified="1440d08f1b6"/>
+      </target>
+      <target file="drvEnc28j60.o" lastModified="1440bfb7e9f">
+         <source file="..\..\..\lib_include\drvEnc28j60.c" lastModified="1440953e528"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="1440bfb6861">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1440bd8cd51"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1440bfb6ddd">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1440bd89222"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1440bfb781a">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1440bd8926b"/>
+      </target>
+      <target file="printf.o" lastModified="1440bfb753c">
+         <source file="..\..\..\stdio\printf.c" lastModified="1440bfa4e4c"/>
+      </target>
+      <target file="drvSysTick.o" lastModified="1440c25632e">
+         <source file="..\..\..\lib_include\drvSysTick.c" lastModified="1440c255865"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="1440bfb7d28">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1440bd8a606"/>
+      </target>
+      <target file="drvUart.o" lastModified="1440bfb7c10">
+         <source file="..\..\..\lib_include\drvUart.c" lastModified="1440953e528"/>
+      </target>
+      <target file="ip_arp_udp_tcp.o" lastModified="1440cd5c5f0">
+         <source file="..\..\..\lib_include\ip_arp_udp_tcp.c" lastModified="1440cd5b25f"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="1440bfb73b6">
+         <source file="..\..\..\lib_include\stm32f4xx_it.c" lastModified="1440953e528"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1440bfb728e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1440bd89367"/>
+      </target>
+      <target file="syscalls.o" lastModified="1440bfb78f4">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="1440be31f5a"/>
+      </target>
+      <target file="mstdio.o" lastModified="1440bfb6999">
+         <source file="..\..\..\lib_include\mstdio.c" lastModified="1440953e528"/>
+      </target>
+      <target file="massert.o" lastModified="1440bfb7dc4">
+         <source file="..\..\..\lib_include\massert.c" lastModified="1440953e528"/>
+      </target>
+      <target file="enc28j60.o" lastModified="1440bfb66fa">
+         <source file="..\..\..\lib_include\enc28j60.c" lastModified="1440953e528"/>
+      </target>
+      <target file="main.o" lastModified="1440cd5c753">
+         <source file="..\..\..\main.c" lastModified="1440c6fdc82"/>
+      </target>
+      <target file="stm32f4xx_usart.o" lastModified="1440bfb6d22">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1440bfb57fc"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,62 @@
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.dll
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.baml
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\App.g.cs
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos_MarkupCompile.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.g.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.Properties.Resources.resources
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.csproj.GenerateResource.Cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe.manifest
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.application
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.pdb
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.dll
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.pdb
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.baml
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.g.cs
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\App.g.cs
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos_MarkupCompile.cache
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.g.resources
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.Properties.Resources.resources
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe.manifest
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.application
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe
+C:\Documents and Settings\User\Mis documentos\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe.manifest
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.application
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.dll
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\WPFToolkit.pdb
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.baml
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\App.g.cs
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos_MarkupCompile.cache
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.g.resources
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.Properties.Resources.resources
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe.manifest
+C:\Users\Gabriel\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.application
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.exe.manifest
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\bin\Debug\OEMyTejidos.application
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.exe.manifest
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\OEMyTejidos\OEMyTejidos\obj\x86\Debug\OEMyTejidos.application

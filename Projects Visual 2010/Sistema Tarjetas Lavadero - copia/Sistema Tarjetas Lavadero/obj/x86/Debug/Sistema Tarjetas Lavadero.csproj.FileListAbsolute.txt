@@ -1,0 +1,8 @@
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\bin\Debug\Sistema Tarjetas Lavadero.exe
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\bin\Debug\Sistema Tarjetas Lavadero.pdb
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema_Tarjetas_Lavadero.Form1.resources
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema_Tarjetas_Lavadero.Properties.Resources.resources
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema Tarjetas Lavadero.csproj.GenerateResource.Cache
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema Tarjetas Lavadero.exe
+c:\users\gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema Tarjetas Lavadero.pdb
+C:\Users\Gaby\documents\visual studio 2010\Projects\Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero\obj\x86\Debug\Sistema Tarjetas Lavadero.csprojResolveAssemblyReference.cache

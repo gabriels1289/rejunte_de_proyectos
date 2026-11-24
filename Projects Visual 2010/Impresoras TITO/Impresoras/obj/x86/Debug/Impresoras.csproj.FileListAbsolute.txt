@@ -1,0 +1,9 @@
+C:\Documents and Settings\User\mis documentos\visual studio 2010\Projects\Impresoras\Impresoras\bin\Debug\Impresoras.exe
+C:\Documents and Settings\User\mis documentos\visual studio 2010\Projects\Impresoras\Impresoras\bin\Debug\Impresoras.pdb
+C:\Documents and Settings\User\mis documentos\visual studio 2010\Projects\Impresoras\Impresoras\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\User\mis documentos\visual studio 2010\Projects\Impresoras\Impresoras\obj\x86\Debug\Impresoras.exe
+C:\Documents and Settings\User\mis documentos\visual studio 2010\Projects\Impresoras\Impresoras\obj\x86\Debug\Impresoras.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Impresoras TITO\Impresoras\obj\x86\Debug\Impresoras.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Impresoras TITO\Impresoras\obj\x86\Debug\Impresoras.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Impresoras TITO\Impresoras\bin\Debug\Impresoras.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Impresoras TITO\Impresoras\bin\Debug\Impresoras.pdb

@@ -1,0 +1,16 @@
+http://stackoverflow.com/questions/15610752/stuck-x-axis-scrollbar-in-mschart-chart
+http://stackoverflow.com/questions/10812649/c-sharp-chart-zooming-precision
+http://msdn.microsoft.com/en-us/library/vstudio/dd456730(v=vs.100).aspx
+http://www.dreamincode.net/forums/topic/282621-why-does-auto-zoomscroll-not-work-for-my-chart/
+http://stackoverflow.com/questions/5141126/adding-a-scroll-bar-to-ms-chart-control-c-sharp
+http://www.kettic.com/winforms_ui/csharp_guide/chart_feature_selection.shtml
+https://www.syncfusion.com/kb/114/how-do-i-zoom-a-chart-programatically
+http://stackoverflow.com/questions/7513048/ms-chart-zooming-of-x-axis-with-scroll-bar-in-c-sharp
+http://www.kettic.com/winforms_ui/csharp_guide/chart_feature_scroll_zoom.shtml
+https://social.msdn.microsoft.com/Forums/vstudio/en-US/f569382a-e05e-4295-b0f8-75cc4e504f79/add-scroll-bar-on-bar-chart-created-by-systemwindowsformsdatavisualizationchartingchart?forum=MSWinWebChart
+http://www.dotnetperls.com/chart
+http://codesamplez.com/programming/serial-port-communication-c-sharp
+http://csharpmaniax.blogspot.com.ar/2012/04/chart-en-c-control-para-graficos-en.html
+http://www.codeproject.com/Articles/32836/A-simple-C-library-for-graph-plotting
+http://msdn.microsoft.com/en-us/library/system.windows.forms.datavisualization.charting.axisscrollbar(v=vs.110).aspx
+http://msdn.microsoft.com/en-us/library/system.windows.forms.datavisualization.charting.axisscaleview(v=vs.110).aspx

@@ -1,0 +1,10 @@
+Gloabl compiler settings gcc avr -> Search directories -> linker (borre esta linea)
+C:\WinAVR-20100110\avr\lib
+
+
+http://forums.codeblocks.org/index.php?topic=12278.0
+http://forums.codeblocks.org/index.php?PHPSESSID=lpqaas2nco7n70h25bg553p6v4&/topic,6819.msg53408.html#msg53408
+http://forums.codeblocks.org/index.php?topic=8347.0
+http://www.johnhenryshammer.com/WOW2/pagesHowTo/atmelPage.php#index
+http://stringofthoughts.wordpress.com/2009/11/06/code-blocks-ide-for-avr-gcc-and-avrdude-ubuntu/
+http://arduinodev.com/codeblocks/

@@ -1,0 +1,27 @@
+.log-fatal {
+  background-color: #ebccd1 !important;
+}
+.log-error {
+  background-color: #f2dede !important;
+}
+.log-warn {
+  background-color: #fcf8e3 !important;
+}
+.log-info {
+  background-color: #d9edf7 !important;
+}
+.log-debug {
+  background-color: #dff0d8 !important;
+}
+.log-trace {
+  background-color: #dff0d8 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

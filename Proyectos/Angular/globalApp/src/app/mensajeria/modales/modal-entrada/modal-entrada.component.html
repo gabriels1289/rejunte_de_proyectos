@@ -1,0 +1,14 @@
+<div class="card border-info" cdkTrapFocus>
+	<div class="card-header bg-info text-capitalize">
+		<h2 mat-dialog-title class="text-center">{{data.nombreapellido}}</h2>
+	</div>
+	<div class="card-body">
+		<mat-dialog-content>
+			<p><b>Fecha: </b>{{data.fecha | date:'medium'}} - <b>Area: </b>{{data.area}}</p>
+			<div [innerHTML]="data.cuerpo | safeHtml"></div>
+		</mat-dialog-content>
+	</div>
+	<div class="card-footer">
+		<button mat-raised-button mat-dialog-close color="warn" class="float-right">Cerrar</button>
+	</div>
+</div>

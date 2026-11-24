@@ -1,0 +1,80 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="row p-5" *ngIf="(idacceso==1 || idacceso==10) && !spinner && !editar && !detalle">
+	<mat-checkbox [(ngModel)]="bigBrother" class="w-25" color="primary" (change)="callBigBrother()">Big Brother</mat-checkbox>
+  <mat-form-field class="w-50" *ngIf="bigBrother">
+    <mat-label>Ver como:</mat-label>
+    <mat-select [(ngModel)]="supervisorSel" name="supervisorSelect" (selectionChange)="callBigBrother()">
+      <mat-option *ngFor="let supervisor of supervisores" [value]="supervisor">
+        {{supervisor.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="card" *ngIf="!spinner && !editar && !detalle && columnas">
+	<div class="card border-info">
+		<div class="card-header bg-info text-capitalize">
+			<div class="row"></div>
+		</div> <!-- card-header 19 -->
+		<div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped table-sm">
+          <thead>
+            <tr class="align-middle text-center">
+              <th id="bordes-tabla-head">Ranking</th>
+              <th id="bordes-tabla-head">Evaluado</th>
+              <th id="bordes-tabla-head" *ngFor="let col of columnas; trackBy:trackByFunctionIndex">{{col.competencia}}</th>
+			        <th id="bordes-tabla-head">Puntaje final</th>
+              <th id="bordes-tabla-head">Menú</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let fila of filas; let indice = index; trackBy:trackByFunctionIndex">
+              <td id="bordes-tabla"># {{indice+1}}</td>
+              <td id="bordes-tabla">{{fila.evaluado}}</td>
+              <ng-container *ngFor="let comparacion of comparaciones; trackBy:trackByFunctionIndex">
+                <ng-container *ngIf="fila.evaluadoid==comparacion.evaluado">
+                  <td id="bordes-tabla" style="text-align:center" [style.background-color]="setBackground(comparacion.promedio, formatoViejo)">{{comparacion.promedio | number:'2.0-2'}}</td>
+                </ng-container>
+              </ng-container>       		    
+              <td id="bordes-tabla" style="text-align:center;" [style.background-color]="setBackground(fila.promedio, formatoViejo)"><strong>{{fila.promedio | number:'2.0-2'}}</strong></td>
+              <td id="bordes-tabla">
+                <button mat-raised-button class="w-25" color="primary" (click)="verDetalle(fila)"><mat-icon aria-hidden="false" aria-label="Test" matTooltip="Ver detalle">pageview</mat-icon></button>
+                <button mat-raised-button class="w-25" color="primary" (click)="edicion(fila)" [disabled]="evaluacion.activa!='SI' || bigBrother" matTooltip="Editar"><mat-icon aria-hidden="false" aria-label="Editar">edit</mat-icon></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- table-responsive 23-->
+    </div> <!-- card-body 22 -->
+  </div> <!-- card border 18 -->
+</div> <!-- card 17 -->
+
+<!-- Modal -->
+<button mat-raised-button matTooltipPosition="above" matTooltip="Mostrar/Ocultar referencias" type="button" color="primary" *ngIf="!spinner && !editar && !detalle"
+	id="botonreferencias" data-toggle="modal" data-target="#myModal">Referencias <mat-icon aria-hidden="false" aria-label="Referencias">info</mat-icon>
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" id="modal-header-info">
+        <h4 class="modal-title text-center" id="myModalLabel">Referencias</h4>
+      </div> <!-- modal-header 64 -->
+      <div class="modal-body">
+        <img *ngIf="formatoViejo" src="assets/img/referenciaseval.jpg" class="center-block img-fluid">
+        <img *ngIf="!formatoViejo" src="assets/img/referenciasevalnuevas.jpg" class="center-block img-fluid">
+      </div> <!-- modal-body 67 -->
+      <div class="modal-footer" id="modal-footer-info">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+      </div> <!-- modal-footer 71 -->
+    </div> <!-- modal-content 63 -->
+  </div> <!-- modal-dialog 62 -->
+</div> <!-- modal fade 61 -->
+
+<app-evaluar *ngIf="editar" [evaluado]="filaEvaluado" [evaluacion]="evaluacion" (guardado)="onGuardado($event)"></app-evaluar>
+<app-detalle *ngIf="detalle" [evaluado]="filaEvaluado" [evaluacion]="evaluacion" [idusuario]="idsupervisor" (guardado)="onGuardado($event)"></app-detalle>
+<!-- <button mat-raised-button (click)="test()" class="w-25 float-left" color="primary">Test <mat-icon aria-hidden="false" aria-label="Test">bug_report</mat-icon></button> -->

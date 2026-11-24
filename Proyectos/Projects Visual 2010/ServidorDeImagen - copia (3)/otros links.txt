@@ -1,0 +1,5 @@
+http://www.todopocketpc.com/programacion-en-windows-mobile/funcion-en-c-para-calcular-diferencia-entre-horas-170024.html
+http://msdn.microsoft.com/es-es/library/576yyx3t(v=vs.90).aspx
+http://msdn.microsoft.com/es-es/library/bb546099(v=vs.110).aspx
+http://www.subgurim.net/Articulos/csharp/36/timespan.aspx
+http://www.pedrov.info/trucos.html

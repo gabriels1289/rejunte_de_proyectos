@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.documento {
+  background-color: #dff0d8 !important;
+}
+.video {
+	background-color: #fcf8e3 !important;
+}
+
+.documento:hover {
+  background-color: lightblue !important;
+}
+.video:hover {
+	background-color: lightblue !important;
+}
+
+.desactivado {
+  background-color: #962e3f !important;
+}
+
+.desactivado:hover {
+  background-color: lightblue !important;
+}

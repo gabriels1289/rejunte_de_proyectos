@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis /I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_lib /I..\..\..\workspace /I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_boot /I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_lib\include /I..\..\..\workspace\Demo_05_ADC_Single - copia\ub_lib /I..\..\..\workspace\Demo_05_ADC_Single - copia">
+      <source file="..\..\..\ub_lib\arm_cfft_radix8_f32.c" lastModified="140a5854c04">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_cfft_f32.c" lastModified="1455e88d490">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+         <include file="..\..\..\ub_lib\arm_common_tables.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_common_tables.h" lastModified="140a5838aa7">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13ce7ff70d8">
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13ce7ff70d8">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_common_tables.c" lastModified="140a5853c06">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+         <include file="..\..\..\ub_lib\arm_common_tables.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_fft_bin_data.c" lastModified="140a5856bd1">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13ce7ff6cf0">
+      </source>
+      <source file="..\..\..\ub_lib\stm32_ub_led.h" lastModified="13cc66e8f80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_max_f32.c" lastModified="140a585400e">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13ce7ff6cf0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13ce7ff6cf0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="13ce801f560">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\stm32_ub_led.c" lastModified="13cc63b3ae0">
+         <include file="..\..\..\ub_lib\stm32_ub_led.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\arm_math.h" lastModified="140a583a246">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\stm32_ub_adc1_single.h" lastModified="13ce8033d80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="13ce7ffc6c8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="13ce7ff70d8">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="13ce801f560">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\ub_lib\stm32_ub_adc1_single.c" lastModified="14cc44db2ff">
+         <include file="..\..\..\ub_lib\stm32_ub_adc1_single.h"/>
+      </source>
+      <source file="..\..\..\main.h" lastModified="13cc656a280">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13ce7ff70d8">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13ce7ff6cf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13ce7ff6cf0">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13ce7ff6cf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13ce7ff70d8">
+      </source>
+      <source file="..\..\..\ub_lib\arm_cmplx_mag_f32.c" lastModified="140a5854f50">
+         <include file="..\..\..\ub_lib\arm_math.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13ce7ff6cf0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>

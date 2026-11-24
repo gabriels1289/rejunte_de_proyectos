@@ -1,0 +1,126 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card" *ngIf="empleado$">
+  <div class="card border-info">
+    <div class="card-header bg-info text-center text-capitalize"><h3>{{empleado$.nombre}} {{empleado$.apellido}}</h3></div>
+    <div class="card-body">
+      <h4 id="titulitos" class="text-capitalize">Datos Personales</h4>
+      <br>
+      <div class="row">
+        <img src="assets\{{empleado$.foto}}" class="img-thumbnail" style="height:150px; width:150px; display: inline-block">
+        <div class="col">
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Fecha de nacimiento:</b> {{empleado$.fechanacimiento | date:'mediumDate'}}</div>
+            <div class="col-sm-12 col-md-4"><b>Sexo:</b> {{empleado$.sexo=='M' ? 'MASCULINO' : 'FEMENINO'}}</div>
+            <div class="col-sm-12 col-md-4"><b>Documento:</b> {{empleado$.tipodocumento}} - {{empleado$.numerodocumento}}</div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Dirección:</b> {{empleado$.direccion}}</div>
+            <div class="col-sm-12 col-md-4"><b>Localidad:</b> {{empleado$.localidad}}</div>
+            <div class="col-sm-12 col-md-4"><b>Código postal:</b> {{empleado$.codigopostal}}</div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Teléfono celular:</b> {{empleado$.telefonomovil}}</div>
+            <div class="col-sm-12 col-md-4"><b>Teléfono fijo:</b> {{empleado$.telefonofijo}}</div>
+            <div class="col-sm-12 col-md-4"><b>Mail:</b> {{empleado$.mail}}</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr id="detallesDiv"/>
+      <h4 id="titulitos" class="text-capitalize">Datos Laborales</h4>
+      <br>
+      <div *ngIf="idacceso==1">
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>ID:</b> {{empleado$.id}}</div>
+          <div class="col-sm-12 col-md-3"><b>Número de legajo:</b> {{empleado$.legajo}}</div>
+          <div class="col-sm-12 col-md-3"><b>Activo:</b> {{empleado$.activo}}</div>				
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Id sector:</b> {{empleado$.idsector}}</div>
+          <div class="col-sm-12 col-md-3"><b>Sector:</b> {{empleado$.sector}}</div>
+          <div class="col-sm-12 col-md-3"><b>Id acceso:</b> {{empleado$.idacceso}}</div>
+          <div class="col-sm-12 col-md-3"><b>Acceso:</b> {{empleado$.acceso}}</div>                        
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Cuil:</b> {{empleado$.cuil}}</div>
+          <div class="col-sm-12 col-md-3"><b>Empresa:</b> {{empleado$.razonsocial}}</div>
+          <div class="col-sm-12 col-md-3"><b>Full time:</b> {{empleado$.fulltime}}</div>
+          <div class="col-sm-12 col-md-3"><b>Básico:</b> {{empleado$.basico}}</div>			
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Obra social:</b> {{empleado$.obrasocial}}</div>
+          <div class="col-sm-12 col-md-3"><b>ART:</b> {{empleado$.art}}</div>
+          <div class="col-sm-12 col-md-3"><b>Fecha contrato:</b> {{empleado$.fechacontrato | date:'mediumDate'}}</div>
+          <div class="col-sm-12 col-md-3"><b>Fecha baja:</b> {{empleado$.fechabaja | date:'mediumDate'}}</div>
+        </div>
+      </div>
+      <div *ngIf="idacceso!=1">
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Activo:</b> {{empleado$.activo}}</div>
+          <div class="col-sm-12 col-md-4"><b>Número de legajo:</b> {{empleado$.legajo}}</div>
+          <div class="col-sm-12 col-md-4"><b>Cuil:</b> {{empleado$.cuil}}</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Empresa:</b> {{empleado$.razonsocial}}</div>
+          <div class="col-sm-12 col-md-4"><b>Sector:</b> {{empleado$.sector}}</div>
+          <div class="col-sm-12 col-md-4"><b>Full time:</b> {{empleado$.fulltime}}</div>
+        </div>
+        <br>
+        <div class="row">						
+          <div class="col-sm-12 col-md-4"><b>Obra social:</b> {{empleado$.obrasocial}}</div>
+          <div class="col-sm-12 col-md-4"><b>ART:</b> {{empleado$.art}}</div>
+          <div class="col-sm-12 col-md-4"><b>Básico:</b> {{empleado$.basico}}</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Fecha contrato:</b> {{empleado$.fechacontrato | date:'mediumDate'}}</div>
+          <div class="col-sm-12 col-md-4"><b>Fecha baja:</b> {{empleado$.fechabaja | date:'mediumDate'}}</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr id="detallesDiv" *ngIf="idacceso==1"/>
+      <h4 id="titulitos" class="text-capitalize" *ngIf="idacceso==1">Datos Preocupacional</h4>
+      <br *ngIf="idacceso==1">
+      <div class="row" *ngIf="idacceso==1">
+        <div class="col-sm-12 col-md-4"><b>Legajo estudio:</b> {{empleado$.legajoestudio}}</div>
+        <div class="col-sm-12 col-md-4"><b>Fecha análisis:</b> {{empleado$.fechaanalisis | date}}</div>
+        <div class="col-sm-12 col-md-4"><b>Preocupacional:</b> {{empleado$.preocupacional}}</div>
+      </div>
+      <br *ngIf="idacceso==1">
+      <div class="row" *ngIf="idacceso==1">
+        <div class="col"><b>Detalles del preocupacional:</b> {{empleado$.preocupacionaldetalle}}</div>
+      </div>
+      <br *ngIf="idacceso==1">
+      <br *ngIf="idacceso==1">
+            
+      <div class="row">
+        <div class="card">
+          <div class="card border-info">
+            <div class="card-header bg-info text-capitalize"><h4 style="text-align: center">Cambiar contraseña</h4></div>
+            <div class="card-body">
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <button mat-raised-button (click)="cambiarPassword()" color="warn"><mat-icon aria-hidden="false" aria-label="Cambiar contraseña">settings</mat-icon> Cambiar contraseña</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> <!-- div 106 -->
+      
+    </div>
+  </div>
+</div>
+ 

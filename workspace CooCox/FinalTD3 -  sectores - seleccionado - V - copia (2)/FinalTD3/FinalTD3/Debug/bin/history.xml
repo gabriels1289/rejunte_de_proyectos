@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=STM32F4_LCDTFT_v2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\FinalTD3 -TC:\CooCox\CoIDE\configuration\ProgramData\FinalTD3/arm-gcc-link.ld -g">
+      <target file="STM32F4_LCDTFT_v2.elf" lastModified="145c306f4cc">
+         <source file="..\obj\enc28j60.o" lastModified="145c306dd96"/>
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="145c306de10"/>
+         <source file="..\obj\server.o" lastModified="145c306dec3"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="145c306df0b"/>
+         <source file="..\obj\ip_arp_udp_tcp.o" lastModified="145c306dfce"/>
+         <source file="..\obj\stm32_ub_led.o" lastModified="145c306e040"/>
+         <source file="..\obj\main.o" lastModified="145c306e0da"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="145c306e183"/>
+         <source file="..\obj\sleep.o" lastModified="145c306eb40"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="145c306ebc7"/>
+         <source file="..\obj\stm32f4xx_flash.o" lastModified="145c306ec5d"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="145c306ecd8"/>
+         <source file="..\obj\syscalls.o" lastModified="145c306ed6c"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="145c306ee12"/>
+         <source file="..\obj\SSD1963.o" lastModified="145c306eec6"/>
+         <source file="..\obj\massert.o" lastModified="145c306ef0a"/>
+         <source file="..\obj\misc.o" lastModified="145c306ef87"/>
+         <source file="..\obj\drvEnc28j60.o" lastModified="145c306effe"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,36 @@
+.sin-leer {
+  background-color: #d9edf7 !important;
+	font-weight: bold;
+}
+.leido {
+  background-color: #ffffff !important;
+}
+.destacado {
+	background-color: #fcf8e3 !important;
+}
+
+.sin-leer:hover {
+  background-color: lightblue !important;
+	font-weight: bold;
+}
+.leido:hover {
+  background-color: lightblue !important;
+}
+.destacado:hover {
+	background-color: lightblue !important;
+}
+
+.selected {
+  /* border-color: red;
+  background-color: red;
+  font-size: 25px;
+  font-style:italic; */
+  color: red;
+}
+.selected:hover {
+  color: black;
+}
+
+h3:hover {
+  color: purple !important;
+}

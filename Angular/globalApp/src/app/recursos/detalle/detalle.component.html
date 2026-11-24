@@ -1,0 +1,23 @@
+<div class="card border-info">
+	<div class="card-header text-capitalize bg-info">
+		<h2 mat-dialog-title class="text-center">{{titulo}}</h2>
+	</div>
+	<div class="card-body">
+		<mat-dialog-content>
+			<p>Para: {{areas}}
+      <hr id="detallesDiv"/>
+      <p class="text-justify" style="margin:5px">{{comentario}}</p>
+      <br>
+      <a class="cursor-manito" href="assets\{{direccion}}" download="{{titulo}}" *ngIf="tipo=='D'"><mat-icon>save_alt</mat-icon> {{titulo}}</a>
+      <div class="embed-responsive embed-responsive-16by9" *ngIf="tipo=='V'">
+        <iframe class="embed-responsive-item" width="100%" height="100%" [src]="direccion | safeResourseUrl" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      
+		</mat-dialog-content>
+	</div>
+	<div class="card-footer">
+		<button mat-raised-button mat-dialog-close="true" color="warn" cdkFocusInitial class="float-right">Aceptar</button>
+	</div>
+</div>

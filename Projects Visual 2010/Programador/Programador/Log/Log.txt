@@ -1,0 +1,9 @@
+==========================================================================
+/* Archivo log con informacion de la ultima accion en BSLProg */          
+==========================================================================
+FECHA		2015/09/11:12:32:08
+ACCION		Verificacion
+ARCHIVO		C:\Users\Gbinsur\Documents\Visual Studio 2010\Projects\Programador\Debug\TI-TEXT.txt
+RESULTADO	OK
+ERROR		-
+==========================================================================

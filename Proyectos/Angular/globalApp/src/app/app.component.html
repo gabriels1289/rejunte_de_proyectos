@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" *ngIf="currentUser">
+  <!-- Logo Brand -->
+  <a class="navbar-brand" routerLink="/mensajeria/bandeja-de-entrada" id="enc-barra">
+    <img src="assets\{{currentUser.foto}}" alt="Logo" style="width:40px;" id="zoom">
+    <!-- {{currentUser.nombre}} {{currentUser.apellido}} | Area: {{currentUser.area | lowercase}} -->
+    {{currentUser.nombre}} {{currentUser.apellido}}
+  </a>
+	
+	<!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Links -->
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav ml-auto">
+
+			<!-- Mensajeria -->
+			<li class="nav-item">
+				<a class="nav-link" routerLink="/mensajeria/bandeja-de-entrada" routerLinkActive="active">Mensajeria</a>
+			</li>
+			
+			<!-- Dropdown 1 -->
+			<li class="nav-item dropdown" *ngIf="tienePermisoMenuEmpleados">
+				<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+					Empleados y Seguimientos
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" routerLink="/empleados" routerLinkActive="active">Empleados</a>
+					<a class="dropdown-item" routerLink="/seguimientos" routerLinkActive="active">Seguimientos</a>
+				</div>
+			</li>
+
+			<!-- Dropdown 2 -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+					Recursos y Evaluaciones
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" routerLink="/evaluaciones" routerLinkActive="active" *ngIf="tienePermisoMenuEvaluaciones">Evaluaciones</a>
+					<a class="dropdown-item" routerLink="/biblioteca">Biblioteca de Recursos</a>
+					<a class="dropdown-item" routerLink="/mis-evaluaciones">Mis Evaluaciones</a>
+				</div>
+			</li>
+			
+			<!-- Dropdown 3 -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+					Mis Ajustes
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" routerLink="/perfil" routerLinkActive="active">Perfil</a>
+					<a class="dropdown-item" routerLink="/logs" routerLinkActive="active" *ngIf="isAdmin">Logs</a>
+				</div>
+			</li>
+			
+			<!-- Cerrar sesion -->
+			<li class="nav-item">
+				<a class="nav-link" (click)="logout()">Cerrar sesión</a>
+			</li>
+			
+		</ul>
+	</div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,237 @@
+import { Component, OnInit } from '@angular/core';
+import { EvaluacionesListado, UtilesEvaluacion } from '../comunes/evaluacion';
+import { ActivatedRoute, Router } from '@angular/router';
+import { EvaluacionesService } from '../servicios/evaluaciones.service';
+import { AuthService } from 'src/app/auth/auth.service';
+import { MatDialog } from '@angular/material';
+import { PopupInformativoModel, PopupInformativoComponent } from 'src/app/modales/popup-informativo/popup-informativo.component';
+
+@Component({
+  selector: 'app-comparacion',
+  templateUrl: './comparacion.component.html',
+  styleUrls: ['./comparacion.component.css']
+})
+export class ComparacionComponent implements OnInit {
+  idevaluacion: any;
+  idusuario: number;
+  public spinner = true; // arranca con el spinner hasta que obtiene los datos del servidor
+  public evaluacion: EvaluacionesListado;
+  fechaDeLaEvaluacion: Date;
+  fechaDeReferencia: Date;
+  formatoViejo: boolean;
+  public setBackground = UtilesEvaluacion.cambiarfondo;
+  idsupervisor: number;
+  columnas: any;
+  filas: any;
+  comparaciones: any;
+  idacceso: number;
+  bigBrother = false;
+  supervisores;
+  supervisorSel;
+  editar = false;
+  empleados: any;
+  devoluciones: any;
+  devolucion: any;
+  empleadoSel: any;
+  idevaluado: any;
+
+  constructor(
+    private rutaActiva: ActivatedRoute,
+    private router: Router,
+    private evaluacionesService: EvaluacionesService,
+    private authService: AuthService,
+    private dialog: MatDialog
+  ) {
+    this.idevaluacion = this.rutaActiva.snapshot.parent.params.idevaluacion;
+    this.idusuario = this.authService.currentUserValue.id;
+    this.idacceso = this.authService.currentUserValue.idacceso;
+  }
+
+  ngOnInit() {
+    this.spinner = true;
+    this.obtenerResumenEvaluacion();
+    if (this.idacceso === 1 || this.idacceso === 10) {
+      this.listadoBigBrother();
+    }
+  }
+
+  obtenerResumenEvaluacion() {
+    this.evaluacionesService.getResumenEvaluacion(this.idevaluacion)
+    .subscribe(
+      (res) => {
+        // console.log(res);
+        // tslint:disable: no-string-literal
+        if (res['status'] === 200) {
+          this.evaluacion = res['body'];
+          // compruebo las fechas de la evaluacion con la del cambio de formato para ver cual debo usar
+          this.fechaDeLaEvaluacion = new Date(this.evaluacion.fecha);
+          this.fechaDeReferencia = new Date(2019, 4, 10); // (year, month, day)
+
+          if (this.fechaDeLaEvaluacion < this.fechaDeReferencia) {
+            this.formatoViejo = true;
+          } else {
+            this.formatoViejo = false;
+          }
+          this.obtenerEvaluados();
+          // tslint:enable: no-string-literal
+        } else {
+          /*const message = `Lo sentimos ha ocurrido un error en el servidor`;
+          const dialogData = new PopupInformativoModel('Error', message, 'danger');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});*/
+          this.spinner = false;
+        }
+      });
+  }
+
+  obtenerEvaluados() {
+    if (this.bigBrother === true) {
+      this.idsupervisor = this.supervisorSel.id;
+    } else {
+      this.idsupervisor = this.idusuario;
+    }
+    this.evaluacionesService.getEvaluados(this.idevaluacion, this.idsupervisor)
+    .subscribe(
+      (res) => {
+        // console.log(res);
+        // tslint:disable: no-string-literal
+        if (res['status'] === 200) {
+          this.empleados = res['body'];
+          this.empleadoSel = this.empleados[0];
+          this.obtenerComparacion();
+        } else if (res['status'] === 204) {
+          this.columnas = null;
+          this.filas = null;
+          this.comparaciones = null;
+          this.devoluciones = null;
+          this.devolucion = null;
+          this.empleados = null;
+          this.empleadoSel = null;
+          const message = `No hay evaluaciones hechas`;
+          const dialogData = new PopupInformativoModel('Aviso', message, 'primary');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});
+          this.spinner = false;
+        } else {
+          /*const message = `Lo sentimos ha ocurrido un error en el servidor`;
+          const dialogData = new PopupInformativoModel('Error', message, 'danger');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});*/
+          this.spinner = false;
+        }
+        // tslint:enable: no-string-literal
+      });
+  }
+
+  obtenerComparacion() {
+    this.evaluacionesService.getComparacion(this.idevaluacion, this.empleadoSel.empleadoid)
+    .subscribe(
+      (res) => {
+        // console.log(res);
+        // tslint:disable: no-string-literal
+        if (res['status'] === 200) {
+          this.columnas = res['body'][0];
+          this.filas = res['body'][1];
+          this.comparaciones = res['body'][2];
+          this.devoluciones = res['body'][3];
+          this.obtenerDevolucion();
+        } else if (res['status'] === 204) {
+          this.columnas = null;
+          this.filas = null;
+          this.comparaciones = null;
+          this.devoluciones = null;
+          this.spinner = false;
+        } else {
+         /* const message = `Lo sentimos ha ocurrido un error en el servidor`;
+          const dialogData = new PopupInformativoModel('Error', message, 'danger');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});*/
+          this.spinner = false;
+        }
+        // tslint:enable: no-string-literal
+      });
+  }
+
+  obtenerDevolucion() {
+    this.evaluacionesService.getDevolucion(this.idevaluacion, this.empleadoSel.empleadoid)
+    .subscribe(
+      (res) => {
+        // console.log(res);
+        // tslint:disable: no-string-literal
+        if (res['status'] === 200) {
+          this.devolucion = res['body'];
+          this.spinner = false;
+        } else if (res['status'] === 204) {
+          this.devolucion = null;
+          this.spinner = false;
+        } else {
+         /* const message = `Lo sentimos ha ocurrido un error en el servidor`;
+          const dialogData = new PopupInformativoModel('Error', message, 'danger');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});*/
+          this.spinner = false;
+        }
+        // tslint:enable: no-string-literal
+      });
+  }
+
+  onChangeSelect() {
+    this.obtenerComparacion();
+  }
+
+  listadoBigBrother() {
+    this.evaluacionesService.getListadoBigBrother(this.idevaluacion, this.idusuario)
+    .subscribe(
+      (res) => {
+        // console.log(res);
+        // tslint:disable: no-string-literal
+        if (res['status'] === 200) {
+          this.supervisores = res['body'];
+          this.supervisorSel = this.supervisores[0];
+        } else {
+          /*const message = `Lo sentimos ha ocurrido un error en el servidor`;
+          const dialogData = new PopupInformativoModel('Error', message, 'danger');
+          const dialogRef = this.dialog.open(PopupInformativoComponent, {data: dialogData});*/
+          this.spinner = false;
+        }
+        // tslint:enable: no-string-literal
+      });
+  }
+
+  callBigBrother() {
+    this.obtenerEvaluados();
+  }
+
+  conceptoGeneral() {
+    this.editar = true;
+  }
+
+  onGuardado(id) {
+    // this.idevaluacion = id;
+    this.editar = false;
+    this.obtenerResumenEvaluacion();
+  }
+
+  //#region funciones trackBy
+  public trackByFunctionIdSup(index, item) {
+    if (!item) {
+      return null;
+    }
+    return item.idsup; // or return index
+  }
+
+  public trackByFunctionId(index, item) {
+    if (!item) {
+      return null;
+    }
+    return item.id; // or return index
+  }
+
+  public trackByFunctionIndex(index, item) {
+    return index; // or return index
+  }
+
+  public trackByFunctionIdPe(index, item) {
+    if (!item) {
+      return null;
+    }
+    return item.idpe; // or return index
+  }
+  //#endregion
+
+}

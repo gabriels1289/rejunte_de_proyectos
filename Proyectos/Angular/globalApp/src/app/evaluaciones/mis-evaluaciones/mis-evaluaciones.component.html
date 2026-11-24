@@ -1,0 +1,151 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<form class="form-inline" *ngIf="mostrarSelect" name="form">
+  <mat-form-field class="p-5 col-sm-8">
+    <mat-label>Evaluaciones</mat-label>
+    <mat-select [(ngModel)]="selectedValue" (selectionChange)="onChangeOption()" name="evaluaciones">
+      <mat-option *ngFor="let evaluacion of evaluaciones" [value]="evaluacion">
+        {{evaluacion.texto}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+
+<div *ngIf="mostrarEval" id="exportable">
+  <div class="card">
+	  <div class="card border-info">
+		  <div class="card-header bg-info text-capitalize text-center">
+        <h3 >{{tituloEvaluacion}}</h3>
+		  </div>
+      <div class="card-body">
+        <div style="display: inline">*Referencias columnas: </div>
+        <div style="text-align:center; display: inline" *ngFor="let supervisor of supervisores; trackBy:trackByFunctionIdSup; let last = last">{{supervisor.nombresupervisor}}{{!last?' - ':''}}</div>
+        <div style="display: inline"> - Promedio </div>
+        <div style="display: inline"> - Promedio competencia</div>
+			<div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped table-sm">
+          <thead class="thead-light">
+            <tr>
+              <th style="text-align:center">Competencias</th>
+              <th style="text-align:center">Comportamientos observados</th>
+            </tr>
+            <tr style="display: inline"></tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let comp of competencias">
+              <td>{{comp.competencia}}</td>
+              <td>
+                <div class="table-responsive">
+      						<table class="table table-hover table-striped">
+      							<tbody>
+                      <ng-container *ngFor="let modelo of modelos">
+                        <ng-container *ngIf="comp.competencia == modelo.competencia">
+                          <tr>
+                            <td>{{modelo.comportamiento}}</td>
+                            <td *ngFor="let sup of supervisores">
+                            <ng-container *ngFor="let punt of puntajes">			  
+                              <ng-container *ngIf="(sup.idsup == punt.idsup) && (punt.idcomportamiento == modelo.idcomportamiento)">
+                                <div  matTooltipPosition="above" matTooltip="{{sup.nombresupervisor}}" [style.background-color]="setBackground(punt.puntaje, formatoViejo)">
+                                  {{punt.puntaje | number:'2.0-2'}}
+                                </div>
+                              </ng-container>
+                            </ng-container>
+                            </td>
+                            <td [style.background-color]="setBackground(modelo.promedio, formatoViejo)" matTooltipPosition="above" matTooltip="Promedio">{{modelo.promedio | number:'2.0-2'}}</td>
+                          </tr>
+                        </ng-container>
+                      </ng-container>
+                    </tbody>
+      						</table>
+      					</div>
+              </td>
+              <td class="align-middle" [style.background-color]="setBackground(comp.porcentaje, formatoViejo)" matTooltipPosition="above" matTooltip="Promedio {{comp.competencia}}">{{comp.porcentaje | number:'2.0-2'}}</td>
+            </tr>
+            <tr>
+              <td>Puntajes finales</td>
+              <td>
+                <div class="table-responsive">
+                  <table class="table table-hover table-striped">
+                    <tbody>
+                      <tr>
+                        <td>Promedios por evaluador</td>
+                        <td *ngFor="let sup of supervisores">
+                          <div matTooltipPosition="above" matTooltip="{{sup.nombresupervisor}}" [style.background-color]="setBackground(sup.promedio, formatoViejo)">{{sup.promedio | number:'2.0-2'}}</div>
+                        </td>
+                        <td [style.background-color]="setBackground(promedioGeneral, formatoViejo)" matTooltipPosition="above" matTooltip="Promedio general">{{promedioGeneral | number:'2.0-2'}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+	<div class="card border-info">
+		  <div class="card-header bg-info text-capitalize"><h3 style="text-align: center">Promedio general de desempeño: {{ promedioGeneral | number:'2.0-2' }}</h3></div>
+		<div class="card-body" style="text-align: left" *ngIf="formatoViejo">
+      <p *ngIf="promedioGeneral <= 30" style="background-color: #FF0000"><strong>Inferior a lo esperado: </strong>se aplica para aquellos cuyo trabajo en términos de calidad, cantidad y cumplimiento está claramente por debajo de las exigencias básicas de su puesto de trabajo.</p>
+      <p *ngIf="promedioGeneral <= 40 && promedioGeneral > 30" style="background-color: #FF5100"><strong>Bajo: </strong>los resultados no cumplen con las expectativas del puesto. No demuestra tener capacidad para el puesto asignado. Necesita mayor desarrollo.</p>
+      <p *ngIf="promedioGeneral <= 50 && promedioGeneral > 40" style="background-color: #FF7C00"><strong>Necesita mejorar: </strong>los resultados no cumplen con las expectativas del puesto. Demuestra capacidad pero necesita demostar una mejoria para la exigencia del puesto.</p>
+      <p *ngIf="promedioGeneral <= 60 && promedioGeneral > 50" style="background-color: #FFCD00"><strong>Medio: </strong>escasamente cumple con lo esperado para la posición. Cumplen ocasionalmente exigencias del puesto. Su tarea la lleva a cabo de manera moderada.</p>
+      <p *ngIf="promedioGeneral <= 70 && promedioGeneral > 60" style="background-color: #FFE600"><strong>Bueno: </strong>lo esperado para la posición. Cumplen claramente las exigencias del puesto. Habitual en aquellas personas que tiene conocimientos, formación y experiencia apropiados. Su tarea la llevan a cabo regularmente de manera eficaz.</p>
+			<p *ngIf="promedioGeneral <= 80 && promedioGeneral > 70" style="background-color: #C9FF00"><strong>Superior: </strong>los resultados superan moderadamente lo esperado. Habitual en aquellas personas con alto nivel de compromiso con la empresa y en continuo desarrollo.</p>
+			<p *ngIf="promedioGeneral <= 90 && promedioGeneral > 80" style="background-color: #49FF00"><strong>Destacado: </strong>los resultados superan claramente lo esperado. Refleja un nivel de desempeño que contiefe logros significativos de manera eficaz. "Está entre los mejores".</p>
+			<p *ngIf="promedioGeneral <= 100 && promedioGeneral > 90" style="background-color: #34C215"><strong>Excepcional: </strong>los resultados obtenido raramente son igualados por otras personas en puestos comparables. Demuestra logros extraordinarios en todas las manifestaciones de su trabajo.</p>
+    </div>
+    <div class="card-body" style="text-align: left" *ngIf="!formatoViejo">
+      <p *ngIf="promedioGeneral <= 29" style="background-color: #FF0000"><strong>Bajo: </strong>los resultados no cumplen con las expectativas del puesto. No demuestra tener capacidad para el puesto asignado. Necesita mayor desarrollo.</p>
+      <p *ngIf="promedioGeneral <= 59 && promedioGeneral > 29" style="background-color: #FF7C00"><strong>Necesita mejorar: </strong>escasamente cumple con lo esperado para la posisción. Cumple ocasionalmente exigencias del puesto. Su tarea la lleva a cabo de manera moderada.</p>
+      <p *ngIf="promedioGeneral <= 69 && promedioGeneral > 59" style="background-color: #FFE600"><strong>Bueno: </strong>lo esperado para la posición. Cumplen claramente las exigencias del puesto. Habitual en aquellas personas que tiene conocimientos, formación y experiencia apropiados. Su tarea la llevan a cabo regularmente de manera eficaz.</p>
+			<p *ngIf="promedioGeneral <= 90 && promedioGeneral > 69" style="background-color: #A2FF00"><strong>Muy bueno: </strong>los resultados superan claramente lo esperado. Refleja un nivel de desempeño que contiefe logros significativos de manera eficaz. "Está entre los mejores".</p>
+			<p *ngIf="promedioGeneral <= 100 && promedioGeneral > 90" style="background-color: #34C215"><strong>Excelente: </strong>los resultados obtenido raramente son igualados por otras personas en puestos comparables. Demuestra logros extraordinarios en todas las manifestaciones de su trabajo.</p>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="card" *ngIf="devolucion">
+  <div class="card border-info">
+    <div class="card-header bg-info text-capitalize">
+      <h3 style="text-align: center">Devolución Global</h3>
+    </div>
+    <div class="card-body">
+      <div><strong>Conceptos positivos a mantener: </strong>{{devolucion.positivo}}</div>
+      <br>
+      <div><strong>Conceptos negativos a mejorar: </strong>{{devolucion.negativo}}</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<button mat-raised-button matTooltipPosition="above" matTooltip="Mostrar/Ocultar referencias" type="button" color="primary" *ngIf="mostrarEval"
+  id="botonreferencias" data-toggle="modal" data-target="#myModal">Referencias <mat-icon aria-hidden="false" aria-label="Referencias">info</mat-icon>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header" id="modal-header-info">
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+				<h4 class="modal-title text-center" id="myModalLabel">Referencias</h4>
+			</div>
+			<div class="modal-body">
+        <img *ngIf="formatoViejo" src="assets/img/referenciaseval.jpg" class="center-block img-fluid">
+				<img *ngIf="!formatoViejo" src="assets/img/referenciasevalnuevas.jpg" class="center-block img-fluid">
+			</div>
+			<div class="modal-footer" id="modal-footer-info">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+

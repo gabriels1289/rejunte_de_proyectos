@@ -1,0 +1,56 @@
+﻿<Window x:Class="OEMyTejidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+        Title="Analisador de Tejidos" Height="543" Width="827"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" ResizeMode="CanResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="126" />
+            <ColumnDefinition Width="126" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29" />
+            <RowDefinition Height="446*" />
+            <RowDefinition Height="29" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/OEMyTejidos;component/Images/maxresdefault.jpg" />
+        </Grid.Background>
+        
+        <ComboBox Height="Auto"  HorizontalAlignment="Left" Margin="15,0,0,0" Name="cBTipoModelo" VerticalAlignment="Top" Width="224" IsEditable="True" IsReadOnly="True" Text="              ---Modelo De Tejido---">
+            <CheckBox Name="chkBTipo1a">Tipo 1a (Modelo Fibroso - Piel Hidratada)</CheckBox>
+            <CheckBox Name="chkBTipo1b">Tipo 1b (Modelo Fibroso - Piel Seca)</CheckBox>
+            <CheckBox Name="chkBTipo2a">Tipo 2a (Modelo Adiposo - Piel Hidratada)</CheckBox>
+            <CheckBox Name="chkBTipo2b">Tipo 2b (Modelo Adiposo - Piel Seca)</CheckBox>
+        </ComboBox>
+
+        <ComboBox  Height="Auto" HorizontalAlignment="Right" Margin="0,0,2,0" Name="cBFrecuencia" VerticalAlignment="Top" Width="120" Text="   ---Frecuencia---" Grid.Column="1" IsEditable="True" IsReadOnly="True">
+            <CheckBox Name="chkB3MHz">3 MHz</CheckBox>
+            <CheckBox Name="chkB30MHz">30 Mhz</CheckBox>
+        </ComboBox>
+
+        <ComboBox Height="Auto" HorizontalAlignment="Right" Margin="0,0,2,0" Name="cBGrafico" VerticalAlignment="Top" Width="120" Text="---Tipo de Curva---" Grid.Column="2" IsEditable="True" IsReadOnly="True">
+            <ComboBoxItem Content="Absorción Energética Vs Posición"    />
+            <ComboBoxItem Content="Aumento De Temperatura Vs Tiempo" />
+            <ComboBoxItem Content="Permitividad Relativa Vs Frecuencia" />
+            <ComboBoxItem Content="Conductividad Vs Frecuencia" />
+            <ComboBoxItem Content="Tangente De Perdida Vs Frecuencia" />
+            <ComboBoxItem Content="Longitud De Onda Vs Frecuencia" />
+            <ComboBoxItem Content="Profundidad De Penetración Vs Frecuencia" />
+        </ComboBox>
+
+        <Button Content="Graficar" Height="23" HorizontalAlignment="Left" Margin="12,0,0,0" Name="bTGraficar" VerticalAlignment="Top" Width="99" Click="button1_Click" Grid.Row="2" Foreground="White" Background="#FF06172F" BorderBrush="White" />
+            
+        <Button Content="Borrar" Height="23" HorizontalAlignment="Left" Name="bTBorrar" VerticalAlignment="Top" Width="99" Grid.Row="2" Grid.Column="1" Margin="12,0,0,0" Click="bTBorrar_Click" Foreground="White" Background="#FF06172F" BorderBrush="White" />
+
+        <Button Content="Exportar Datos" Height="23" HorizontalAlignment="Left" Margin="12,0,0,0" Name="bTExportar" VerticalAlignment="Top" Width="99" Grid.Row="2" Grid.Column="2" Click="bTExportar_Click" Background="#FF06172F" BorderBrush="White" Foreground="White" />
+
+        <chartingToolkit:Chart Margin="12,42" Name="chartCurva" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"  Padding="10,0" Grid.Row="1" Grid.ColumnSpan="3" Opacity="1" Visibility="Hidden" FontSize="14" Foreground="Red" LegendTitle="REFERENCIAS:">
+            <chartingToolkit:LineSeries  DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" IsSelectionEnabled="True"/>
+        </chartingToolkit:Chart>
+        
+    </Grid>
+
+</Window>

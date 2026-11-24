@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>cashless/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>183</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+    <Debug-Log><ColumnWidth0>22</ColumnWidth0><ColumnWidth1>961</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-20759-1917</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>cashless</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-12457-2482</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-7992-6625</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\serial.c</Filename><XPos>0</XPos><YPos>54</YPos><SelStart>1947</SelStart><SelEnd>1956</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\display.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>3489</SelStart><SelEnd>3489</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\tcpip.h</Filename><XPos>0</XPos><YPos>199</YPos><SelStart>9899</SelStart><SelEnd>9905</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\mgmt.h</Filename><XPos>0</XPos><YPos>79</YPos><SelStart>163</SelStart><SelEnd>163</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\fonts.h</Filename><XPos>0</XPos><YPos>235</YPos><SelStart>29696</SelStart><SelEnd>38780</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\enc28j60.c</Filename><XPos>0</XPos><YPos>57</YPos><SelStart>2116</SelStart><SelEnd>2116</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\ks0108.c</Filename><XPos>0</XPos><YPos>123</YPos><SelStart>2863</SelStart><SelEnd>2863</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\enc28j60.h</Filename><XPos>0</XPos><YPos>180</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\md5.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>362</SelStart><SelEnd>362</SelEnd></Tab><ActiveTab>8</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\md5.h</Filename><XPos>0</XPos><YPos>44</YPos><SelStart>3019</SelStart><SelEnd>3019</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\cashless.h</Filename><XPos>0</XPos><YPos>786</YPos><SelStart>31367</SelStart><SelEnd>31367</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\cashless.c</Filename><XPos>0</XPos><YPos>287</YPos><SelStart>18349</SelStart><SelEnd>18349</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\tcpip.c</Filename><XPos>0</XPos><YPos>251</YPos><SelStart>9807</SelStart><SelEnd>9807</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Guillermo\Documents\Bingo\Olimex\cashless\mgmt.c</Filename><XPos>0</XPos><YPos>132</YPos><SelStart>4687</SelStart><SelEnd>4687</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0074fbe8><key>iaridepm.enu1</key></Toolbar-0074fbe8></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2><Row3><Sizes/></Row3><Row4><Sizes/></Row4><Row5><Sizes/></Row5><Row6><Sizes/></Row6></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>552</Bottom><Right>257</Right><x>-2</x><y>-2</y><xscreen>366</xscreen><yscreen>430</yscreen><sizeHorzCX>285938</sizeHorzCX><sizeHorzCY>598886</sizeHorzCY><sizeVertCX>202344</sizeVertCX><sizeVertCY>771588</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>121</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>123</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>171309</sizeHorzCY><sizeVertCX>285938</sizeVertCX><sizeVertCY>598886</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

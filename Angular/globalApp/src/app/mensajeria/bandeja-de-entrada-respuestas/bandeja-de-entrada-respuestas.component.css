@@ -1,0 +1,56 @@
+/* genera un recorte del texto y agrega puntos suspensivos */
+.cortar{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+/* 
+.cortar:hover {
+  width: auto;
+  white-space: initial;
+  overflow:visible;
+  cursor: pointer;
+} */
+
+.sin-leer {
+  background-color: #d9edf7 !important;
+	font-weight: bold;
+}
+.leido {
+  background-color: #ffffff !important;
+}
+.destacado {
+	background-color: #fcf8e3 !important;
+}
+
+.sin-leer:hover {
+  background-color: lightblue !important;
+	font-weight: bold;
+}
+.leido:hover {
+  background-color: lightblue !important;
+}
+.destacado:hover {
+	background-color: lightblue !important;
+}
+
+.selected {
+  /* border-color: red;
+  background-color: red;
+  font-size: 25px;
+  font-style:italic; */
+  color: red;
+}
+.selected:hover {
+  color: black;
+}
+
+#detallesDiv{
+	border: solid 1px #bce8f1;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+h3:hover {
+  color: purple !important;
+}

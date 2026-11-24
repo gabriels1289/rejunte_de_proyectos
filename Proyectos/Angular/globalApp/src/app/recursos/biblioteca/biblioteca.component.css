@@ -1,0 +1,10 @@
+.selected {
+  color: red !important;
+}
+.selected:hover {
+  color: blue !important;
+}
+
+li:hover {
+  color: blue !important;
+}

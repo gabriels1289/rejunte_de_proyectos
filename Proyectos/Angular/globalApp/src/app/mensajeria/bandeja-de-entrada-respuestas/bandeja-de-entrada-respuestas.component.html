@@ -1,0 +1,78 @@
+<div class="d-flex justify -->-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card border-info mb-3" *ngIf="!spinner"><!--style="max-width: 18rem;"-->
+  <div class="card-header text-center bg-info"><h4>{{detalleMensaje.asunto}}</h4></div>
+  <div class="card-body">
+    <h5 class="card-title">De: {{detalleMensaje.nombreapellido}} - Área: {{detalleMensaje.area}}</h5>
+    <mat-divider></mat-divider>
+    <p class="card-text"><b>Fecha: </b>{{detalleMensaje.fecha | date:'medium'}}</p>
+    
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Para:
+        </mat-panel-title>
+        <mat-panel-description class="cortar text-left">
+          {{textoDestinatarios | lowercase}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div *ngFor="let destinatario of destinatarios" style="display: inline" class="text-left">{{destinatario.area | lowercase}}{{!$last?', ':''}}</div>
+    </mat-expansion-panel>
+
+    <hr id="detallesDiv"/>
+
+    <div class="card-text mt-1" [innerHTML]="detalleMensaje.cuerpo | safeHtml"></div>
+  </div> <!-- card-body 7 -->
+
+  <div class="card-footer" *ngIf="adjuntos != 'consulta vacia'">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        Adjuntos: <mat-icon class="ml-3">attach_file</mat-icon>
+      </mat-expansion-panel-header>
+      <mat-nav-list>
+        <a mat-list-item *ngFor="let adjunto of adjuntos" href="assets\{{adjunto.url}}" download="assets\{{adjunto.nombre}}">
+          <mat-icon class="mr-3">save_alt</mat-icon> {{adjunto.nombre}} - ({{adjunto.subidopor}} / {{adjunto.fecha | date:'medium'}})
+        </a>
+      </mat-nav-list>
+    </mat-expansion-panel>
+  </div> <!-- card-footer 29 -->
+  <div class="row mb-3 ml-3">
+    <button mat-raised-button (click)="goToResponder()" color="primary" class="float-right">Responder <mat-icon aria-hidden="false" aria-label="Responder">chat</mat-icon></button>
+  </div>
+</div> <!-- card 5 -->
+
+<!-- <div class="row ml-3 mb-3" *ngIf="!spinner">
+  <button mat-raised-button (click)="goToResponder()" class="float-right" color="primary">Responder <mat-icon aria-hidden="false" aria-label="Responder">chat</mat-icon></button>
+</div> -->
+
+<div class="card border-info" *ngIf="todasLasRespuestas">
+  <div class="card-body">
+    <mat-nav-list>
+      <mat-list-item *ngFor="let respuesta of todasLasRespuestas | paginador:pageSize:pageIndex" [class.selected]="respuesta.id === selectedId">
+        <img matListAvatar src="assets\{{respuesta.foto}}" alt="{{respuesta.nombreapellido}}" id="zoom">
+        <h3 matLine (click)="openDialog(respuesta)"> {{respuesta.nombreapellido}} </h3>
+        <h4 matLine> {{respuesta.fecha | date:'medium'}} - Area: {{respuesta.area}} </h4>
+        <p matLine> {{respuesta.cuerpo2}} </p>
+        
+        <div class="d-flex flex-row">
+          <mat-icon class="ml-3" matTooltip="Reenviar" matTooltipPosition="left" (click)="goToReenviar(respuesta)">send</mat-icon>
+        </div>
+        <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+      </mat-list-item>
+    </mat-nav-list>
+  </div> <!-- card-body 49 -->
+</div> <!-- card 48 -->
+
+<mat-paginator  [length]="todasLasRespuestas.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="todasLasRespuestas"
+                [pageIndex] = "pageIndex"
+                >
+</mat-paginator>
+
+<button mat-raised-button (click)="goToBandejaDeEntrada(detalleMensaje)" class="float-right" color="warn" *ngIf="!spinner">Volver <mat-icon>arrow_back</mat-icon></button>

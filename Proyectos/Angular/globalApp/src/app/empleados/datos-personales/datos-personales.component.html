@@ -1,0 +1,153 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card" *ngIf="empleado$ && (editar == false)">
+  <div class="card border-info">
+    <div class="card-header bg-info text-center text-capitalize"><h3>{{empleado$.nombre}} {{empleado$.apellido}}</h3></div>
+    <div class="card-body">
+      <h4 id="titulitos" class="text-capitalize">Datos Personales</h4>
+      <br>
+      <div class="row">
+        <img src="assets\{{empleado$.foto}}" class="img-thumbnail" style="height:150px; width:150px; display: inline-block">
+        <div class="col">
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Fecha de nacimiento:</b> {{empleado$.fechanacimiento | date:'mediumDate'}}</div>
+            <div class="col-sm-12 col-md-4"><b>Sexo:</b> {{empleado$.sexo=='M' ? 'MASCULINO' : 'FEMENINO'}}</div>
+            <div class="col-sm-12 col-md-4"><b>Documento:</b> {{empleado$.tipodocumento}} - {{empleado$.numerodocumento}}</div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Dirección:</b> {{empleado$.direccion}}</div>
+            <div class="col-sm-12 col-md-4"><b>Localidad:</b> {{empleado$.localidad}}</div>
+            <div class="col-sm-12 col-md-4"><b>Código postal:</b> {{empleado$.codigopostal}}</div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-4"><b>Teléfono celular:</b> {{empleado$.telefonomovil}}</div>
+            <div class="col-sm-12 col-md-4"><b>Teléfono fijo:</b> {{empleado$.telefonofijo}}</div>
+            <div class="col-sm-12 col-md-4"><b>Mail:</b> {{empleado$.mail}}</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr id="detallesDiv"/>
+      <h4 id="titulitos" class="text-capitalize">Datos Laborales</h4>
+      <br>
+      <div *ngIf="idacceso==1">
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>ID:</b> {{empleado$.id}}</div>
+          <div class="col-sm-12 col-md-3"><b>Número de legajo:</b> {{empleado$.legajo}}</div>
+          <div class="col-sm-12 col-md-3"><b>Activo:</b> {{empleado$.activo}}</div>				
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Id sector:</b> {{empleado$.idsector}}</div>
+          <div class="col-sm-12 col-md-3"><b>Sector:</b> {{empleado$.sector}}</div>
+          <div class="col-sm-12 col-md-3"><b>Id acceso:</b> {{empleado$.idacceso}}</div>
+          <div class="col-sm-12 col-md-3"><b>Acceso:</b> {{empleado$.acceso}}</div>                        
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Cuil:</b> {{empleado$.cuil}}</div>
+          <div class="col-sm-12 col-md-3"><b>Empresa:</b> {{empleado$.razonsocial}}</div>
+          <div class="col-sm-12 col-md-3"><b>Full time:</b> {{empleado$.fulltime}}</div>
+          <div class="col-sm-12 col-md-3"><b>Básico:</b> {{empleado$.basico}}</div>			
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-3"><b>Obra social:</b> {{empleado$.obrasocial}}</div>
+          <div class="col-sm-12 col-md-3"><b>ART:</b> {{empleado$.art}}</div>
+          <div class="col-sm-12 col-md-3"><b>Fecha contrato:</b> {{empleado$.fechacontrato | date:'mediumDate'}}</div>
+          <div class="col-sm-12 col-md-3"><b>Fecha baja:</b> {{empleado$.fechabaja | date:'mediumDate'}}</div>
+        </div>
+      </div>
+      <div *ngIf="idacceso!=1">
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Activo:</b> {{empleado$.activo}}</div>
+          <div class="col-sm-12 col-md-4"><b>Número de legajo:</b> {{empleado$.legajo}}</div>
+          <div class="col-sm-12 col-md-4"><b>Cuil:</b> {{empleado$.cuil}}</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Empresa:</b> {{empleado$.razonsocial}}</div>
+          <div class="col-sm-12 col-md-4"><b>Sector:</b> {{empleado$.sector}}</div>
+          <div class="col-sm-12 col-md-4"><b>Full time:</b> {{empleado$.fulltime}}</div>
+        </div>
+        <br>
+        <div class="row">						
+          <div class="col-sm-12 col-md-4"><b>Obra social:</b> {{empleado$.obrasocial}}</div>
+          <div class="col-sm-12 col-md-4"><b>ART:</b> {{empleado$.art}}</div>
+          <div class="col-sm-12 col-md-4"><b>Básico:</b> {{empleado$.basico}}</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 col-md-4"><b>Fecha contrato:</b> {{empleado$.fechacontrato | date:'mediumDate'}}</div>
+          <div class="col-sm-12 col-md-4"><b>Fecha baja:</b> {{empleado$.fechabaja | date:'mediumDate'}}</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr id="detallesDiv"/>
+      <h4 id="titulitos" class="text-capitalize">Datos Preocupacional</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 col-md-4"><b>Legajo estudio:</b> {{empleado$.legajoestudio}}</div>
+        <div class="col-sm-12 col-md-4"><b>Fecha análisis:</b> {{empleado$.fechaanalisis | date}}</div>
+        <div class="col-sm-12 col-md-4"><b>Preocupacional:</b> {{empleado$.preocupacional}}</div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col"><b>Detalles del preocupacional:</b> {{empleado$.preocupacionaldetalle}}</div>
+      </div>
+      <br *ngIf="permisoEdicion || permisoReporte">
+      <br *ngIf="permisoEdicion || permisoReporte">
+
+      <div class="row" *ngIf="permisoEdicion">
+        <div class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card border-info">
+              <div class="card-header bg-info text-capitalize"><h4 style="text-align: center">Editar empleado</h4></div>
+              <div class="card-body">
+                <div class="text-center">
+                  <button mat-raised-button (click)="editarEmpleado()" color="primary">Editar <mat-icon aria-hidden="false" aria-label="Editar">create</mat-icon></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="permisoReporte" class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card border-info">
+              <div class="card-header bg-info text-capitalize"><h4 style="text-align: center">Generar Reporte</h4></div>
+              <div class="card-body">
+                <div class="text-center">
+                  <button mat-raised-button matTooltip="Descargar" (click)="generarReporte('descargar')" color="primary"><mat-icon aria-hidden="false" aria-label="Descargar">save_alt</mat-icon> Descargar</button>
+                  <!-- <button mat-raised-button matTooltip="Abrir en una pestaña" (click)="generarReporte('abrir')" class="" color="primary"><mat-icon aria-hidden="false" aria-label="Abrir">open_in_new</mat-icon> Abrir</button>
+                  <button mat-raised-button matTooltip="Impirmir" (click)="generarReporte('imprimir')" class="" color="primary"><mat-icon aria-hidden="false" aria-label="Imprimir">print</mat-icon> Imprimir</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- div 124 -->
+
+        <div *ngIf="idacceso==1" class="col-sm-12 col-md-4">
+          <div class="card">
+            <div class="card border-info">
+              <div class="card-header bg-info text-capitalize"><h4 style="text-align: center">Resetear usuario y contraseña</h4></div>
+              <div class="card-body">
+                <div class="text-center">
+                  <button mat-raised-button (click)="resetearPassword()" color="warn"><mat-icon aria-hidden="false" aria-label="Resetear">warning</mat-icon> Resetear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- div 141 -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<app-formulario *ngIf="editar" [empleado]="empleado$" (guardado)="onGuardado($event)"></app-formulario>

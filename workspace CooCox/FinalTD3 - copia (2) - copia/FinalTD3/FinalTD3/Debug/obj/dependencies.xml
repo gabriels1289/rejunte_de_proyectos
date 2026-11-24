@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\cmsis /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\cmsis_lib\include /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3 /I..\..\..\workspace\FinalTD3 - copia (2) /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\librerias\inc /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\cmsis_boot /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\cmsis_lib /I..\..\..\workspace\FinalTD3 - copia (2)\FinalTD3\librerias">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13d01ec8a80">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\massert.h" lastModified="13d40f077f0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="1440e9519e0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\misc.h" lastModified="1440ea6b124">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\librerias\src\stm32_ub_led.c" lastModified="1440ea5a1f1">
+         <include file="..\..\..\librerias\inc\stm32_ub_led.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1440e9519e4">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\librerias\src\drvEnc28j60.c" lastModified="13d305f0370">
+         <include file="..\..\..\librerias\inc\massert.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\librerias\inc\drvEnc28j60.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1440ea6b129">
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\typedef.h" lastModified="13d370b4bc0">
+      </source>
+      <source file="..\..\..\librerias\inc\server.h" lastModified="1444b0bdf31">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\enc28j60.h" lastModified="13d46215b40">
+      </source>
+      <source file="..\..\..\librerias\src\massert.c" lastModified="13d40f52b10">
+         <include file="..\..\..\librerias\inc\massert.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\librerias\inc\drvEnc28j60.h" lastModified="144092bdfd7">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\librerias\src\enc28j60.c" lastModified="13d462aaa10">
+         <include file="..\..\..\librerias\inc\typedef.h"/>
+         <include file="..\..\..\librerias\inc\massert.h"/>
+         <include file="..\..\..\librerias\inc\drvEnc28j60.h"/>
+         <include file="..\..\..\librerias\inc\enc28j60.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="13d01ec8e68">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\net.h" lastModified="1444f514c15">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="13d01ec8a80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\stm32_ub_led.h" lastModified="1440ea5a20c">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="1445abcd643">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1445a6c0a5c">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="13d01ecd4b8">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1445a6c0a3f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\librerias\inc\SSD1963.h" lastModified="1452a025fe5">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="13d01ec9638">
+      </source>
+      <source file="..\..\..\librerias\inc\ip_arp_udp_tcp.h" lastModified="1444f740f8e">
+         <include file="..\..\..\librerias\inc\enc28j60.h"/>
+      </source>
+      <source file="..\..\..\librerias\src\SSD1963.c" lastModified="14557c35353">
+         <include file="..\..\..\librerias\inc\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h" lastModified="145577861dd">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="145577861df">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="13d01ec9638">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="13d01ec9250">
+      </source>
+      <source file="..\..\..\librerias\src\sleep.c" lastModified="14529c0cf81">
+         <include file="..\..\..\librerias\inc\SSD1963.h"/>
+      </source>
+      <source file="..\..\..\librerias\src\ip_arp_udp_tcp.c" lastModified="144706c1624">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\librerias\inc\net.h"/>
+         <include file="..\..\..\librerias\inc\enc28j60.h"/>
+         <include file="..\..\..\librerias\inc\ip_arp_udp_tcp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13d01ec8a80">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13d01ec9250">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>

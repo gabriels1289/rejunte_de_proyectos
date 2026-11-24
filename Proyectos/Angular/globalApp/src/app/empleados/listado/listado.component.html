@@ -1,0 +1,87 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<!-- <mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtro" *ngIf="!spinner">
+</mat-form-field> -->
+
+<div class="row mt-3" *ngIf="!spinner">
+  <div class="col-sm-7">
+    <mat-form-field appearance="legacy">
+      <mat-label>Buscar...</mat-label>
+      <input matInput placeholder="Buscar..." (keyup)="applyFilter($event.target.value)" [(ngModel)]="valorFiltro">
+      <!-- <mat-icon matSuffix (click)="buscar()">search</mat-icon> -->
+    </mat-form-field>
+  </div> <!-- col 10 -->
+  <div class="col-sm-3">
+    <mat-form-field>
+      <mat-label>Estado:</mat-label>
+      <mat-select [(ngModel)]="selectedValue" (selectionChange)="onChangeOption()">
+        <mat-option *ngFor="let estado of estados" [value]="estado.value">
+          {{estado.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> <!-- col 17 -->
+  <div class="col-sm-2">
+    <button mat-raised-button (click)="nuevoEmpleado()" color="primary" *ngIf="permisoNuevoEmpleado">Nuevo Empleado <mat-icon aria-hidden="false" aria-label="Nuevo Empleado">person_add</mat-icon></button>
+  </div> <!-- col 27 -->
+</div> <!-- row 9 -->
+
+<div class="mat-elevation-z8" *ngIf="!spinner">
+  <table mat-table [dataSource]="empleadosFiltrados | paginador:pageSize:pageIndex">
+
+    <!-- Imágen -->
+    <ng-container matColumnDef="foto">
+      <th mat-header-cell *matHeaderCellDef> Foto </th>
+      <td mat-cell *matCellDef="let element"> <img src="assets\{{element.foto}}" id="zoom"/> </td>
+    </ng-container>
+
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- legajo Column -->
+    <ng-container matColumnDef="legajo">
+      <th mat-header-cell *matHeaderCellDef> Legajo </th>
+      <td mat-cell *matCellDef="let element"> {{element.legajo}} </td>
+    </ng-container>
+
+    <!-- Apellido Column -->
+    <ng-container matColumnDef="apellido">
+      <th mat-header-cell *matHeaderCellDef> Apellido </th>
+      <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+    </ng-container>
+
+    <!-- Nombre Column -->
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef> Nombre </th>
+      <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+
+    <!-- Sector Column -->
+    <ng-container matColumnDef="sector">
+      <th mat-header-cell *matHeaderCellDef> Sector </th>
+      <td mat-cell *matCellDef="let element"> {{element.sector}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onRowClicked(row)"
+      [ngClass]="{'activo': row.activo=='SI', 'desactivado': row.activo!='SI'}"></tr>
+  </table>
+
+  <!-- Paginador -->
+  <mat-paginator  [length]="empleadosFiltrados.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="todosLosEmpleados"
+                [pageIndex] = "pageIndex"
+                >
+  </mat-paginator>
+
+</div>

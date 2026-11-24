@@ -1,0 +1,8 @@
+Ver todos los encapsulados y medidas
+Terminar de armar la fuente switching
+revisar diseño
+mirar el tema del led de NO LOAD con el zener de 2V
+ver tema de las resistencias de potencia
+seleccion del zener de 3.3V del circuito del voltimetro
+
+Pasar el JTAG al poncho

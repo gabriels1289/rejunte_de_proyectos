@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1392131653 source:c:\users\usuario\documents\electronica\programacion\coocox\stm32f4_lcdtft_v2\lib_inlcude\imagen\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+

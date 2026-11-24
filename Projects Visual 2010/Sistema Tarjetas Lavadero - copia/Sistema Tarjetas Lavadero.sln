@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema Tarjetas Lavadero", "Sistema Tarjetas Lavadero\Sistema Tarjetas Lavadero.csproj", "{5A60EC1D-A2F7-42EF-A08D-B7A2F9C73678}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A60EC1D-A2F7-42EF-A08D-B7A2F9C73678}.Debug|x86.ActiveCfg = Debug|x86
+		{5A60EC1D-A2F7-42EF-A08D-B7A2F9C73678}.Debug|x86.Build.0 = Debug|x86
+		{5A60EC1D-A2F7-42EF-A08D-B7A2F9C73678}.Release|x86.ActiveCfg = Release|x86
+		{5A60EC1D-A2F7-42EF-A08D-B7A2F9C73678}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

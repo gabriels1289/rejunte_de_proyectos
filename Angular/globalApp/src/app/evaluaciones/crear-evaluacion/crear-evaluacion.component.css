@@ -1,0 +1,12 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.size-letra-chips {
+  font-size: 10px;
+}

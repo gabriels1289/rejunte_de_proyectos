@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1411416831 source:m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\fuse.c
+	<avr/io.h>
+
+1408713582 source:m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\lcd_lib.c
+	"lcd_lib.h"
+	<inttypes.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+
+1409593384 m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\lcd_lib.h
+	<inttypes.h>
+
+1411423830 source:m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\main.c
+	<avr/io.h>
+	<stdio.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<string.h>
+	"lcd_lib.h"
+	"main.h"
+	"i2c.h"
+	"varios.h"
+
+1410636431 m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\main.h
+	"varios.h"
+
+1411424211 m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\varios.h
+
+1411422817 m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\i2c.h
+
+1411422817 source:m:\mis documentos\trabajos\lavadero con rfid\cargareeprom\i2c.c
+	<avr/io.h>
+	<util/delay.h>
+	<compat/twi.h>
+	"i2c.h"
+
+1411416831 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom\fuse.c
+	<avr/io.h>
+
+1411422817 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom\i2c.c
+	<avr/io.h>
+	<util/delay.h>
+	<compat/twi.h>
+	"i2c.h"
+
+1411422817 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom\i2c.h
+
+1408713582 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom\lcd_lib.c
+	"lcd_lib.h"
+	<inttypes.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+
+1409593384 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom\lcd_lib.h
+	<inttypes.h>
+
+1411416831 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\fuse.c
+	<avr/io.h>
+
+1411846968 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\i2c.c
+	<avr/io.h>
+	<util/delay.h>
+	<compat/twi.h>
+	"i2c.h"
+
+1411422817 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\i2c.h
+
+1408713582 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\lcd_lib.c
+	"lcd_lib.h"
+	<inttypes.h>
+	<avr/io.h>
+	<avr/pgmspace.h>
+	<util/delay.h>
+
+1409593384 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\lcd_lib.h
+	<inttypes.h>
+
+1412801441 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\main.c
+	<avr/io.h>
+	<stdio.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	<avr/pgmspace.h>
+	<string.h>
+	"lcd_lib.h"
+	"main.h"
+	"i2cmaster.h"
+	"varios.h"
+
+1410636431 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\main.h
+	"varios.h"
+
+1411424245 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\varios.h
+
+1110166798 c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\i2cmaster.h
+	<i2cmaster.h>
+	<avr/io.h>
+
+1412801467 source:c:\documents and settings\desarrollo\escritorio\lavadero\lavadero con rfid\cargareeprom_fleury\twimaster.c
+	<inttypes.h>
+	<compat/twi.h>
+	"i2cmaster.h"
+

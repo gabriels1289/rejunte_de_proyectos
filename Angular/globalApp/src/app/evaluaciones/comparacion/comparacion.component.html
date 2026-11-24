@@ -1,0 +1,152 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner && !editar">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="row p-5" *ngIf="(idacceso==1 || idacceso==10) && !spinner && !editar">
+	<mat-checkbox [(ngModel)]="bigBrother" class="w-25" color="primary" (change)="callBigBrother()">Big Brother</mat-checkbox>
+  <mat-form-field class="w-50" *ngIf="bigBrother">
+    <mat-label>Ver como:</mat-label>
+    <mat-select [(ngModel)]="supervisorSel" name="supervisorSelect" (selectionChange)="callBigBrother()">
+      <mat-option *ngFor="let supervisor of supervisores" [value]="supervisor">
+        {{supervisor.nombre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div id="exportable" *ngIf="!spinner && empleados && !editar">
+	<div class="card">
+		<div class="card border-info">
+			<div class="card-header bg-info text-capitalize">
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="assets/{{empleadoSel.foto}}" class="img-thumbnail" style="height:150px; width:150px">
+					</div> <!-- div col-sm-4 22 -->
+					<div class="col-sm-8">
+          	<mat-form-field class="w-75">
+            	<mat-label>Evaluado:</mat-label>
+            	<mat-select [(ngModel)]="empleadoSel" name="empleadosSelect" (selectionChange)="onChangeSelect()">
+              	<mat-option *ngFor="let empleado of empleados" [value]="empleado">
+                	{{empleado.nombre}}
+              	</mat-option>
+            	</mat-select>
+          	</mat-form-field>
+					</div> <!-- col-sm-8 25-->
+				</div> <!-- row 21 -->
+			</div> <!-- card header 20 -->
+			<div class="card-body">
+      	<div class="table-responsive">
+        	<table class="table table-bordered table-hover table-striped table-sm">
+          	<thead>
+            	<tr>
+              	<th id="bordes-tabla-head">Supervisor</th>
+								<th id="bordes-tabla-head" *ngFor="let col of columnas; trackBy:trackByFunctionIndex" style="text-align:center">{{col.competencia}}</th>
+								<th id="bordes-tabla-head">Puntaje final</th>
+							</tr>
+          	</thead>
+          	<tbody>
+            	<tr *ngFor="let fila of filas; trackBy:trackByFunctionIndex">
+              	<td id="bordes-tabla">{{fila.supervisor}}</td>
+			        	<ng-container *ngFor="let comparacion of comparaciones; trackBy:trackByFunctionIndex">
+				        	<ng-container *ngIf="fila.supervisorid==comparacion.supervisor">
+					        	<td id="bordes-tabla" class="align-middle center-text" style="text-align: center;" [style.background-color]="setBackground(comparacion.promedio, formatoViejo)">{{comparacion.promedio | number:'2.0-2'}}</td>
+				        	</ng-container>
+				      	</ng-container>
+				    		<td id="bordes-tabla" class="align-middle center-text" style="text-align: center;" [style.background-color]="setBackground(fila.promedio, formatoViejo)"><strong>{{fila.promedio | number:'2.0-2'}}</strong></td>
+            	</tr>
+          	</tbody>
+        	</table>
+      	</div> <!-- div table 38 -->
+				<br>
+				<br>
+				<div class="card">
+					<div class="card border-info">
+						<div class="card-header bg-info text-capitalize">
+							<h3 style="text-align: center">Conceptos</h3>
+						</div>
+						<div class="card-body">
+							<h4 id="titulitos" style="color:green">Conceptos positivos a mantener</h4>
+							<div class="table-responsive">
+			        	<table class="table table-bordered table-hover table-striped table-sm">
+			          	<thead>
+			            	<tr>
+			              	<th id="bordes-tabla-head" *ngFor="let col of devoluciones; trackBy:trackByFunctionIndex" class="align-middle">{{col.supervisor}}</th>
+								  	</tr>
+			          	</thead>
+									<tbody>
+										<tr>
+											<td id="bordes-tabla" *ngFor="let fila of devoluciones; trackBy:trackByFunctionIndex" class="align-text-top">{{fila.positivo}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<br>
+							<h4 id="titulitos" style="color:red">Conceptos negativos a mejorar</h4>
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover table-striped table-sm">
+									<thead>
+										<tr>
+											<th id="bordes-tabla-head" *ngFor="let col of devoluciones; trackBy:trackByFunctionIndex" class="align-middle">{{col.supervisor}}</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td id="bordes-tabla" *ngFor="let fila of devoluciones; trackBy:trackByFunctionIndex" class="align-text-top">{{fila.negativo}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<button mat-raised-button matTooltipPosition="above" matTooltip="Crear/Editar concepto general" type="button" color="primary" [disabled]="evaluacion.activa!='CE' || bigBrother" (click)="conceptoGeneral()">
+								Concepto General <mat-icon aria-hidden="false" aria-label="Concepto General">edit</mat-icon>
+							</button>
+			    	</div> <!-- card body 67-->
+			  	</div> <!-- card border 63-->
+				</div> <!-- card 62-->
+
+				<br>
+				<div class="card" *ngIf="devolucion">
+					<div class="card border-info">
+						<div class="card-header bg-info text-capitalize">
+							<h3 style="text-align: center">Devolución</h3>
+						</div> <!-- card-header 109 -->
+						<div class="card-body">
+							<div><strong>Conceptos positivos a mantener: </strong>{{devolucion.positivo}}</div>
+							<br>
+							<div><strong>Conceptos negativos a mejorar: </strong>{{devolucion.negativo}}</div>
+							<br>
+							<div *ngIf="devolucion.entregada=='SI'">
+								<div><strong>Evaluador que efectuó la devolución: </strong>{{devolucion.nombresup}} - <strong>Fecha: </strong>{{devolucion.fecha_entrega | date:'medium'}}</div>
+								<div><strong>Concepto generado en la devolución: </strong>{{devolucion.rtaempleado}}</div>
+							</div>
+			    	</div> <!-- card body 112 -->
+			  	</div> <!-- card-border 108 -->
+				</div> <!-- card 107 -->
+
+			</div> <!-- card body 37 -->
+  	</div> <!-- card-border 19 -->
+	</div> <!-- card 18 -->
+</div> <!-- exportable 17 -->
+
+<!-- Modal -->
+<button mat-raised-button matTooltipPosition="above" matTooltip="Mostrar/Ocultar referencias" type="button" color="primary" *ngIf="!spinner && !editar"
+  id="botonreferencias" data-toggle="modal" data-target="#myModal">Referencias <mat-icon aria-hidden="false" aria-label="Referencias">info</mat-icon>
+</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header" id="modal-header-info">
+      	<h4 class="modal-title text-center" id="myModalLabel">Referencias</h4>
+    	</div> <!-- modal-header 138 -->
+    	<div class="modal-body">
+      	<img *ngIf="formatoViejo" src="assets/img/referenciaseval.jpg" class="center-block img-fluid">
+      	<img *ngIf="!formatoViejo" src="assets/img/referenciasevalnuevas.jpg" class="center-block img-fluid">
+    	</div> <!-- modal-body 141-->
+    	<div class="modal-footer" id="modal-footer-info">
+      	<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+    	</div> <!-- modal-footer 145-->
+    </div> <!-- modal-content 137-->
+  </div> <!-- modal-dialog 136 -->
+</div> <!-- modal fade 135 -->
+
+<app-concepto *ngIf="editar" [evaluado]="empleadoSel" [evaluacion]="evaluacion" [devolucion]="devolucion" [devoluciones]="devoluciones" (guardado)="onGuardado($event)"></app-concepto>

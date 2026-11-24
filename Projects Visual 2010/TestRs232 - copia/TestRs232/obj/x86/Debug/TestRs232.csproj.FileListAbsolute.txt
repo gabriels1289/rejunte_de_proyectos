@@ -1,0 +1,4 @@
+c:\users\gbinsur\documents\visual studio 2010\Projects\TestRs232\TestRs232\bin\Debug\TestRs232.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\TestRs232\TestRs232\bin\Debug\TestRs232.pdb
+c:\users\gbinsur\documents\visual studio 2010\Projects\TestRs232\TestRs232\obj\x86\Debug\TestRs232.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\TestRs232\TestRs232\obj\x86\Debug\TestRs232.pdb

@@ -1,0 +1,9 @@
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\bin\Debug\AnalizadorDeTramas.exe.config
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\bin\Debug\AnalizadorDeTramas.exe
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\bin\Debug\AnalizadorDeTramas.pdb
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.Form1.resources
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.Properties.Resources.resources
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.csproj.GenerateResource.Cache
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.exe
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.pdb
+C:\Users\Pela\Documents\Visual Studio 2013\Projects\AnalizadorDeTramas\AnalizadorDeTramas\obj\Debug\AnalizadorDeTramas.csprojResolveAssemblyReference.cache

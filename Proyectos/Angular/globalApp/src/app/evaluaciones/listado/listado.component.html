@@ -1,0 +1,121 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="example-container" *ngIf="!spinner">
+  <div class="row  mt-3">
+    <div class="col-sm-8">
+      <mat-form-field appearance="legacy">
+        <mat-label>Buscar...</mat-label>
+        <input matInput placeholder="Buscar..." (keyup)="applyFilter($event.target.value)" [(ngModel)]="valorFiltro">
+        <!-- <mat-icon matSuffix (click)="buscar()">search</mat-icon> -->
+      </mat-form-field>
+    </div> <!-- div 7 -->
+    <div class="col-sm-2">
+      <mat-form-field>
+        <mat-label>Estado:</mat-label>
+        <mat-select [(ngModel)]="selectedValue" (selectionChange)="onChangeOption()">
+          <mat-option *ngFor="let estado of estados" [value]="estado.value">
+            {{estado.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div> <!-- div 14 -->
+    <div class="col-sm-2" *ngIf="puedeCrear">
+      <button mat-raised-button (click)="crearEvaluacion()" color="primary">Crear Evaluación <mat-icon>assignment</mat-icon></button>
+    </div> <!-- div 24 -->
+  </div> <!-- div 6 -->
+  
+  <button mat-raised-button matTooltipPosition="above" matTooltip="Mostrar/Ocultar referencias" type="button" color="primary"
+    id="botonreferencias" data-toggle="modal" data-target="#myModal">Referencias <mat-icon aria-hidden="false" aria-label="Referencias">info</mat-icon>
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="modal-header-info">
+          <h4 class="modal-title" id="myModalLabel">Referencias</h4>
+        </div>
+        <div class="modal-body"  style="text-align: left">
+          <p><mat-icon>done_outline</mat-icon><strong> CE: </strong>{{tituloTipo}} cerradas, se permite la edición de devoluciones, pero no la modificación de los puntajes</p>
+          <br>
+          <p><mat-icon>done_outline</mat-icon><strong> NO: </strong>{{tituloTipo}} archivadas, no se permite ninguna edición, el resumen de la misma está disponible para el empleado</p>
+          <br>
+          <p><mat-icon>done_outline</mat-icon><strong> SI: </strong>{{tituloTipo}} activas, se permite su total edición</p>
+        </div>
+        <div class="modal-footer" id="modal-footer-info">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- div 5 -->
+
+<div class="mat-elevation-z8" *ngIf="!spinner">
+  <table mat-table [dataSource]="evaluacionesFiltradas | paginador:pageSize:pageIndex">
+
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- titulo Column -->
+    <ng-container matColumnDef="titulo">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Evaluación </th>
+      <td mat-cell *matCellDef="let element"> {{element.titulo}} </td>
+    </ng-container>
+
+    <!-- sector Column -->
+    <ng-container matColumnDef="sector">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Sector </th>
+      <td mat-cell *matCellDef="let element"> {{element.sector}} </td>
+    </ng-container>
+
+    <!-- fecha Column -->
+    <ng-container matColumnDef="fecha">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Fecha </th>
+      <td mat-cell *matCellDef="let element"> {{element.fecha | date:'medium'}} </td>
+    </ng-container>
+
+    <!-- activa Column -->
+    <ng-container matColumnDef="activa">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Activa </th>
+      <td mat-cell *matCellDef="let element"> {{element.activa}} </td>
+    </ng-container>
+
+    <!-- Menús Column -->
+    <ng-container matColumnDef="menu">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Menú </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button matTooltip="Evaluar, Rankings y Edición" color="primary" (click)="goToEvaluacion(element)"><mat-icon class="mat-18">how_to_reg</mat-icon></button>
+        <button mat-icon-button color="primary" (click)="abrirCerrar(element)" [disabled]="element.activa == 'NO' " *ngIf="permisosMenu">
+          <mat-icon class="mat-18" *ngIf="element.activa == 'SI' " matTooltip="Cerrar">lock</mat-icon>
+          <mat-icon class="mat-18" *ngIf="element.activa != 'SI' " matTooltip="Abrir">lock_open</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" (click)="archivar(element)" *ngIf="permisosMenu">
+          <mat-icon class="mat-18" *ngIf="element.activa != 'NO' " matTooltip="Archivar">folder</mat-icon>
+          <mat-icon class="mat-18" *ngIf="element.activa == 'NO' " matTooltip="Desarchivar">folder_open</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Borrar" color="warn" (click)="borrar(element)" *ngIf="permisosMenu && (element.creadapor == idusuario || idsector == 1)"><mat-icon class="mat-18">delete</mat-icon></button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+      [ngClass]="{'abierta': row.activa=='SI', 'cerrada': row.activa=='CE', 'archivada': row.activa=='NO'}"></tr>
+  </table>
+
+  <!-- Paginador -->
+  <mat-paginator  [length]="evaluacionesFiltradas.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="todasLasEvaluaciones"
+                [pageIndex] = "pageIndex"
+                >
+  </mat-paginator>
+
+</div>

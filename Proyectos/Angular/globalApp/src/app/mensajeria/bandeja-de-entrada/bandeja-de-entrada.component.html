@@ -1,0 +1,56 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<!-- <app-search *ngIf="todosLosCorreos" (busca)="onBusca($event)"></app-search> -->
+
+<div class="card border-info" *ngIf="todosLosCorreos">
+  <div class="card-body">
+    <mat-nav-list>
+      <mat-list-item *ngFor="let correo of todosLosCorreos | paginador:pageSize:pageIndex" [class.selected]="correo.id == selectedId" 
+        [ngClass]="{'sin-leer': correo.leido=='N', 'leido': correo.leido=='S', 'destacado': correo.destacado=='I'}">
+        <img matListAvatar src="assets\{{correo.foto}}" alt="{{correo.nombreapellido}}" id="zoom">
+        <!-- <h3 matLine><a [routerLink]="['/mensajeria/bandeja-de-entrada', correo.id]" [queryParams]="{ pagina: pageIndex }" [state]=correo> {{correo.nombreapellido}} </a></h3> -->
+        <h3 matLine (click)="goToRespuestas(correo)">{{correo.nombreapellido}}</h3>
+        <h4 matLine> {{correo.fecha | date:'medium'}} - Area: {{correo.area}} </h4>
+        <p matLine> {{correo.asunto}} </p>
+        
+        <div class="d-flex flex-row">
+          <mat-icon matBadge="{{correo.respuestas}}" matBadgeColor="primary" matTooltip="Respuestas" matTooltipPosition="left">chat</mat-icon>
+          <mat-icon matBadge="{{correo.lecturas}}" matBadgeColor="primary" class="ml-3" matTooltip="Lecturas" matTooltipPosition="left">drafts</mat-icon>
+          <mat-icon class="ml-3" matTooltip="Reenviar" matTooltipPosition="left" (click)="goToReenviar(correo)">send</mat-icon>
+        </div>
+        <mat-divider [inset]="true" *ngIf="!last"></mat-divider>
+      </mat-list-item>
+    </mat-nav-list>
+  </div>
+</div>
+
+<mat-paginator  [length]="todosLosCorreos.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="todosLosCorreos"
+                [pageIndex] = "pageIndex"
+                >
+</mat-paginator>
+
+<!-- <div class="card"> -->
+  <!-- <div class="card-header text-center"><h1>Empleados</h1></div> -->
+<!--
+  <div class="card-body">
+    <div class="d-flex flex-wrap flex-column">
+      <div *ngFor="let correo of correos$ | async" [class.selected]="correo.id === selectedId">
+        <div class="card border-dark mb-3 mr-3" style="max-height: 18rem;">
+          <div class="card-header text-center"><a [routerLink]="['/mensajeria/bandeja-de-entrada', correo.id]" [state]=correo><b>{{correo.asunto | titlecase}}</b></a></div>
+          <div class="card-body text-dark">
+            <p class="card-title"><b>Remitente: {{correo.nombreapellido}}</b></p>
+            <p class="card-text">{{correo.cuerpo}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+<!-- </div> -->

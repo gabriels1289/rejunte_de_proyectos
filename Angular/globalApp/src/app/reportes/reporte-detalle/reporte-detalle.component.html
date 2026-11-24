@@ -1,0 +1,14 @@
+<div *ngIf="reporte">
+  <h3>"{{ nombreEditado }}"</h3>
+  <div>
+    <label>Id: </label>{{ reporte.id }}
+  </div>
+  <div>
+    <label>nombre: </label>
+    <input [(ngModel)]="nombreEditado" placeholder="nombre"/>
+  </div>
+  <p>
+    <button (click)="save()">Save</button>
+    <button (click)="cancel()">Cancel</button>
+  </p>
+</div>

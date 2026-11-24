@@ -1,0 +1,12 @@
+.card {
+  width: 500px;
+}
+
+.mat-form-field {
+  display: block;
+}
+
+textarea {
+  /* height: 200px; */
+  resize: vertical;
+}

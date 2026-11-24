@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=STM32F4_LCDTFT_v2.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\STM32F4_LCDTFT_v2 -TC:\CooCox\CoIDE\configuration\ProgramData\STM32F4_LCDTFT_v2/arm-gcc-link.ld -g">
+      <target file="STM32F4_LCDTFT_v2.elf" lastModified="14419bc1865">
+         <source file="..\obj\stm32f4xx_syscfg.o" lastModified="14419b67ae8"/>
+         <source file="..\obj\Apple_Galaxy.o" lastModified="14419b699ca"/>
+         <source file="..\obj\TMMI.o" lastModified="14419b6b575"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14419b6b64e"/>
+         <source file="..\obj\stm32_ub_led.o" lastModified="14419b6b77a"/>
+         <source file="..\obj\main.o" lastModified="14419bc14b3"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14419b6baad"/>
+         <source file="..\obj\Apple_iris.o" lastModified="14419b6d85b"/>
+         <source file="..\obj\tiburon.o" lastModified="14419b6fa18"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14419b6fbce"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14419b6fcfb"/>
+         <source file="..\obj\SSD1963.o" lastModified="14419b6fe83"/>
+         <source file="..\obj\firefox.o" lastModified="14419b7054e"/>
+         <source file="..\obj\arco_iris.o" lastModified="14419b72483"/>
+         <source file="..\obj\misc.o" lastModified="14419b725a7"/>
+         <source file="..\obj\bad_bird.o" lastModified="14419b72b4d"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,93 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div id="exportable" *ngIf="!spinner && supervisores">
+  <div class="card">
+    <div class="card border-info">
+      <div class="card-header bg-info text-capitalize">
+        <h3 style="text-align: center">Ranking Global</h3>
+      </div> <!-- card-header 8 -->
+      <div class="card-body">
+        <!--tabla ranking global -->
+        <div class="table-responsive">
+          <h4 id="titulitos">Ranking Final</h4>
+          <table class="table table-bordered table-hover table-striped table-sm">
+            <thead>
+              <tr>
+                <th id="bordes-tabla-head">Ranking</th>
+                <th id="bordes-tabla-head">Puntaje final</th>
+                <th id="bordes-tabla-head">Evaluado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let fila of filas; let indice = index trackBy:trackByFunctionIndex">
+                <td id="bordes-tabla"># {{indice+1}}</td>
+                <td id="bordes-tabla" style="text-align:center" [style.background-color]="setBackground(fila.promedio, formatoViejo)"><strong>{{fila.promedio | number:'2.0-2'}}</strong></td>
+                <td id="bordes-tabla">{{fila.evaluado}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- table 13-->
+  
+        <br>
+        <br>
+  
+        <!-- tablas por supervisores -->
+        <div class="row">
+          <div class="card col-sm-4" *ngFor="let ranking of subrankings; trackBy:trackByFunctionIndex" style="border-color: rgba(0, 0, 0, 0);">
+            <div class="card border-info">
+              <div class="card-header bg-info text-capitalize">
+                <h4 id="titulitos" style="text-align: center;">{{ranking[0].supervisor}}</h4>
+              </div> <!-- card-header 39-->
+              <div class="card-body">
+                <!--tabla ranking supervisor -->
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th id="bordes-tabla-head">Ranking</th>
+                        <th id="bordes-tabla-head">Puntaje final</th>
+                        <th id="bordes-tabla-head">Evaluado</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let fila of filas; let indice = index; trackBy:trackByFunctionIndex">
+                        <td id="bordes-tabla"># {{indice+1}}</td>
+                        <td id="bordes-tabla" style="text-align:center" [style.background-color]="setBackground(fila.promedio, formatoViejo)"><strong>{{fila.promedio | number:'2.0-2'}}</strong></td>
+                        <td id="bordes-tabla">{{fila.evaluado}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- table 44 -->
+              </div> <!-- card-body 42 -->
+            </div> <!-- card border 38 -->
+          </div> <!-- card 38 -->
+        </div> <!-- row 37 -->
+      </div> <!-- card-body 11 -->
+    </div> <!-- card border 7 -->
+  </div> <!-- card 6-->
+  
+  <!-- Modal -->
+  <button mat-raised-button matTooltipPosition="above" matTooltip="Mostrar/Ocultar referencias" type="button" color="primary"
+  id="botonreferencias" data-toggle="modal" data-target="#myModal">Referencias <mat-icon aria-hidden="false" aria-label="Referencias">info</mat-icon>
+  </button>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" id="modal-header-info">
+          <h4 class="modal-title text-center" id="myModalLabel">Referencias</h4>
+        </div> <!-- modal-header 78 -->
+        <div class="modal-body">
+          <img *ngIf="formatoViejo" src="assets/img/referenciaseval.jpg" class="center-block img-fluid">
+          <img *ngIf="!formatoViejo" src="assets/img/referenciasevalnuevas.jpg" class="center-block img-fluid">
+        </div> <!-- modal-body 81 -->
+        <div class="modal-footer" id="modal-footer-info">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div> <!-- modal-footer 85 -->
+      </div> <!-- modal-content 77 -->
+    </div> <!-- modal-dialog 76 -->
+  </div> <!-- modal fade 75 -->
+</div> <!-- exportable 5 -->
+  

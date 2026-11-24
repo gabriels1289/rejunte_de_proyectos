@@ -1,0 +1,9 @@
+c:\users\pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\bin\Debug\ServerProgresivos.exe.config
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\bin\Debug\ServerProgresivos.exe
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\bin\Debug\ServerProgresivos.pdb
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.csprojResolveAssemblyReference.cache
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.Form1.resources
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.Properties.Resources.resources
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.csproj.GenerateResource.Cache
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.exe
+C:\Users\Pela\documents\visual studio 2013\Projects\ServerProgresivos\ServerProgresivos\obj\Debug\ServerProgresivos.pdb

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 4.3.2 arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DARM_MATH_CM4 -D__FPU_PRESENT = 1 -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_lib\include -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_boot -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\lib_include -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2 -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis -I..\..\..\..\..\Users\Usuario\Documents\Electronica\Proyectos de investigacion\Filtros Digitales y Fast Fourier STM\STM32F4_FPU_FFT_v2\cmsis_lib">
+      <target file="stm32f4xx_gpio.o" lastModified="1455fc7e77c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1455e64cafd"/>
+      </target>
+      <target file="arm_max_f32.o" lastModified="145603ae4c4">
+         <source file="..\..\..\lib_include\arm_max_f32.c" lastModified="140a585400e"/>
+      </target>
+      <target file="arm_common_tables.o" lastModified="145603adb92">
+         <source file="..\..\..\lib_include\arm_common_tables.c" lastModified="140a5853c06"/>
+      </target>
+      <target file="arm_cfft_f32.o" lastModified="145603add75">
+         <source file="..\..\..\lib_include\arm_cfft_f32.c" lastModified="1455e88d490"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1455fc7e9eb">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1455e64cb26"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="145603ade75">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1455e64cb16"/>
+      </target>
+      <target file="main.o" lastModified="145603adfd7">
+         <source file="..\..\..\main.c" lastModified="1455fcab70c"/>
+      </target>
+      <target file="arm_cmplx_mag_f32.o" lastModified="145603ae117">
+         <source file="..\..\..\lib_include\arm_cmplx_mag_f32.c" lastModified="140a5854f50"/>
+      </target>
+      <target file="arm_fft_bin_data.o" lastModified="145603ae3b7">
+         <source file="..\..\..\lib_include\arm_fft_bin_data.c" lastModified="140a5856bd1"/>
+      </target>
+      <target file="arm_cfft_radix8_f32.o" lastModified="145603ae274">
+         <source file="..\..\..\lib_include\arm_cfft_radix8_f32.c" lastModified="140a5854c04"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1455fc7e4b9">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1455e64cb4b"/>
+      </target>
+   </processor>
+</history>

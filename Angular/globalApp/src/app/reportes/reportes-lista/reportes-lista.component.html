@@ -1,0 +1,25 @@
+<!--
+<ul class="reportes">
+  <li *ngFor="let reporte of reportes$ | async"
+    [class.selected]="reporte.id === selectedId">
+    <a [routerLink]="['/reportes', reporte.id]">
+      <span class="badge">{{reporte.id}}</span> {{reporte.nombre}}
+    </a>
+  </li>
+</ul>
+-->
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex flex-column">
+      <div class="align-self-center" *ngFor="let reporte of reportes$ | async" [class.selected]="reporte.id === selectedId">
+        <div class="card border-dark mb-3 mr-3" style="max-width: 18rem;">
+          <div class="card-header text-center">
+            <a [routerLink]="[reporte.id]"><b>{{reporte.id}} - {{reporte.nombre | titlecase}}</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

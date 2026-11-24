@@ -1,0 +1,933 @@
+Archive member included because of file (symbol)
+
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+                              ..\obj\arm_cmplx_mag_f32.o (sqrtf)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__ieee754_sqrtf)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__fdlib_version)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (matherr)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__fpclassifyf)
+..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+                              ..\obj\main.o (arm_cfft_radix4_init_f32)
+..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+                              ..\obj\main.o (arm_cfft_radix4_f32)
+..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+                              ..\obj\arm_cfft_f32.o (arm_bitreversal_f32)
+c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__aeabi_f2d)
+c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__aeabi_ddiv)
+c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__aeabi_d2f)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o) (__errno)
+..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+                              ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o) (_impure_ptr)
+
+Allocating common symbols
+Common symbol       size              file
+
+Output              0x1000            ..\obj\main.o
+adcSamples          0x2000            ..\obj\main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 ..\obj\arm_common_tables.o
+ .data          0x00000000        0x0 ..\obj\arm_common_tables.o
+ .bss           0x00000000        0x0 ..\obj\arm_common_tables.o
+ .text          0x00000000        0x0 ..\obj\arm_cfft_f32.o
+ .data          0x00000000        0x0 ..\obj\arm_cfft_f32.o
+ .bss           0x00000000        0x0 ..\obj\arm_cfft_f32.o
+ .text.arm_cfft_radix8by2_f32
+                0x00000000      0x450 ..\obj\arm_cfft_f32.o
+ .text.arm_cfft_radix8by4_f32
+                0x00000000      0xdb8 ..\obj\arm_cfft_f32.o
+ .text.arm_cfft_f32
+                0x00000000      0x158 ..\obj\arm_cfft_f32.o
+ .debug_info    0x00000000      0x51d ..\obj\arm_cfft_f32.o
+ .debug_abbrev  0x00000000      0x11f ..\obj\arm_cfft_f32.o
+ .debug_loc     0x00000000       0xac ..\obj\arm_cfft_f32.o
+ .debug_aranges
+                0x00000000       0x30 ..\obj\arm_cfft_f32.o
+ .debug_ranges  0x00000000       0x20 ..\obj\arm_cfft_f32.o
+ .debug_line    0x00000000      0x48c ..\obj\arm_cfft_f32.o
+ .debug_str     0x00000000      0x271 ..\obj\arm_cfft_f32.o
+ .comment       0x00000000       0x71 ..\obj\arm_cfft_f32.o
+ .ARM.attributes
+                0x00000000       0x3b ..\obj\arm_cfft_f32.o
+ .debug_frame   0x00000000       0x70 ..\obj\arm_cfft_f32.o
+ .text          0x00000000        0x0 ..\obj\startup_stm32f4xx.o
+ .data          0x00000000        0x0 ..\obj\startup_stm32f4xx.o
+ .bss           0x00000000        0x0 ..\obj\startup_stm32f4xx.o
+ .text          0x00000000        0x0 ..\obj\stm32_ub_led.o
+ .bss           0x00000000        0x0 ..\obj\stm32_ub_led.o
+ .text.UB_Led_Switch
+                0x00000000       0x30 ..\obj\stm32_ub_led.o
+ .text          0x00000000        0x0 ..\obj\main.o
+ .data          0x00000000        0x0 ..\obj\main.o
+ .bss           0x00000000        0x0 ..\obj\main.o
+ .text          0x00000000        0x0 ..\obj\stm32f4xx_rcc.o
+ .data          0x00000000       0x10 ..\obj\stm32f4xx_rcc.o
+ .bss           0x00000000        0x0 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_DeInit
+                0x00000000       0x84 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_HSEConfig
+                0x00000000       0x30 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_WaitForHSEStartUp
+                0x00000000       0x64 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x48 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_HSICmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_LSEConfig
+                0x00000000       0x60 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_LSICmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PLLConfig
+                0x00000000       0x48 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PLLCmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PLLI2SConfig
+                0x00000000       0x30 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PLLI2SCmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_MCO1Config
+                0x00000000       0x48 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_MCO2Config
+                0x00000000       0x48 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_SYSCLKConfig
+                0x00000000       0x40 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_GetSYSCLKSource
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_HCLKConfig
+                0x00000000       0x40 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PCLK1Config
+                0x00000000       0x40 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_PCLK2Config
+                0x00000000       0x44 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_GetClocksFreq
+                0x00000000      0x1cc ..\obj\stm32f4xx_rcc.o
+ .text.RCC_RTCCLKConfig
+                0x00000000       0x74 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_RTCCLKCmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_BackupResetCmd
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_I2SCLKConfig
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphClockCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphClockCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_APB1PeriphClockCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB1PeriphResetCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphResetCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphResetCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_APB1PeriphResetCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_APB2PeriphResetCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB1PeriphClockLPModeCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB2PeriphClockLPModeCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_AHB3PeriphClockLPModeCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_APB1PeriphClockLPModeCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_APB2PeriphClockLPModeCmd
+                0x00000000       0x54 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_ITConfig
+                0x00000000       0x60 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_GetFlagStatus
+                0x00000000       0x90 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_ClearFlag
+                0x00000000       0x24 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_GetITStatus
+                0x00000000       0x40 ..\obj\stm32f4xx_rcc.o
+ .text.RCC_ClearITPendingBit
+                0x00000000       0x20 ..\obj\stm32f4xx_rcc.o
+ .text          0x00000000        0x0 ..\obj\stm32f4xx_adc.o
+ .data          0x00000000        0x0 ..\obj\stm32f4xx_adc.o
+ .bss           0x00000000        0x0 ..\obj\stm32f4xx_adc.o
+ .text.ADC_DeInit
+                0x00000000       0x20 ..\obj\stm32f4xx_adc.o
+ .text.ADC_StructInit
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_CommonStructInit
+                0x00000000       0x34 ..\obj\stm32f4xx_adc.o
+ .text.ADC_AnalogWatchdogCmd
+                0x00000000       0x3c ..\obj\stm32f4xx_adc.o
+ .text.ADC_AnalogWatchdogThresholdsConfig
+                0x00000000       0x28 ..\obj\stm32f4xx_adc.o
+ .text.ADC_AnalogWatchdogSingleChannelConfig
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_TempSensorVrefintCmd
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_VBATCmd
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_GetSoftwareStartConvStatus
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_EOCOnEachRegularChannelCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_ContinuousModeCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_DiscModeChannelCountConfig
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_DiscModeCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_GetMultiModeConversionValue
+                0x00000000       0x18 ..\obj\stm32f4xx_adc.o
+ .text.ADC_DMACmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_DMARequestAfterLastTransferCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_MultiModeDMARequestAfterLastTransferCmd
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_InjectedChannelConfig
+                0x00000000      0x144 ..\obj\stm32f4xx_adc.o
+ .text.ADC_InjectedSequencerLengthConfig
+                0x00000000       0x4c ..\obj\stm32f4xx_adc.o
+ .text.ADC_SetInjectedOffset
+                0x00000000       0x34 ..\obj\stm32f4xx_adc.o
+ .text.ADC_ExternalTrigInjectedConvConfig
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_ExternalTrigInjectedConvEdgeConfig
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_SoftwareStartInjectedConv
+                0x00000000       0x20 ..\obj\stm32f4xx_adc.o
+ .text.ADC_GetSoftwareStartInjectedConvCmdStatus
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_AutoInjectedConvCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_InjectedDiscModeCmd
+                0x00000000       0x38 ..\obj\stm32f4xx_adc.o
+ .text.ADC_GetInjectedConversionValue
+                0x00000000       0x34 ..\obj\stm32f4xx_adc.o
+ .text.ADC_ITConfig
+                0x00000000       0x58 ..\obj\stm32f4xx_adc.o
+ .text.ADC_ClearFlag
+                0x00000000       0x20 ..\obj\stm32f4xx_adc.o
+ .text.ADC_GetITStatus
+                0x00000000       0x6c ..\obj\stm32f4xx_adc.o
+ .text.ADC_ClearITPendingBit
+                0x00000000       0x30 ..\obj\stm32f4xx_adc.o
+ .text          0x00000000        0x0 ..\obj\stm32_ub_adc1_single.o
+ .bss           0x00000000        0x0 ..\obj\stm32_ub_adc1_single.o
+ .text          0x00000000        0x0 ..\obj\arm_cmplx_mag_f32.o
+ .data          0x00000000        0x0 ..\obj\arm_cmplx_mag_f32.o
+ .bss           0x00000000        0x0 ..\obj\arm_cmplx_mag_f32.o
+ .text          0x00000000        0x0 ..\obj\stm32f4xx_gpio.o
+ .data          0x00000000        0x0 ..\obj\stm32f4xx_gpio.o
+ .bss           0x00000000        0x0 ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_DeInit
+                0x00000000      0x178 ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_StructInit
+                0x00000000       0x3c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_PinLockConfig
+                0x00000000       0x44 ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ReadInputDataBit
+                0x00000000       0x3c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ReadInputData
+                0x00000000       0x1c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000       0x3c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ReadOutputData
+                0x00000000       0x1c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_SetBits
+                0x00000000       0x1c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ResetBits
+                0x00000000       0x1c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_WriteBit
+                0x00000000       0x30 ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_Write
+                0x00000000       0x1c ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_ToggleBits
+                0x00000000       0x24 ..\obj\stm32f4xx_gpio.o
+ .text.GPIO_PinAFConfig
+                0x00000000       0xa8 ..\obj\stm32f4xx_gpio.o
+ .text          0x00000000        0x0 ..\obj\arm_cfft_radix8_f32.o
+ .data          0x00000000        0x0 ..\obj\arm_cfft_radix8_f32.o
+ .bss           0x00000000        0x0 ..\obj\arm_cfft_radix8_f32.o
+ .text.arm_radix8_butterfly_f32
+                0x00000000     0x1158 ..\obj\arm_cfft_radix8_f32.o
+ .debug_info    0x00000000      0x42c ..\obj\arm_cfft_radix8_f32.o
+ .debug_abbrev  0x00000000       0x8a ..\obj\arm_cfft_radix8_f32.o
+ .debug_loc     0x00000000       0x3a ..\obj\arm_cfft_radix8_f32.o
+ .debug_aranges
+                0x00000000       0x20 ..\obj\arm_cfft_radix8_f32.o
+ .debug_ranges  0x00000000       0x10 ..\obj\arm_cfft_radix8_f32.o
+ .debug_line    0x00000000      0x49b ..\obj\arm_cfft_radix8_f32.o
+ .debug_str     0x00000000      0x19e ..\obj\arm_cfft_radix8_f32.o
+ .comment       0x00000000       0x71 ..\obj\arm_cfft_radix8_f32.o
+ .ARM.attributes
+                0x00000000       0x3b ..\obj\arm_cfft_radix8_f32.o
+ .debug_frame   0x00000000       0x2c ..\obj\arm_cfft_radix8_f32.o
+ .text          0x00000000        0x0 ..\obj\system_stm32f4xx.o
+ .data          0x00000000       0x14 ..\obj\system_stm32f4xx.o
+ .bss           0x00000000        0x0 ..\obj\system_stm32f4xx.o
+ .text.SystemCoreClockUpdate
+                0x00000000      0x170 ..\obj\system_stm32f4xx.o
+ .text          0x00000000        0x0 ..\obj\arm_fft_bin_data.o
+ .data          0x00000000     0x2000 ..\obj\arm_fft_bin_data.o
+ .bss           0x00000000        0x0 ..\obj\arm_fft_bin_data.o
+ .debug_info    0x00000000       0xb2 ..\obj\arm_fft_bin_data.o
+ .debug_abbrev  0x00000000       0x54 ..\obj\arm_fft_bin_data.o
+ .debug_aranges
+                0x00000000       0x18 ..\obj\arm_fft_bin_data.o
+ .debug_line    0x00000000       0x7d ..\obj\arm_fft_bin_data.o
+ .debug_str     0x00000000      0x161 ..\obj\arm_fft_bin_data.o
+ .comment       0x00000000       0x71 ..\obj\arm_fft_bin_data.o
+ .ARM.attributes
+                0x00000000       0x3b ..\obj\arm_fft_bin_data.o
+ .text          0x00000000        0x0 ..\obj\arm_max_f32.o
+ .data          0x00000000        0x0 ..\obj\arm_max_f32.o
+ .bss           0x00000000        0x0 ..\obj\arm_max_f32.o
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+ .text          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .data          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .bss           0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .text          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .data          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .bss           0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .text          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .data          0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .bss           0x00000000        0x0 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .text.arm_bitreversal_q31
+                0x00000000      0x1c0 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .text.arm_bitreversal_q15
+                0x00000000      0x128 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+ .text          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+ .data          0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x08000000         0x00100000         xr
+ram              0x20000000         0x00020000         xrw
+ram1             0x10000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x20020000                _eram = 0x20020000
+
+.text           0x08000000    0x29680
+ *(.isr_vector .isr_vector.*)
+ .isr_vector    0x08000000      0x188 ..\obj\startup_stm32f4xx.o
+                0x08000000                g_pfnVectors
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.Default_Reset_Handler
+                0x08000188       0x7c ..\obj\startup_stm32f4xx.o
+                0x08000188                Default_Reset_Handler
+                0x08000188                Reset_Handler
+ .text.Default_Handler
+                0x08000204        0x8 ..\obj\startup_stm32f4xx.o
+                0x08000204                RTC_Alarm_IRQHandler
+                0x08000204                HASH_RNG_IRQHandler
+                0x08000204                EXTI2_IRQHandler
+                0x08000204                TIM8_CC_IRQHandler
+                0x08000204                DebugMon_Handler
+                0x08000204                TIM1_CC_IRQHandler
+                0x08000204                DMA2_Stream5_IRQHandler
+                0x08000204                HardFault_Handler
+                0x08000204                DMA1_Stream5_IRQHandler
+                0x08000204                SysTick_Handler
+                0x08000204                PVD_IRQHandler
+                0x08000204                SDIO_IRQHandler
+                0x08000204                TAMP_STAMP_IRQHandler
+                0x08000204                PendSV_Handler
+                0x08000204                NMI_Handler
+                0x08000204                CAN2_RX1_IRQHandler
+                0x08000204                EXTI3_IRQHandler
+                0x08000204                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000204                TIM1_UP_TIM10_IRQHandler
+                0x08000204                TIM8_UP_TIM13_IRQHandler
+                0x08000204                I2C3_ER_IRQHandler
+                0x08000204                EXTI0_IRQHandler
+                0x08000204                I2C2_EV_IRQHandler
+                0x08000204                DMA1_Stream2_IRQHandler
+                0x08000204                CAN1_RX0_IRQHandler
+                0x08000204                FPU_IRQHandler
+                0x08000204                OTG_HS_WKUP_IRQHandler
+                0x08000204                UsageFault_Handler
+                0x08000204                CAN2_SCE_IRQHandler
+                0x08000204                DMA2_Stream2_IRQHandler
+                0x08000204                SPI1_IRQHandler
+                0x08000204                TIM6_DAC_IRQHandler
+                0x08000204                TIM1_BRK_TIM9_IRQHandler
+                0x08000204                DCMI_IRQHandler
+                0x08000204                CAN2_RX0_IRQHandler
+                0x08000204                DMA2_Stream3_IRQHandler
+                0x08000204                USART6_IRQHandler
+                0x08000204                USART3_IRQHandler
+                0x08000204                CRYP_IRQHandler
+                0x08000204                CAN1_RX1_IRQHandler
+                0x08000204                UART5_IRQHandler
+                0x08000204                DMA2_Stream0_IRQHandler
+                0x08000204                TIM4_IRQHandler
+                0x08000204                I2C1_EV_IRQHandler
+                0x08000204                DMA1_Stream6_IRQHandler
+                0x08000204                DMA1_Stream1_IRQHandler
+                0x08000204                UART4_IRQHandler
+                0x08000204                TIM3_IRQHandler
+                0x08000204                RCC_IRQHandler
+                0x08000204                TIM8_BRK_TIM12_IRQHandler
+                0x08000204                EXTI15_10_IRQHandler
+                0x08000204                ADC_IRQHandler
+                0x08000204                DMA1_Stream7_IRQHandler
+                0x08000204                TIM7_IRQHandler
+                0x08000204                CAN2_TX_IRQHandler
+                0x08000204                TIM5_IRQHandler
+                0x08000204                DMA2_Stream7_IRQHandler
+                0x08000204                I2C3_EV_IRQHandler
+                0x08000204                EXTI9_5_IRQHandler
+                0x08000204                RTC_WKUP_IRQHandler
+                0x08000204                ETH_WKUP_IRQHandler
+                0x08000204                SPI2_IRQHandler
+                0x08000204                OTG_HS_EP1_IN_IRQHandler
+                0x08000204                MemManage_Handler
+                0x08000204                DMA1_Stream0_IRQHandler
+                0x08000204                CAN1_TX_IRQHandler
+                0x08000204                SVC_Handler
+                0x08000204                EXTI4_IRQHandler
+                0x08000204                FSMC_IRQHandler
+                0x08000204                ETH_IRQHandler
+                0x08000204                OTG_HS_EP1_OUT_IRQHandler
+                0x08000204                WWDG_IRQHandler
+                0x08000204                TIM2_IRQHandler
+                0x08000204                OTG_FS_WKUP_IRQHandler
+                0x08000204                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000204                OTG_HS_IRQHandler
+                0x08000204                EXTI1_IRQHandler
+                0x08000204                USART2_IRQHandler
+                0x08000204                I2C2_ER_IRQHandler
+                0x08000204                DMA2_Stream1_IRQHandler
+                0x08000204                CAN1_SCE_IRQHandler
+                0x08000204                FLASH_IRQHandler
+                0x08000204                DMA2_Stream4_IRQHandler
+                0x08000204                BusFault_Handler
+                0x08000204                USART1_IRQHandler
+                0x08000204                OTG_FS_IRQHandler
+                0x08000204                SPI3_IRQHandler
+                0x08000204                DMA1_Stream4_IRQHandler
+                0x08000204                I2C1_ER_IRQHandler
+                0x08000204                DMA2_Stream6_IRQHandler
+                0x08000204                DMA1_Stream3_IRQHandler
+ .text.UB_Led_Init
+                0x0800020c       0xe4 ..\obj\stm32_ub_led.o
+                0x0800020c                UB_Led_Init
+ .text.UB_Led_Off
+                0x080002f0       0x54 ..\obj\stm32_ub_led.o
+                0x080002f0                UB_Led_Off
+ .text.UB_Led_On
+                0x08000344       0x54 ..\obj\stm32_ub_led.o
+                0x08000344                UB_Led_On
+ .text.UB_Led_Toggle
+                0x08000398       0x74 ..\obj\stm32_ub_led.o
+                0x08000398                UB_Led_Toggle
+ .text.main     0x0800040c      0x1ac ..\obj\main.o
+                0x0800040c                main
+ .text.pinInit  0x080005b8       0x58 ..\obj\main.o
+                0x080005b8                pinInit
+ .text.RCC_AHB1PeriphClockCmd
+                0x08000610       0x54 ..\obj\stm32f4xx_rcc.o
+                0x08000610                RCC_AHB1PeriphClockCmd
+ .text.RCC_APB2PeriphClockCmd
+                0x08000664       0x54 ..\obj\stm32f4xx_rcc.o
+                0x08000664                RCC_APB2PeriphClockCmd
+ .text.ADC_Init
+                0x080006b8       0xb8 ..\obj\stm32f4xx_adc.o
+                0x080006b8                ADC_Init
+ .text.ADC_CommonInit
+                0x08000770       0x5c ..\obj\stm32f4xx_adc.o
+                0x08000770                ADC_CommonInit
+ .text.ADC_Cmd  0x080007cc       0x38 ..\obj\stm32f4xx_adc.o
+                0x080007cc                ADC_Cmd
+ .text.ADC_RegularChannelConfig
+                0x08000804      0x1bc ..\obj\stm32f4xx_adc.o
+                0x08000804                ADC_RegularChannelConfig
+ .text.ADC_SoftwareStartConv
+                0x080009c0       0x20 ..\obj\stm32f4xx_adc.o
+                0x080009c0                ADC_SoftwareStartConv
+ .text.ADC_GetConversionValue
+                0x080009e0       0x1c ..\obj\stm32f4xx_adc.o
+                0x080009e0                ADC_GetConversionValue
+ .text.ADC_GetFlagStatus
+                0x080009fc       0x3c ..\obj\stm32f4xx_adc.o
+                0x080009fc                ADC_GetFlagStatus
+ .text.UB_ADC1_SINGLE_Init
+                0x08000a38       0x10 ..\obj\stm32_ub_adc1_single.o
+                0x08000a38                UB_ADC1_SINGLE_Init
+ .text.UB_ADC1_SINGLE_Read
+                0x08000a48       0x84 ..\obj\stm32_ub_adc1_single.o
+                0x08000a48                UB_ADC1_SINGLE_Read
+ .text.UB_ADC1_SINGLE_Read_MW
+                0x08000acc      0x1dc ..\obj\stm32_ub_adc1_single.o
+                0x08000acc                UB_ADC1_SINGLE_Read_MW
+ .text.P_ADC1s_InitIO
+                0x08000ca8       0xa4 ..\obj\stm32_ub_adc1_single.o
+                0x08000ca8                P_ADC1s_InitIO
+ .text.P_ADC1s_InitADC
+                0x08000d4c       0x80 ..\obj\stm32_ub_adc1_single.o
+                0x08000d4c                P_ADC1s_InitADC
+ .text.arm_sqrt_f32
+                0x08000dcc       0x4c ..\obj\arm_cmplx_mag_f32.o
+ .text.arm_cmplx_mag_f32
+                0x08000e18      0x1c4 ..\obj\arm_cmplx_mag_f32.o
+                0x08000e18                arm_cmplx_mag_f32
+ .text.GPIO_Init
+                0x08000fdc      0x144 ..\obj\stm32f4xx_gpio.o
+                0x08000fdc                GPIO_Init
+ .text.SystemInit
+                0x08001120       0x94 ..\obj\system_stm32f4xx.o
+                0x08001120                SystemInit
+ .text.SetSysClock
+                0x080011b4      0x188 ..\obj\system_stm32f4xx.o
+ .text.arm_max_f32
+                0x0800133c      0x15c ..\obj\arm_max_f32.o
+                0x0800133c                arm_max_f32
+ .text.sqrtf    0x08001498       0xb4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+                0x08001498                sqrtf
+ .text.__ieee754_sqrtf
+                0x0800154c       0xc4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+                0x0800154c                __ieee754_sqrtf
+ .text.matherr  0x08001610        0x4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+                0x08001610                matherr
+ .text.__fpclassifyf
+                0x08001614       0x5c ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+                0x08001614                __fpclassifyf
+ .text.arm_cfft_radix4_init_f32
+                0x08001670       0xb4 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+                0x08001670                arm_cfft_radix4_init_f32
+ .text.arm_radix4_butterfly_f32
+                0x08001724      0x50c ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+                0x08001724                arm_radix4_butterfly_f32
+ .text.arm_radix4_butterfly_inverse_f32
+                0x08001c30      0x384 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+                0x08001c30                arm_radix4_butterfly_inverse_f32
+ .text.arm_cfft_radix4_f32
+                0x08001fb4       0x40 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+                0x08001fb4                arm_cfft_radix4_f32
+ .text.arm_bitreversal_f32
+                0x08001ff4       0xe8 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+                0x08001ff4                arm_bitreversal_f32
+ .text          0x080020dc      0x370 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                0x080020dc                __aeabi_drsub
+                0x080020e4                __aeabi_dsub
+                0x080020e4                __subdf3
+                0x080020e8                __aeabi_dadd
+                0x080020e8                __adddf3
+                0x08002360                __floatunsidf
+                0x08002360                __aeabi_ui2d
+                0x08002380                __floatsidf
+                0x08002380                __aeabi_i2d
+                0x080023a4                __aeabi_f2d
+                0x080023a4                __extendsfdf2
+                0x080023e0                __floatundidf
+                0x080023e0                __aeabi_ul2d
+                0x080023f0                __floatdidf
+                0x080023f0                __aeabi_l2d
+ .text          0x0800244c      0x424 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                0x0800244c                __aeabi_dmul
+                0x0800244c                __muldf3
+                0x080026a0                __divdf3
+                0x080026a0                __aeabi_ddiv
+ .text          0x08002870       0xa0 c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+                0x08002870                __truncdfsf2
+                0x08002870                __aeabi_d2f
+ .text.__errno  0x08002910        0xc ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+                0x08002910                __errno
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.rodata .rodata* .gnu.linkonce.r.*)
+ .rodata        0x0800291c    0x26d58 ..\obj\arm_common_tables.o
+                0x0800291c                armBitRevTable
+                0x0800311c                twiddleCoef_16
+                0x0800319c                twiddleCoef_32
+                0x0800329c                twiddleCoef_64
+                0x0800349c                twiddleCoef_128
+                0x0800389c                twiddleCoef_256
+                0x0800409c                twiddleCoef_512
+                0x0800509c                twiddleCoef_1024
+                0x0800709c                twiddleCoef_2048
+                0x0800b09c                twiddleCoef_4096
+                0x0801309c                twiddleCoefQ31
+                0x0801909c                twiddleCoefQ15
+                0x0801c09c                armRecipTableQ15
+                0x0801c11c                armRecipTableQ31
+                0x0801c21c                armBitRevIndexTable16
+                0x0801c244                armBitRevIndexTable32
+                0x0801c2a4                armBitRevIndexTable64
+                0x0801c314                armBitRevIndexTable128
+                0x0801c4b4                armBitRevIndexTable256
+                0x0801c824                armBitRevIndexTable512
+                0x0801cba4                armBitRevIndexTable1024
+                0x0801d9b4                armBitRevIndexTable2048
+                0x0801f774                armBitRevIndexTable4096
+                0x080216f4                twiddleCoef_rfft_32
+                0x08021774                twiddleCoef_rfft_64
+                0x08021874                twiddleCoef_rfft_128
+                0x08021a74                twiddleCoef_rfft_256
+                0x08021e74                twiddleCoef_rfft_512
+                0x08022674                twiddleCoef_rfft_1024
+                0x08023674                twiddleCoef_rfft_2048
+                0x08025674                twiddleCoef_rfft_4096
+ .rodata.str1.4
+                0x08029674        0x6 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+                                  0x8 (size before relaxing)
+ *fill*         0x0802967a        0x2 00
+ .rodata.str1.4
+                0x0802967c        0x4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+
+.vfp11_veneer   0x08029680        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08029680        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08029680        0x0
+ .iplt          0x00000000        0x0 ..\obj\arm_common_tables.o
+
+.rel.dyn        0x08029680        0x0
+ .rel.iplt      0x00000000        0x0 ..\obj\arm_common_tables.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x08029680                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x08029680                __exidx_end = .
+                0x08029680                . = ALIGN (0x4)
+                0x08029680                _etext = .
+                0x08029680                _sidata = .
+
+.data           0x20000000      0x4bc load address 0x08029680
+                0x20000000                _sdata = .
+ *(.data .data.*)
+ .data          0x20000000       0x50 ..\obj\stm32_ub_led.o
+                0x20000000                LED
+ .data          0x20000050       0x3c ..\obj\stm32_ub_adc1_single.o
+                0x20000050                ADC1s
+ .data.__fdlib_version
+                0x2000008c        0x1 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+                0x2000008c                __fdlib_version
+ *fill*         0x2000008d        0x3 00
+ .data.impure_data
+                0x20000090      0x428 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x200004b8        0x4 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+                0x200004b8                _impure_ptr
+                0x200004bc                . = ALIGN (0x4)
+                0x200004bc                _edata = .
+
+.igot.plt       0x200004bc        0x0 load address 0x08029b3c
+ .igot.plt      0x00000000        0x0 ..\obj\arm_common_tables.o
+
+.bss            0x200004bc     0x3000 load address 0x08029b3c
+                0x200004bc                _sbss = .
+ *(.bss .bss.*)
+ *(COMMON)
+ COMMON         0x200004bc     0x3000 ..\obj\main.o
+                0x200004bc                Output
+                0x200014bc                adcSamples
+                0x200034bc                . = ALIGN (0x4)
+                0x200034bc                _ebss = .
+
+.co_stack       0x200034bc      0x804 load address 0x0802cb3c
+                0x200034c0                . = ALIGN (0x8)
+ *fill*         0x200034bc        0x4 00
+ *(.co_stack .co_stack.*)
+ .co_stack      0x200034c0      0x800 ..\obj\startup_stm32f4xx.o
+                0x200034c0                pulStack
+                0x20003cc0                . = ALIGN (0x4)
+                0x20003cc0                _end = .
+LOAD ..\obj\arm_common_tables.o
+LOAD ..\obj\arm_cfft_f32.o
+LOAD ..\obj\startup_stm32f4xx.o
+LOAD ..\obj\stm32_ub_led.o
+LOAD ..\obj\main.o
+LOAD ..\obj\stm32f4xx_rcc.o
+LOAD ..\obj\stm32f4xx_adc.o
+LOAD ..\obj\stm32_ub_adc1_single.o
+LOAD ..\obj\arm_cmplx_mag_f32.o
+LOAD ..\obj\stm32f4xx_gpio.o
+LOAD ..\obj\arm_cfft_radix8_f32.o
+LOAD ..\obj\system_stm32f4xx.o
+LOAD ..\obj\arm_fft_bin_data.o
+LOAD ..\obj\arm_max_f32.o
+LOAD ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libc.a
+LOAD ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a
+LOAD ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a
+LOAD ..\..\..\libarm_cortexm4lf_math.a
+START GROUP
+LOAD c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a
+LOAD ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a
+LOAD ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libc.a
+END GROUP
+OUTPUT(Demo_05.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x4f48
+ .debug_info    0x00000000      0x52b ..\obj\arm_common_tables.o
+ .debug_info    0x0000052b      0x103 ..\obj\startup_stm32f4xx.o
+ .debug_info    0x0000062e      0x441 ..\obj\stm32_ub_led.o
+ .debug_info    0x00000a6f      0x5af ..\obj\main.o
+ .debug_info    0x0000101e      0xd49 ..\obj\stm32f4xx_rcc.o
+ .debug_info    0x00001d67      0xd14 ..\obj\stm32f4xx_adc.o
+ .debug_info    0x00002a7b      0x6e8 ..\obj\stm32_ub_adc1_single.o
+ .debug_info    0x00003163      0x193 ..\obj\arm_cmplx_mag_f32.o
+ .debug_info    0x000032f6      0x640 ..\obj\stm32f4xx_gpio.o
+ .debug_info    0x00003936      0x5f5 ..\obj\system_stm32f4xx.o
+ .debug_info    0x00003f2b      0x159 ..\obj\arm_max_f32.o
+ .debug_info    0x00004084      0x242 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_info    0x000042c6      0x9b0 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_info    0x00004c76      0x2d2 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_abbrev   0x00000000     0x106f
+ .debug_abbrev  0x00000000       0x82 ..\obj\arm_common_tables.o
+ .debug_abbrev  0x00000082       0xb2 ..\obj\startup_stm32f4xx.o
+ .debug_abbrev  0x00000134      0x14b ..\obj\stm32_ub_led.o
+ .debug_abbrev  0x0000027f      0x158 ..\obj\main.o
+ .debug_abbrev  0x000003d7      0x1e5 ..\obj\stm32f4xx_rcc.o
+ .debug_abbrev  0x000005bc      0x198 ..\obj\stm32f4xx_adc.o
+ .debug_abbrev  0x00000754      0x17d ..\obj\stm32_ub_adc1_single.o
+ .debug_abbrev  0x000008d1       0xd1 ..\obj\arm_cmplx_mag_f32.o
+ .debug_abbrev  0x000009a2      0x1a5 ..\obj\stm32f4xx_gpio.o
+ .debug_abbrev  0x00000b47      0x138 ..\obj\system_stm32f4xx.o
+ .debug_abbrev  0x00000c7f       0x94 ..\obj\arm_max_f32.o
+ .debug_abbrev  0x00000d13       0xf4 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_abbrev  0x00000e07      0x19c ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_abbrev  0x00000fa3       0xcc ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_aranges  0x00000000      0x528
+ .debug_aranges
+                0x00000000       0x18 ..\obj\arm_common_tables.o
+ .debug_aranges
+                0x00000018       0x28 ..\obj\startup_stm32f4xx.o
+ .debug_aranges
+                0x00000040       0x40 ..\obj\stm32_ub_led.o
+ .debug_aranges
+                0x00000080       0x28 ..\obj\main.o
+ .debug_aranges
+                0x000000a8      0x178 ..\obj\stm32f4xx_rcc.o
+ .debug_aranges
+                0x00000220      0x148 ..\obj\stm32f4xx_adc.o
+ .debug_aranges
+                0x00000368       0x40 ..\obj\stm32_ub_adc1_single.o
+ .debug_aranges
+                0x000003a8       0x28 ..\obj\arm_cmplx_mag_f32.o
+ .debug_aranges
+                0x000003d0       0x88 ..\obj\stm32f4xx_gpio.o
+ .debug_aranges
+                0x00000458       0x30 ..\obj\system_stm32f4xx.o
+ .debug_aranges
+                0x00000488       0x20 ..\obj\arm_max_f32.o
+ .debug_aranges
+                0x000004a8       0x20 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_aranges
+                0x000004c8       0x30 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_aranges
+                0x000004f8       0x30 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_line     0x00000000     0x2a49
+ .debug_line    0x00000000      0x108 ..\obj\arm_common_tables.o
+ .debug_line    0x00000108       0xaf ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000001b7      0x272 ..\obj\stm32_ub_led.o
+ .debug_line    0x00000429      0x2d2 ..\obj\main.o
+ .debug_line    0x000006fb      0x5a2 ..\obj\stm32f4xx_rcc.o
+ .debug_line    0x00000c9d      0x55b ..\obj\stm32f4xx_adc.o
+ .debug_line    0x000011f8      0x2ed ..\obj\stm32_ub_adc1_single.o
+ .debug_line    0x000014e5      0x15f ..\obj\arm_cmplx_mag_f32.o
+ .debug_line    0x00001644      0x346 ..\obj\stm32f4xx_gpio.o
+ .debug_line    0x0000198a      0x1d6 ..\obj\system_stm32f4xx.o
+ .debug_line    0x00001b60      0x147 ..\obj\arm_max_f32.o
+ .debug_line    0x00001ca7      0x185 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_line    0x00001e2c      0x933 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_line    0x0000275f      0x2ea ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_str      0x00000000     0x1de6
+ .debug_str     0x00000000      0x37a ..\obj\arm_common_tables.o
+                                0x3ca (size before relaxing)
+ .debug_str     0x0000037a       0xbd ..\obj\startup_stm32f4xx.o
+                                0x121 (size before relaxing)
+ .debug_str     0x00000437      0x2cc ..\obj\stm32_ub_led.o
+                                0x3b8 (size before relaxing)
+ .debug_str     0x00000703      0x163 ..\obj\main.o
+                                0x462 (size before relaxing)
+ .debug_str     0x00000866      0x6a4 ..\obj\stm32f4xx_rcc.o
+                                0x800 (size before relaxing)
+ .debug_str     0x00000f0a      0x5fd ..\obj\stm32f4xx_adc.o
+                                0x7b4 (size before relaxing)
+ .debug_str     0x00001507      0x18d ..\obj\stm32_ub_adc1_single.o
+                                0x5aa (size before relaxing)
+ .debug_str     0x00001694      0x137 ..\obj\arm_cmplx_mag_f32.o
+                                0x23e (size before relaxing)
+ .debug_str     0x000017cb      0x1b0 ..\obj\stm32f4xx_gpio.o
+                                0x453 (size before relaxing)
+ .debug_str     0x0000197b      0x125 ..\obj\system_stm32f4xx.o
+                                0x35a (size before relaxing)
+ .debug_str     0x00001aa0       0x8e ..\obj\arm_max_f32.o
+                                0x1a1 (size before relaxing)
+ .debug_str     0x00001b2e       0xc1 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+                                0x2c3 (size before relaxing)
+ .debug_str     0x00001bef      0x177 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+                                0x33e (size before relaxing)
+ .debug_str     0x00001d66       0x80 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+                                0x214 (size before relaxing)
+
+.comment        0x00000000       0xe0
+ .comment       0x00000000       0x70 ..\obj\arm_common_tables.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ..\obj\startup_stm32f4xx.o
+ .comment       0x00000000       0x71 ..\obj\stm32_ub_led.o
+ .comment       0x00000000       0x71 ..\obj\main.o
+ .comment       0x00000000       0x71 ..\obj\stm32f4xx_rcc.o
+ .comment       0x00000000       0x71 ..\obj\stm32f4xx_adc.o
+ .comment       0x00000000       0x71 ..\obj\stm32_ub_adc1_single.o
+ .comment       0x00000000       0x71 ..\obj\arm_cmplx_mag_f32.o
+ .comment       0x00000000       0x71 ..\obj\stm32f4xx_gpio.o
+ .comment       0x00000000       0x71 ..\obj\system_stm32f4xx.o
+ .comment       0x00000000       0x71 ..\obj\arm_max_f32.o
+ .comment       0x00000070       0x70 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .comment       0x00000000       0x71 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.ARM.attributes
+                0x00000000       0x3b
+ .ARM.attributes
+                0x00000000       0x3b ..\obj\arm_common_tables.o
+ .ARM.attributes
+                0x0000003b       0x3b ..\obj\startup_stm32f4xx.o
+ .ARM.attributes
+                0x00000076       0x3b ..\obj\stm32_ub_led.o
+ .ARM.attributes
+                0x000000b1       0x3b ..\obj\main.o
+ .ARM.attributes
+                0x000000ec       0x3b ..\obj\stm32f4xx_rcc.o
+ .ARM.attributes
+                0x00000127       0x3b ..\obj\stm32f4xx_adc.o
+ .ARM.attributes
+                0x00000162       0x3b ..\obj\stm32_ub_adc1_single.o
+ .ARM.attributes
+                0x0000019d       0x3b ..\obj\arm_cmplx_mag_f32.o
+ .ARM.attributes
+                0x000001d8       0x3b ..\obj\stm32f4xx_gpio.o
+ .ARM.attributes
+                0x00000213       0x3b ..\obj\system_stm32f4xx.o
+ .ARM.attributes
+                0x0000024e       0x3b ..\obj\arm_max_f32.o
+ .ARM.attributes
+                0x00000289       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+ .ARM.attributes
+                0x000002bf       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+ .ARM.attributes
+                0x000002f5       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_lib_ver.o)
+ .ARM.attributes
+                0x0000032b       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+ .ARM.attributes
+                0x00000361       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+ .ARM.attributes
+                0x00000397       0x3b ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .ARM.attributes
+                0x000003d2       0x3b ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .ARM.attributes
+                0x0000040d       0x3b ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .ARM.attributes
+                0x00000448       0x1e c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000466       0x1e c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000484       0x1e c:/program files (x86)/gnu tools arm embedded/4.7 2013q1/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x000004a2       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000004d8       0x36 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-impure.o)
+
+.debug_loc      0x00000000     0x470a
+ .debug_loc     0x00000000       0x64 ..\obj\startup_stm32f4xx.o
+ .debug_loc     0x00000064      0x118 ..\obj\stm32_ub_led.o
+ .debug_loc     0x0000017c       0x70 ..\obj\main.o
+ .debug_loc     0x000001ec      0x97c ..\obj\stm32f4xx_rcc.o
+ .debug_loc     0x00000b68      0x838 ..\obj\stm32f4xx_adc.o
+ .debug_loc     0x000013a0      0x10c ..\obj\stm32_ub_adc1_single.o
+ .debug_loc     0x000014ac       0x70 ..\obj\arm_cmplx_mag_f32.o
+ .debug_loc     0x0000151c      0x310 ..\obj\stm32f4xx_gpio.o
+ .debug_loc     0x0000182c       0x9c ..\obj\system_stm32f4xx.o
+ .debug_loc     0x000018c8       0x38 ..\obj\arm_max_f32.o
+ .debug_loc     0x00001900      0x380 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_loc     0x00001c80     0x25f3 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_loc     0x00004273      0x497 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_ranges   0x00000000      0x440
+ .debug_ranges  0x00000000       0x18 ..\obj\startup_stm32f4xx.o
+ .debug_ranges  0x00000018       0x30 ..\obj\stm32_ub_led.o
+ .debug_ranges  0x00000048       0x18 ..\obj\main.o
+ .debug_ranges  0x00000060      0x168 ..\obj\stm32f4xx_rcc.o
+ .debug_ranges  0x000001c8      0x138 ..\obj\stm32f4xx_adc.o
+ .debug_ranges  0x00000300       0x30 ..\obj\stm32_ub_adc1_single.o
+ .debug_ranges  0x00000330       0x18 ..\obj\arm_cmplx_mag_f32.o
+ .debug_ranges  0x00000348       0x78 ..\obj\stm32f4xx_gpio.o
+ .debug_ranges  0x000003c0       0x20 ..\obj\system_stm32f4xx.o
+ .debug_ranges  0x000003e0       0x10 ..\obj\arm_max_f32.o
+ .debug_ranges  0x000003f0       0x10 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_ranges  0x00000400       0x20 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_ranges  0x00000420       0x20 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+
+.debug_frame    0x00000000      0xf70
+ .debug_frame   0x00000000       0x48 ..\obj\startup_stm32f4xx.o
+ .debug_frame   0x00000048       0xa8 ..\obj\stm32_ub_led.o
+ .debug_frame   0x000000f0       0x50 ..\obj\main.o
+ .debug_frame   0x00000140      0x4d8 ..\obj\stm32f4xx_rcc.o
+ .debug_frame   0x00000618      0x434 ..\obj\stm32f4xx_adc.o
+ .debug_frame   0x00000a4c       0xac ..\obj\stm32_ub_adc1_single.o
+ .debug_frame   0x00000af8       0x50 ..\obj\arm_cmplx_mag_f32.o
+ .debug_frame   0x00000b48      0x19c ..\obj\stm32f4xx_gpio.o
+ .debug_frame   0x00000ce4       0x64 ..\obj\system_stm32f4xx.o
+ .debug_frame   0x00000d48       0x2c ..\obj\arm_max_f32.o
+ .debug_frame   0x00000d74       0x30 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x00000da4       0x2c ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x00000dd0       0x20 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x00000df0       0x20 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a(lib_a-sf_fpclassify.o)
+ .debug_frame   0x00000e10       0x20 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_init_f32.o)
+ .debug_frame   0x00000e30       0x98 ..\..\..\libarm_cortexm4lf_math.a(arm_cfft_radix4_f32.o)
+ .debug_frame   0x00000ec8       0x88 ..\..\..\libarm_cortexm4lf_math.a(arm_bitreversal.o)
+ .debug_frame   0x00000f50       0x20 ..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a(lib_a-errno.o)

@@ -1,0 +1,10 @@
+c:\users\gbinsur\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\gbinsur\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Gbinsur\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Envio Tarjetas RS232\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Envio Tarjetas RS232\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Envio Tarjetas RS232\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Envio Tarjetas RS232\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Gaby\Documents\Visual Studio 2010\Projects\Envio Tarjetas RS232\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

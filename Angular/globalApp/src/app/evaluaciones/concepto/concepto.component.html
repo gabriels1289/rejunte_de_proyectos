@@ -1,0 +1,59 @@
+<div class="d-flex justify-content-center" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card" *ngIf="!spinner">
+  <div class="card border-info">
+    <div class="card-header bg-info text-capitalize">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="assets/{{evaluado.foto}}" class="img-thumbnail" style="height:150px; width:150px">
+        </div>
+        <div class="col-sm-8">
+          <h4 class="align-middle text-center">{{evaluado.nombre}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="form">
+        
+        <div class="form-group">
+          <mat-form-field hintLabel="Máx 3000 caracteres" class="w-100">
+            <textarea matInput placeholder="Positivo" formControlName="positivoCtrl" #positivo rows="5"></textarea>
+            <mat-hint align="end">{{positivo.value?.length || 0}}/3000</mat-hint>
+            <mat-error *ngIf="f.positivoCtrl.invalid">{{getErrorMessageMinMaxRequired('positivoCtrl')}}</mat-error>
+          </mat-form-field>
+        </div>
+        
+        <div class="form-group">
+          <mat-form-field hintLabel="Máx 3000 caracteres" class="w-100">
+            <textarea matInput placeholder="Negativo" formControlName="negativoCtrl" #negativo rows="5"></textarea>
+            <mat-hint align="end">{{negativo.value?.length || 0}}/3000</mat-hint>
+            <mat-error *ngIf="f.negativoCtrl.invalid">{{getErrorMessageMinMaxRequired('negativoCtrl')}}</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-checkbox formControlName="entregadaCtrl" class="w-25" color="primary">Devolución entregada</mat-checkbox>
+          <label class="col-sm-2 control-label">Evaluador:</label>
+          <label class="col-sm-2 control-label" *ngIf="devolucion.entregada">{{devolucion.nombresup}}</label>
+        </div>
+                
+        <div class="form-group">
+          <mat-form-field hintLabel="Máx 3000 caracteres" class="w-100">
+            <textarea matInput placeholder="Generado en la devolución" formControlName="respuestaCtrl" #respuesta rows="5"></textarea>
+            <mat-hint align="end">{{respuesta.value?.length || 0}}/3000</mat-hint>
+            <mat-error *ngIf="f.positivoCtrl.invalid">{{getErrorMessageMinMaxRequired('respuestaCtrl')}}</mat-error>
+          </mat-form-field>
+        </div>
+      
+        <div>
+          <!-- <button mat-raised-button (click)="test()" class="w-25 float-left" color="primary">Test <mat-icon aria-hidden="false" aria-label="Test">bug_report</mat-icon></button> -->
+          <button mat-raised-button (click)="volver()" class="w-25 float-left" color="primary">Cancelar <mat-icon aria-hidden="false" aria-label="Cancelar">arrow_back</mat-icon></button>
+          <button mat-raised-button (click)="guardar()" class="w-25 float-right" color="primary" [disabled]="deshabilitar()">Guardar <mat-icon aria-hidden="false" aria-label="Guardar">save</mat-icon></button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2 /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\lib_include /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_lib\include /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_boot /I..\..\..\..\..\Users\Usuario\Documents\Electronica\Programacion\CooCox\STM32F4_Ethernet_ENC28J60_v2\cmsis_lib">
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1440bd891c2">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\lib_include\ip_arp_udp_tcp.c" lastModified="1440cd5b25f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\lib_include\net.h"/>
+         <include file="..\..\..\lib_include\enc28j60.h"/>
+         <include file="..\..\..\lib_include\ip_arp_udp_tcp.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="1440bd8cd4e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1440bd8cd51">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1440bd89367">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1440bd8933f">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_include\enc28j60.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\lib_include\enc28j60.c" lastModified="1440953e528">
+         <include file="..\..\..\lib_include\typedef.h"/>
+         <include file="..\..\..\lib_include\massert.h"/>
+         <include file="..\..\..\lib_include\drvEnc28j60.h"/>
+         <include file="..\..\..\lib_include\enc28j60.h"/>
+      </source>
+      <source file="..\..\..\lib_include\server.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1440bd896c7">
+      </source>
+      <source file="..\..\..\lib_include\server.c" lastModified="1440d08f986">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\lib_include\enc28j60.h"/>
+         <include file="..\..\..\lib_include\ip_arp_udp_tcp.h"/>
+         <include file="..\..\..\lib_include\net.h"/>
+         <include file="..\..\..\lib_include\server.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1440bd896a1">
+      </source>
+      <source file="..\..\..\lib_include\massert.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1440bd89622">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\lib_include\massert.c" lastModified="1440953e528">
+         <include file="..\..\..\lib_include\massert.h"/>
+      </source>
+      <source file="..\..\..\lib_include\drvUart.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1440bd891af">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_include\drvUart.c" lastModified="1440953e528">
+         <include file="..\..\..\lib_include\typedef.h"/>
+         <include file="..\..\..\lib_include\massert.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\lib_include\drvUart.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1440bd8a606">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1440bd8e075">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+      </source>
+      <source file="..\..\..\lib_include\typedef.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="1440bd8a5e3">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="1440c6fe06a">
+         <include file="..\..\..\lib_include\massert.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\lib_include\drvSysTick.h"/>
+         <include file="..\..\..\lib_include\drvEnc28j60.h"/>
+         <include file="..\..\..\lib_include\enc28j60.h"/>
+         <include file="..\..\..\lib_include\ip_arp_udp_tcp.h"/>
+         <include file="..\..\..\lib_include\server.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1440bd8970b">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h" lastModified="1440bfb57fc">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_include\net.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="1440bfb57fc">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_usart.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\lib_include\drvEnc28j60.h" lastModified="1440be7da47">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+      </source>
+      <source file="..\..\..\lib_include\drvSysTick.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\lib_include\drvEnc28j60.c" lastModified="1440953e528">
+         <include file="..\..\..\lib_include\massert.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\lib_include\drvEnc28j60.h"/>
+      </source>
+      <source file="..\..\..\lib_include\mstdio.h" lastModified="1440953e528">
+      </source>
+      <source file="..\..\..\lib_include\drvSysTick.c" lastModified="1440c255865">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\lib_include\massert.h"/>
+         <include file="..\..\..\lib_include\drvSysTick.h"/>
+      </source>
+      <source file="..\..\..\lib_include\stm32f4xx_it.h" lastModified="1440953e528">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\lib_include\mstdio.c" lastModified="1440953e910">
+         <include file="..\..\..\lib_include\drvUart.h"/>
+         <include file="..\..\..\lib_include\mstdio.h"/>
+      </source>
+      <source file="..\..\..\lib_include\stm32f4xx_it.c" lastModified="1440953e528">
+         <include file="..\..\..\lib_include\stm32f4xx_it.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1440bd89695">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1440bd89286">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1440bd89222">
+      </source>
+      <source file="..\..\..\lib_include\ip_arp_udp_tcp.h" lastModified="1440cd5b29c">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1440bd8926b">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+   </includePath>
+</dependencies>

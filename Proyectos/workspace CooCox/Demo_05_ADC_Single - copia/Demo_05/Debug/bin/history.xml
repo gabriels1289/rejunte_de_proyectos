@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Demo_05.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Demo_05 -TC:\CooCox\CoIDE\configuration\ProgramData\Demo_05/arm-gcc-link.ld -g -L..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu -lc -L..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu -lg -L..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu -lm -L..\..\.. -larm_cortexm4lf_math">
+      <target file="Demo_05.elf" lastModified="14cc46ad9f8">
+         <source file="..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libc.a" lastModified="13d5fdb0108"/>
+         <source file="..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libg.a" lastModified="13d5fdb0108"/>
+         <source file="..\..\..\..\..\..\..\Program Files (x86)\GNU Tools ARM Embedded\4.7 2013q1\arm-none-eabi\lib\armv7e-m\fpu\libm.a" lastModified="13d5fdafd20"/>
+         <source file="..\obj\arm_common_tables.o" lastModified="14cc4658ce0"/>
+         <source file="..\obj\arm_cfft_f32.o" lastModified="14cc4658e38"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="14cc4654745"/>
+         <source file="..\obj\stm32_ub_led.o" lastModified="14cc4654821"/>
+         <source file="..\obj\main.o" lastModified="14cc46ad718"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="14cc4654a82"/>
+         <source file="..\obj\stm32f4xx_adc.o" lastModified="14cc4654bab"/>
+         <source file="..\obj\stm32_ub_adc1_single.o" lastModified="14cc4654ca5"/>
+         <source file="..\obj\arm_cmplx_mag_f32.o" lastModified="14cc4658f32"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="14cc4654d90"/>
+         <source file="..\obj\arm_cfft_radix8_f32.o" lastModified="14cc46590a9"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="14cc4654e7a"/>
+         <source file="..\obj\arm_fft_bin_data.o" lastModified="14cc46591e1"/>
+         <source file="..\obj\arm_max_f32.o" lastModified="14cc465930a"/>
+      </target>
+   </processor>
+</history>

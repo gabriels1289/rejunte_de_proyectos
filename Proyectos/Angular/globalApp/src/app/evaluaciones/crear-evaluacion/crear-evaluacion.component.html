@@ -1,0 +1,178 @@
+<div class="d-flex justify-content-center" style="margin-top: 20%" *ngIf="spinner">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card" *ngIf="!spinner">
+	<div class="card border-info">
+		<div class="card-header bg-info text-capitalize">
+			<h2 class="sub-header">Selección parcial</h2>
+		</div> <!-- card-header 7 -->
+		<div class="card-body">
+			<div>
+        <form name="form" class="form-horizontal" [formGroup]="form" novalidate>
+          <div class="form-group">
+            <mat-form-field hintLabel="Máx 200 caracteres" class="w-50">
+              <input matInput placeholder="Nombre de la evaluación" formControlName="nombreCtrl" #nombre>
+              <mat-hint align="end">{{nombre.value?.length || 0}}/200</mat-hint>
+              <mat-error *ngIf="f.nombreCtrl.invalid">{{getErrorMessageMinMaxRequired('nombreCtrl')}}</mat-error>
+            </mat-form-field>      
+          </div> <!-- form-group 12 -->
+          <div class="form-group">
+            <!-- Evaluadores -->
+            <mat-form-field class="w-100">
+              <mat-chip-list #chipList aria-label="Seleccion Evaluadores">
+                <mat-chip class="size-letra-chips"
+                  *ngFor="let usuario of chipSelectedUsuarios"
+                  [selectable]="selectable"
+                  [removable]="removable"
+                  (removed)="removeUsuario(usuario)">
+                  {{usuario.usuario}}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input
+                  placeholder="Usuarios"
+                  #usuariosInput
+                  [formControl]="usuariosCtrl"
+                  [matAutocomplete]="auto"
+                  [matChipInputFor]="chipList"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  [matChipInputAddOnBlur]="addOnBlur"
+                  (matChipInputTokenEnd)="addUsuario($event)">
+              </mat-chip-list>
+              <mat-autocomplete #auto="matAutocomplete" (optionSelected)="usuarioSelected($event)">
+                <mat-option *ngFor="let thisUsuarioName of usuariosFiltrados | async" [value]="thisUsuarioName">
+                  {{thisUsuarioName}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+
+            <br>
+            <!-- Areas  -->
+            <mat-form-field class="w-100">
+              <mat-chip-list #chipList2 aria-label="Seleccion Areas Destinos">
+                <mat-chip class="size-letra-chips"
+                  *ngFor="let area of chipSelectedAreas"
+                  [selectable]="selectable"
+                  [removable]="removable"
+                  (removed)="removeArea(area)">
+                  {{area.area}}
+                  <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                </mat-chip>
+                <input
+                  placeholder="Areas"
+                  #areasInput
+                  [formControl]="areasCtrl"
+                  [matAutocomplete]="auto2"
+                  [matChipInputFor]="chipList2"
+                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                  [matChipInputAddOnBlur]="addOnBlur"
+                  (matChipInputTokenEnd)="addArea($event)">
+              </mat-chip-list>
+              <mat-autocomplete #auto2="matAutocomplete" (optionSelected)="areaSelected($event)">
+                <mat-option *ngFor="let thisAreaName of areasFiltradas | async" [value]="thisAreaName">
+                  {{thisAreaName}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div> <!-- form-group 19 -->
+        </form> <!-- form 12 -->
+				<div class="card">
+				  <div class="card border-info">
+				    <div class="card-header bg-info text-capitalize">
+				      <h2 class="sub-header">Competencias y Comportamientos</h2>
+				    </div> <!-- card-header 80 -->
+				    <div class="card-body">
+							<div>
+                <mat-form-field class="w-75">
+                  <mat-label>Competencia</mat-label>
+                  <mat-select [(ngModel)]="compSeleccionada" name="competenciaSelect">
+                    <mat-option *ngFor="let competencia of competencias" [value]="competencia">
+                      {{competencia.competencia}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+							</div> <!-- div 84 -->
+							<hr style="border: solid 2px "/>
+				      <ul style="list-style-type:none;">
+				        <li *ngFor="let compor of comportamientos | paginador:pageSize:pageIndex;" class="text-left">
+                  <mat-checkbox [(ngModel)]="compor.check" class="w-25" color="primary"></mat-checkbox>{{compor.id}} - {{compor.comportamiento}}
+				        </li>
+              </ul>
+              <mat-paginator  [length]="comportamientos.length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                [showFirstLastButtons]="true"
+                (page)="pageEvent = handlePage($event)"
+                *ngIf="comportamientos"
+                [pageIndex] = "pageIndex"
+                >
+              </mat-paginator>
+				    </div> <!-- card-body 83 -->
+				  </div> <!-- card border 79 -->
+				</div> <!-- card 78 -->
+
+        <div class="card">
+          <div class="card-body">
+            <button mat-raised-button (click)="agregar()" class="float-left" color="primary">Agregar <mat-icon aria-hidden="false" aria-label="Agregar">add</mat-icon></button>
+            <button mat-raised-button (click)="crearComp()" class="float-right" color="primary">Crear Competencia/Comportamiento <mat-icon aria-hidden="false" aria-label="Crear Competencia/Comportamiento">note_add</mat-icon></button>
+          </div>
+        </div>
+
+				<div class="card">
+				  <div class="card border-info">
+				    <div class="card-header bg-info text-capitalize">
+				      <h2 class="sub-header">Plantilla</h2>
+				    </div> <!-- card-header 133 -->
+				    <div class="card-body">
+							<div class="form-group">
+                <mat-checkbox [(ngModel)]="usarPlantilla" class="w-25" color="primary" (change)="actualizarPlantilla()" labelPosition="before">Usar plantilla: </mat-checkbox>
+
+                <mat-form-field *ngIf="usarPlantilla" class="w-75 float-right">
+                  <mat-label>Plantilla</mat-label>
+                  <mat-select [(ngModel)]="plantillaSel" (selectionChange)="cargarPlantilla()" name="plantillaSelect">
+                    <mat-option *ngFor="let plantilla of plantillas" [value]="plantilla">
+                      {{plantilla.nombre}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+							</div> <!-- form-group 137 -->
+				    </div> <!-- card-body 136 -->
+				  </div> <!-- card border 132 -->
+				</div> <!-- card 131 -->
+
+				<div class="card">
+					<div class="card border-info">
+						<div class="card-header bg-info text-capitalize">
+							<h2 class="sub-header">Modelado</h2>
+							<h4 class="sub-header">{{nombre.value}}</h4>
+						</div> <!-- card-header 156 -->
+						<div class="card-body">
+							<div class="col-sm-10">
+								<ul style="color: blue; text-align:left;">
+									<li *ngFor="let titulo of tituloGrupo; trackBy:trackByFunctionIndex" class="text-capitalize"><strong>{{titulo.competencia}}</strong>
+										<ul>
+                      <ng-container *ngFor="let model of modelo; let indice = index; trackBy:trackByFunctionIndex">
+                        <ng-container *ngIf="titulo.competencia == model.competencia">
+                          <li style="margin-top:5px">{{model.idcompor}} - {{model.comportamiento}}
+                            <button mat-icon-button (click)="quitarDeLaLista(indice)" color="warn"><mat-icon aria-hidden="false" aria-label="Quitar">clear</mat-icon></button>
+                          </li>
+                        </ng-container>
+                      </ng-container>
+										</ul>
+									</li>
+								</ul>
+							</div> <!-- div col-sm-10 161 -->
+						</div> <!-- card-body 160 -->
+					</div> <!-- card border 155 -->
+				</div> <!-- card 154 -->
+				
+        <div>
+          <!-- <button mat-raised-button (click)="test()" class="w-25 float-left" color="primary">Test <mat-icon aria-hidden="false" aria-label="Test">bug_report</mat-icon></button> -->
+          <button mat-raised-button (click)="cancelar()" class="float-left" color="warn">Cancelar <mat-icon aria-hidden="false" aria-label="Cancelar">arrow_back</mat-icon></button>
+          <button mat-raised-button (click)="guardar()" class="float-right" color="primary" [disabled]="modelo==[] || nombre.value=='' || !chipSelectedAreas.length || !chipSelectedUsuarios.length">Guardar <mat-icon aria-hidden="false" aria-label="Guardar">save</mat-icon></button>
+        </div>
+
+			</div> <!-- div 11 -->
+		</div> <!-- card-body 10 -->
+	</div> <!-- card border 6 -->
+</div> <!-- card 5 -->

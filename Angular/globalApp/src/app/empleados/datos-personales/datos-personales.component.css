@@ -1,0 +1,13 @@
+#titulitos{
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	/*margin-bottom: 5px;
+	margin-top: 5px;*/
+}
+
+#detallesDiv{
+	border: solid 1px #bce8f1;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}

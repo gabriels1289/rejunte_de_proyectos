@@ -1,0 +1,132 @@
+http://msdn.microsoft.com/es-es/library/system.io.filesystemwatcher(v=vs.110).aspx
+http://gmoralescruz.blogspot.com.ar/2009/05/inspeccionar-cambios-en-archivos-y.html
+http://javiercsharp.blogspot.com.ar/2007/03/monitorizar-archivos-en-c.html
+http://www.elguille.info/colabora/NET2005/svalsse_leyendo_y_escribiendo_archivos.htm
+
+Leyendo un archivo binario
+
+using System;
+using System.IO;
+
+static void Main(string[] args)
+{
+    try
+    {
+        string fileName = "temp.txt";
+        int letter = 0;
+        FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+        BinaryReader reader = new BinaryReader(stream);
+
+        while (letter != -1)
+        {
+            letter = reader.Read();
+            if (letter != -1) Console.Write((char)letter);
+        }
+        reader.Close();
+        stream.Close();
+    }
+    catch
+    {
+        Console.WriteLine("Error");
+    }
+}
+Escribiendo en un archivo binario
+
+static void Main(string[] args)
+{
+    try
+    {
+        string fileName = "temp.txt";
+        // data a ser guardada
+        int[] data = {0, 1, 2, 3, 4, 5};
+        FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Write);
+        BinaryWriter writer = new BinaryWriter(stream);
+
+        for(int i=0; i<data.Length; i++)
+        {
+            // números son guardados en formáto UTF-8 format (4 bytes)
+            writer.Write(data[i]);
+        }
+
+        writer.Close();
+        stream.Close();
+    }
+    catch
+    {
+        Console.WriteLine("Error");
+}
+Ver cambios en el file system
+
+.NET Framework prove la calse System.IO.FileSystemWatcher la cual permite ver si hay cambios en el file system.
+
+using System;
+using System.IO;
+class WatcherSample
+{
+    static void Main(string[] args)
+    {
+        // ver los cambios en el directorio de la aplicación y sobre todos los archivos
+        FileSystemWatcher watcher = new FileSystemWatcher(System.Windows.Forms.Application.StartupPath, "*.*");
+
+        // ver el nombre del archivo y tamaño cambiado
+        watcher.NotifyFilter = NotifyFilters.FileName | NotifyFilters.Size;
+        watcher.Changed += new FileSystemEventHandler(OnChange);
+        watcher.Created += new FileSystemEventHandler(OnChange);
+        watcher.Deleted += new FileSystemEventHandler(OnChange);
+        watcher.Renamed += new RenamedEventHandler(OnRenamed);
+        watcher.EnableRaisingEvents = true;
+
+        // espera por una tecla para terminar la aplicación
+        Console.ReadLine();
+    }
+    private static void OnChange(object sender, FileSystemEventArgs e)
+    {
+        Console.WriteLine("File: {0} - change type: {1}", e.FullPath, e.ChangeType);
+    }
+    private static void OnChange(object sender, RenamedEventArgs e)
+    {
+        Console.WriteLine("File: {0} renamed to {1}", e.OldName, e.Name);
+    }
+}
+
+
+
+
+
+http://stackoverflow.com/questions/19786668/c-sharp-udp-socket-client-and-server
+http://www.c-sharpcorner.com/uploadfile/patricklam/simpletcpudpserverclientpl211222005040054am/simpletcpudpserverclientpl2.aspx
+http://codereview.stackexchange.com/questions/7226/is-this-implementation-of-an-asynchronous-tcp-udp-server-correct
+http://www.nullskull.com/a/1551/clientserver-autodiscovery-in-c-and-udp-sockets.aspx
+http://www.fiuba6662.com.ar/6648/presentaciones/2007/DLMS/TP4.pdf
+
+http://mikedodaro.net/2012/07/23/creating-an-udp-server-with-net-gadgeteer/
+http://csharp.net-informations.com/communications/csharp-multi-threaded-client-socket.htm
+http://csharp.net-informations.com/communications/csharp-multi-threaded-server-socket.htm
+http://www.c-sharpcorner.com/uploadfile/patricklam/simpletcpudpserverclientpl211222005040054am/simpletcpudpserverclientpl2.aspx
+http://www.java2s.com/Code/CSharp/Network/UdpServerSample.htm
+http://www.codeproject.com/Articles/26715/Simple-client-server-UDP-socket-program
+http://www.codeproject.com/Articles/16935/A-Chat-Application-Using-Asynchronous-UDP-sockets
+http://www.prodigyproductionsllc.com/articles/programming/write-a-udp-client-and-server-with-c/
+http://stackoverflow.com/questions/19786668/c-sharp-udp-socket-client-and-server
+http://www.c-sharpcorner.com/uploadfile/patricklam/simpletcpudpserverclientpl211222005040054am/simpletcpudpserverclientpl2.aspx
+
+
+
+http://msdn.microsoft.com/en-us/library/system.windows.forms.linklabel.linkclicked(v=vs.110).aspx
+http://bytes.com/topic/c-sharp/answers/267014-link-open-folder
+http://www.java2s.com/Tutorial/CSharp/0460__GUI-Windows-Forms/LinkLabelslinktotextfile.htm
+http://msdn.microsoft.com/es-es/library/aa984271(v=vs.71).aspx
+
+http://www.homeandlearn.co.uk/csharp/csharp_s4p9.html
+http://www.slideshare.net/adolfogcasanova/extensiones-de-imgenes
+
+http://www.dreamincode.net/forums/topic/57482-countdown-timer/
+http://www.codeproject.com/Questions/505182/TimerplusinplusWindowsplusFormplusApplicationplusC
+http://markashleybell.com/creating-a-simple-stopwatchtimer-application-with-c-windows-forms.html
+http://ltuttini.blogspot.com.ar/2010/07/winforms-formbase-control-de-tiempo-de.html
+http://social.msdn.microsoft.com/Forums/vstudio/en-US/c943b880-a3bd-4ad0-8f12-c57615522501/how-can-i-create-a-countdown-timer-using-c-?forum=csharpgeneral
+http://social.msdn.microsoft.com/Forums/en-US/eb074a91-8667-4e6b-acd6-ef585154c2c8/5-minutes-countdown-timer
+http://yourankit.blogspot.com.ar/2012/03/how-to-make-countdown-timer-in-cnet.html#.Uvpy9Pl5NBo
+
+http://msdn.microsoft.com/es-es/library/ms143295(v=vs.110).aspx
+http://msdn.microsoft.com/es-es/library/7a2f3ay4(v=vs.90).aspx

@@ -1,0 +1,45 @@
+<div class="card border-info" cdkTrapFocus>
+	<div class="card-header bg-info text-capitalize">
+		<h2 mat-dialog-title class="text-center">{{detalle.asunto}}</h2>
+	</div> <!-- card-header -->
+	<div class="card-body">
+		<mat-dialog-content>
+		<p><b>Fecha: </b>{{detalle.fecha | date:'medium'}}</p>
+
+		<mat-expansion-panel>
+			<mat-expansion-panel-header>
+				<mat-panel-title>
+					Para:
+				</mat-panel-title>
+				<mat-panel-description class="cortar text-left">
+					{{textoDestinatarios | lowercase}}
+				</mat-panel-description>
+			</mat-expansion-panel-header>
+			<div *ngFor="let destinatario of destinatarios" style="display: inline" class="text-left">{{destinatario.area | lowercase}}{{!$last?', ':''}}</div>
+		</mat-expansion-panel>
+
+		<hr id="detallesDiv"/>
+
+		<div [innerHTML]="detalle.cuerpo | safeHtml"></div>
+
+		<div *ngIf="adjuntos != 'consulta vacia'">
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					Adjuntos: <mat-icon class="ml-3">attach_file</mat-icon>
+				</mat-expansion-panel-header>
+				<mat-nav-list>
+					<a mat-list-item *ngFor="let adjunto of adjuntos" href="assets\{{adjunto.url}}" download="assets\{{adjunto.nombre}}">
+						<mat-icon class="mr-3">save_alt</mat-icon> {{adjunto.nombre}} - ({{adjunto.subidopor}} / {{adjunto.fecha | date:'medium'})
+					</a>
+				</mat-nav-list>
+			</mat-expansion-panel>
+		</div>
+
+	</mat-dialog-content>
+	</div> <!-- card-body -->
+	<div class="card-footer">
+		<!-- <mat-dialog-actions> -->
+			<button mat-raised-button mat-dialog-close color="warn" class="float-right">Cerrar</button>
+		<!-- </mat-dialog-actions> -->
+	</div> <!-- card-footer -->
+</div> <!-- card -->

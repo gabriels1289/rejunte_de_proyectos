@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -D__FPU_USED -DARM_MATH_MATRIX_CHECK -DARM_ROUNDING -DARM_MATH_CM4 -D_FPU_PRESENT = 1 -I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis -I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_lib -I..\..\..\workspace -I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_boot -I..\..\..\workspace\Demo_05_ADC_Single - copia\cmsis_lib\include -I..\..\..\workspace\Demo_05_ADC_Single - copia\ub_lib -I..\..\..\workspace\Demo_05_ADC_Single - copia">
+      <target file="stm32f4xx_gpio.o" lastModified="14cc4654d90">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13ce7ff6cf0"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="14cc4654bab">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="13ce801f560"/>
+      </target>
+      <target file="arm_common_tables.o" lastModified="14cc4658ce0">
+         <source file="..\..\..\ub_lib\arm_common_tables.c" lastModified="140a5853c06"/>
+      </target>
+      <target file="arm_max_f32.o" lastModified="14cc465930a">
+         <source file="..\..\..\ub_lib\arm_max_f32.c" lastModified="140a585400e"/>
+      </target>
+      <target file="arm_cfft_f32.o" lastModified="14cc4658e38">
+         <source file="..\..\..\ub_lib\arm_cfft_f32.c" lastModified="1455e88d490"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14cc4654e7a">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13ce7ff6cf0"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14cc4654745">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13ce7ff6cf0"/>
+      </target>
+      <target file="stm32_ub_led.o" lastModified="14cc4654821">
+         <source file="..\..\..\ub_lib\stm32_ub_led.c" lastModified="13cc63b3ae0"/>
+      </target>
+      <target file="main.o" lastModified="14cc46ad718">
+         <source file="..\..\..\main.c" lastModified="14cc46ad229"/>
+      </target>
+      <target file="stm32_ub_adc1_single.o" lastModified="14cc4654ca5">
+         <source file="..\..\..\ub_lib\stm32_ub_adc1_single.c" lastModified="14cc44db2ff"/>
+      </target>
+      <target file="arm_cmplx_mag_f32.o" lastModified="14cc4658f32">
+         <source file="..\..\..\ub_lib\arm_cmplx_mag_f32.c" lastModified="140a5854f50"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="14cc4654a82">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13ce7ff6cf0"/>
+      </target>
+      <target file="arm_cfft_radix8_f32.o" lastModified="14cc46590a9">
+         <source file="..\..\..\ub_lib\arm_cfft_radix8_f32.c" lastModified="140a5854c04"/>
+      </target>
+      <target file="arm_fft_bin_data.o" lastModified="14cc46591e1">
+         <source file="..\..\..\ub_lib\arm_fft_bin_data.c" lastModified="140a5856bd1"/>
+      </target>
+   </processor>
+</history>

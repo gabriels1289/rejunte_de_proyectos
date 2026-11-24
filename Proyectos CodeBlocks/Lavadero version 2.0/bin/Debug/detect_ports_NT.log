@@ -1,0 +1,24 @@
+Enter DetectPortsNT(Parport, LPT%d, 0049F9EC, 4)
+RegOpenKeyEx(Services\Parport\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Serial, COM%d, 0049F9CC, 4)
+RegOpenKeyEx(Services\Serial\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Parport, LPT%d, 0049F9EC, 4)
+RegOpenKeyEx(Services\Parport\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Serial, COM%d, 0049F9CC, 4)
+RegOpenKeyEx(Services\Serial\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Parport, LPT%d, 0049F9EC, 4)
+RegOpenKeyEx(Services\Parport\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Serial, COM%d, 0049F9CC, 4)
+RegOpenKeyEx(Services\Serial\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Parport, LPT%d, 0049F9EC, 4)
+RegOpenKeyEx(Services\Parport\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0
+Enter DetectPortsNT(Serial, COM%d, 0049F9CC, 4)
+RegOpenKeyEx(Services\Serial\Enum) Failed with code 2
+Enter DetectPortsNT() *** Count = 0

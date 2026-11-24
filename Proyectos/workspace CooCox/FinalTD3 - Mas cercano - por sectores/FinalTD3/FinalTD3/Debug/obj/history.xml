@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\cmsis_boot -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\cmsis_lib -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\cmsis_lib\include -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\librerias -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\cmsis -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3\librerias\inc -I..\..\..\workspace\FinalTD3 - Mas cercano - por sectores\FinalTD3">
+      <target file="stm32f4xx_gpio.o" lastModified="1457fd1d1f6">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="13d01ec8a80"/>
+      </target>
+      <target file="drvEnc28j60.o" lastModified="1457fd1d609">
+         <source file="..\..\..\librerias\src\drvEnc28j60.c" lastModified="13d305f0370"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="1457fd1d29e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="145577861df"/>
+      </target>
+      <target file="server.o" lastModified="1457fd1c4f7">
+         <source file="..\..\..\librerias\src\server.c" lastModified="1456229ba98"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="1457fd1c43b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="1440e9519e4"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="1457fd1c543">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="13d01ec8a80"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="1457fd1d310">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="13d01ec9250"/>
+      </target>
+      <target file="misc.o" lastModified="1457fd1d58d">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1440ea6b129"/>
+      </target>
+      <target file="sleep.o" lastModified="1457fd1d171">
+         <source file="..\..\..\librerias\src\sleep.c" lastModified="14529c0cf81"/>
+      </target>
+      <target file="stm32_ub_led.o" lastModified="1457fd1c676">
+         <source file="..\..\..\librerias\src\stm32_ub_led.c" lastModified="1440ea5a1f1"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="1457fd1d419">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1445a6c0a5c"/>
+      </target>
+      <target file="ip_arp_udp_tcp.o" lastModified="1457fd1c600">
+         <source file="..\..\..\librerias\src\ip_arp_udp_tcp.c" lastModified="144706c1624"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="1457fd1c7c9">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="13d01ec9250"/>
+      </target>
+      <target file="syscalls.o" lastModified="1457fd1d381">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="1445abcc6a3"/>
+      </target>
+      <target file="massert.o" lastModified="1457fd1d50e">
+         <source file="..\..\..\librerias\src\massert.c" lastModified="13d40f52b10"/>
+      </target>
+      <target file="enc28j60.o" lastModified="1457fd1c3ca">
+         <source file="..\..\..\librerias\src\enc28j60.c" lastModified="13d462aaa10"/>
+      </target>
+      <target file="SSD1963.o" lastModified="1457fd1d4ba">
+         <source file="..\..\..\librerias\src\SSD1963.c" lastModified="14557c35353"/>
+      </target>
+      <target file="main.o" lastModified="1457fd1c712">
+         <source file="..\..\..\main.c" lastModified="145622512a3"/>
+      </target>
+   </processor>
+</history>

@@ -1,0 +1,5 @@
+c:\users\gbinsur\documents\visual studio 2010\Projects\prueba Texto a hexa\prueba Texto a hexa\bin\Debug\prueba Texto a hexa.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\prueba Texto a hexa\prueba Texto a hexa\bin\Debug\prueba Texto a hexa.pdb
+c:\users\gbinsur\documents\visual studio 2010\Projects\prueba Texto a hexa\prueba Texto a hexa\obj\x86\Debug\prueba Texto a hexa.exe
+c:\users\gbinsur\documents\visual studio 2010\Projects\prueba Texto a hexa\prueba Texto a hexa\obj\x86\Debug\prueba Texto a hexa.pdb
+C:\Users\Gbinsur\Documents\Visual Studio 2010\Projects\prueba Texto a hexa\prueba Texto a hexa\obj\x86\Debug\prueba Texto a hexa.csprojResolveAssemblyReference.cache
